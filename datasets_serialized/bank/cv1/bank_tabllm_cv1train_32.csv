@@ -1,0 +1,33 @@
+age,type of job,marital status,education,has credit in default?,"average yearly balance, in euros",has housing loan?,has personal loan?,contact communication type,last contact day of the month,last contact month of year,"last contact duration, in seconds",number of contacts performed during this campaign and for this client,number of days that passed by after the client was last contacted from a previous campaign,number of contacts performed before this campaign and for this client,outcome of the previous marketing campaign,label
+45,admin.,married,secondary,no,72,yes,yes,cellular,15,may,262,2,352,2,failure,False
+31,admin.,single,secondary,no,-1,yes,no,cellular,15,may,99,1,352,1,failure,False
+39,blue-collar,married,secondary,no,1309,no,yes,telephone,10,jul,37,1,client was not previously contacted,0,unknown,False
+34,blue-collar,married,secondary,no,2495,yes,no,unknown,23,may,924,1,client was not previously contacted,0,unknown,True
+51,services,married,secondary,no,135,no,no,cellular,25,aug,105,4,client was not previously contacted,0,unknown,False
+47,blue-collar,married,primary,no,550,yes,no,unknown,7,may,113,1,client was not previously contacted,0,unknown,False
+44,blue-collar,married,primary,no,-315,yes,no,unknown,23,may,90,3,client was not previously contacted,0,unknown,False
+48,blue-collar,married,primary,no,-460,no,no,cellular,23,jul,135,1,client was not previously contacted,0,unknown,False
+39,blue-collar,married,primary,no,558,yes,no,unknown,22,jul,23,1,531,3,failure,False
+33,housemaid,married,primary,no,0,no,no,cellular,8,aug,138,2,client was not previously contacted,0,unknown,False
+54,technician,single,tertiary,no,1433,yes,yes,unknown,18,jun,18,20,client was not previously contacted,0,unknown,False
+36,admin.,married,tertiary,no,157,yes,no,cellular,17,apr,277,2,client was not previously contacted,0,unknown,False
+53,technician,married,secondary,no,2818,yes,no,cellular,16,jul,350,7,client was not previously contacted,0,unknown,False
+30,admin.,single,tertiary,no,33,yes,no,cellular,25,jul,396,1,client was not previously contacted,0,unknown,False
+25,admin.,single,tertiary,no,1734,no,no,cellular,19,oct,366,1,client was not previously contacted,0,unknown,False
+37,admin.,divorced,tertiary,no,43,yes,no,cellular,20,apr,328,2,264,2,failure,False
+35,services,single,secondary,no,-437,yes,no,unknown,3,jun,43,5,client was not previously contacted,0,unknown,False
+38,blue-collar,single,secondary,no,0,yes,no,cellular,12,may,84,3,client was not previously contacted,0,unknown,False
+67,management,divorced,tertiary,no,361,no,no,cellular,13,oct,411,2,client was not previously contacted,0,unknown,True
+35,entrepreneur,single,tertiary,no,-49,no,no,unknown,17,jun,668,8,client was not previously contacted,0,unknown,False
+72,retired,married,primary,no,9160,no,no,cellular,5,feb,229,1,client was not previously contacted,0,unknown,False
+49,management,divorced,tertiary,no,169,no,no,cellular,18,jul,141,1,client was not previously contacted,0,unknown,False
+26,blue-collar,single,secondary,no,-188,no,no,telephone,16,jul,198,1,client was not previously contacted,0,unknown,False
+41,self-employed,married,secondary,no,305,yes,no,cellular,13,may,174,2,client was not previously contacted,0,unknown,False
+29,technician,single,tertiary,no,0,yes,no,unknown,7,may,104,2,client was not previously contacted,0,unknown,False
+21,student,single,tertiary,no,1258,no,no,cellular,7,jul,404,1,client was not previously contacted,0,unknown,False
+45,management,married,primary,no,1533,no,no,cellular,31,jul,83,4,client was not previously contacted,0,unknown,False
+40,blue-collar,married,secondary,no,1451,no,no,cellular,30,sep,117,1,121,1,success,True
+29,technician,single,secondary,no,825,no,no,cellular,25,jun,472,2,client was not previously contacted,0,unknown,True
+49,technician,divorced,tertiary,no,917,no,no,cellular,11,aug,165,6,client was not previously contacted,0,unknown,False
+69,housemaid,married,primary,no,1080,no,no,cellular,22,apr,164,2,client was not previously contacted,0,unknown,False
+46,admin.,married,secondary,no,171,yes,yes,cellular,11,oct,251,1,430,1,failure,False

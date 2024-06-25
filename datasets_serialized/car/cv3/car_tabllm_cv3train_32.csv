@@ -1,0 +1,33 @@
+Buying price,Doors,Maintenance costs,Persons,Safety score,Trunk size,label
+medium,four,low,four,high,medium,3
+very high,five or more,medium,more than four,high,medium,1
+low,three,very high,two,low,small,0
+high,two,medium,two,high,big,0
+very high,five or more,very high,two,medium,medium,0
+medium,five or more,very high,more than four,high,medium,1
+very high,three,high,four,medium,big,0
+very high,three,high,more than four,low,medium,0
+very high,five or more,low,more than four,high,big,1
+high,two,medium,more than four,high,big,1
+very high,two,low,two,low,medium,0
+medium,two,medium,four,high,big,3
+medium,two,very high,more than four,medium,small,0
+high,five or more,high,two,high,medium,0
+low,three,medium,two,low,small,0
+medium,three,low,more than four,high,small,2
+low,five or more,low,four,high,medium,3
+very high,four,low,four,low,medium,0
+medium,three,low,four,low,big,0
+very high,four,medium,more than four,low,medium,0
+high,five or more,high,four,high,small,1
+high,four,high,two,medium,small,0
+high,four,medium,more than four,low,small,0
+low,three,very high,two,medium,medium,0
+very high,five or more,very high,two,high,small,0
+very high,four,medium,four,high,medium,1
+low,two,low,four,low,big,0
+medium,two,high,four,medium,big,1
+medium,four,medium,four,low,small,0
+low,two,medium,more than four,low,small,0
+low,five or more,medium,more than four,medium,small,1
+medium,five or more,low,two,low,small,0

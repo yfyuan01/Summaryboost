@@ -1,0 +1,1383 @@
+Buying price,Doors,Maintenance costs,Persons,Safety score,Trunk size,label
+high,four,very high,more than four,high,small,0
+high,two,very high,two,low,small,0
+high,three,very high,more than four,medium,big,0
+low,four,very high,two,high,medium,0
+high,two,low,four,high,big,1
+medium,four,medium,more than four,low,small,0
+low,five or more,high,four,medium,big,1
+very high,two,high,four,medium,small,0
+low,three,high,four,high,big,3
+medium,five or more,medium,four,low,small,0
+high,two,very high,more than four,high,small,0
+very high,three,medium,more than four,medium,big,1
+high,four,high,more than four,high,big,1
+high,four,high,four,medium,big,1
+high,two,very high,more than four,medium,small,0
+very high,two,low,two,high,small,0
+low,two,very high,more than four,low,medium,0
+medium,two,very high,four,medium,medium,0
+medium,two,low,four,medium,big,2
+high,five or more,low,more than four,high,big,1
+low,two,medium,four,low,big,0
+medium,five or more,very high,more than four,low,medium,0
+very high,two,low,four,high,small,1
+very high,three,low,four,high,medium,1
+medium,five or more,medium,four,low,big,0
+low,five or more,medium,more than four,medium,medium,2
+low,three,low,two,high,medium,0
+low,three,high,two,high,big,0
+very high,three,high,four,medium,medium,0
+high,five or more,low,four,low,big,0
+very high,four,high,two,high,big,0
+medium,five or more,medium,more than four,medium,small,1
+high,three,very high,two,medium,big,0
+medium,five or more,high,four,low,medium,0
+high,four,high,four,medium,medium,1
+high,four,high,more than four,medium,medium,1
+low,three,low,more than four,low,big,0
+high,three,very high,four,medium,medium,0
+medium,three,very high,four,low,small,0
+high,three,very high,two,medium,medium,0
+very high,three,very high,two,medium,medium,0
+very high,four,medium,two,high,medium,0
+high,four,medium,more than four,high,medium,1
+high,three,low,more than four,high,big,1
+low,four,medium,two,high,medium,0
+low,two,very high,four,high,medium,1
+very high,five or more,low,more than four,low,small,0
+high,two,high,four,medium,medium,0
+low,two,low,four,medium,big,2
+very high,two,medium,four,high,medium,1
+very high,two,very high,more than four,high,big,0
+low,five or more,very high,two,low,big,0
+medium,five or more,low,more than four,low,big,0
+low,two,medium,two,low,small,0
+very high,two,high,more than four,medium,small,0
+low,four,medium,more than four,high,big,3
+very high,two,low,four,medium,big,1
+high,five or more,low,two,low,medium,0
+low,two,low,two,medium,big,0
+low,three,medium,more than four,medium,medium,2
+medium,three,medium,two,low,medium,0
+high,four,high,four,high,medium,1
+low,five or more,high,four,high,small,1
+medium,three,medium,more than four,low,medium,0
+very high,five or more,high,two,high,big,0
+low,three,medium,two,medium,big,0
+low,three,medium,two,high,big,0
+medium,two,high,four,medium,big,1
+low,five or more,medium,two,low,big,0
+medium,two,low,more than four,low,medium,0
+low,two,medium,four,high,big,3
+high,five or more,high,more than four,low,big,0
+very high,two,high,four,low,medium,0
+medium,five or more,medium,more than four,low,small,0
+medium,two,medium,two,low,medium,0
+very high,five or more,high,more than four,low,small,0
+high,three,low,two,high,big,0
+high,three,high,four,high,medium,1
+low,two,high,more than four,low,small,0
+medium,five or more,low,more than four,high,small,2
+medium,two,low,four,high,big,3
+low,four,low,two,high,small,0
+very high,five or more,low,two,medium,big,0
+high,two,very high,two,high,small,0
+low,three,medium,two,medium,small,0
+medium,three,high,more than four,high,medium,1
+low,two,very high,two,medium,small,0
+low,two,medium,two,high,medium,0
+low,three,very high,more than four,high,big,1
+very high,five or more,very high,more than four,high,medium,0
+high,two,high,four,medium,small,0
+high,five or more,low,four,medium,big,1
+very high,five or more,very high,more than four,high,big,0
+high,five or more,medium,two,high,medium,0
+medium,two,low,more than four,high,big,3
+medium,three,very high,four,medium,medium,0
+very high,five or more,medium,more than four,high,big,1
+medium,four,low,more than four,medium,small,1
+low,five or more,high,two,high,small,0
+low,four,very high,two,medium,small,0
+high,five or more,very high,more than four,medium,small,0
+high,four,low,two,medium,medium,0
+very high,two,medium,four,high,big,1
+low,two,very high,two,low,big,0
+low,three,high,more than four,high,big,3
+low,two,low,more than four,medium,big,2
+high,four,very high,more than four,medium,big,0
+low,four,low,two,medium,small,0
+medium,three,very high,two,high,medium,0
+low,three,medium,more than four,medium,small,1
+high,two,high,four,high,big,1
+high,four,high,four,high,big,1
+very high,four,low,two,low,medium,0
+very high,two,high,two,high,big,0
+low,four,very high,four,high,medium,1
+high,three,high,more than four,high,medium,1
+low,two,high,four,low,small,0
+medium,three,very high,more than four,low,small,0
+medium,three,high,two,high,medium,0
+low,two,very high,four,medium,medium,0
+medium,two,high,more than four,medium,medium,0
+very high,three,very high,more than four,low,small,0
+low,five or more,low,four,high,medium,3
+high,two,high,four,medium,big,1
+very high,three,low,more than four,medium,small,0
+medium,four,medium,four,high,big,3
+low,four,very high,more than four,high,small,1
+very high,three,very high,four,high,small,0
+high,five or more,very high,two,low,medium,0
+medium,three,medium,four,medium,small,1
+very high,five or more,high,two,high,small,0
+high,three,very high,four,medium,small,0
+low,five or more,medium,more than four,high,medium,3
+medium,five or more,very high,two,low,big,0
+very high,two,very high,two,low,small,0
+very high,four,very high,two,low,small,0
+medium,two,low,four,low,big,0
+very high,four,very high,more than four,medium,big,0
+very high,three,low,more than four,low,small,0
+medium,three,medium,two,medium,medium,0
+medium,four,medium,two,low,medium,0
+low,two,medium,two,medium,big,0
+very high,four,medium,two,low,medium,0
+medium,five or more,low,two,high,medium,0
+very high,three,medium,more than four,low,small,0
+medium,two,low,two,low,big,0
+medium,four,very high,more than four,low,medium,0
+high,four,high,four,low,medium,0
+medium,five or more,low,four,medium,small,1
+low,two,low,four,high,medium,2
+medium,two,low,more than four,medium,medium,1
+medium,four,medium,two,medium,small,0
+low,four,high,more than four,low,small,0
+low,four,high,four,high,big,3
+very high,four,very high,four,medium,small,0
+high,five or more,medium,four,medium,big,1
+very high,four,low,four,low,big,0
+low,three,very high,four,high,small,1
+high,two,medium,two,medium,small,0
+medium,four,medium,two,medium,big,0
+high,four,low,two,high,medium,0
+medium,four,medium,four,low,big,0
+high,two,low,four,low,big,0
+high,two,high,more than four,low,big,0
+medium,five or more,very high,more than four,medium,medium,1
+low,two,low,two,medium,medium,0
+high,five or more,low,four,medium,medium,1
+medium,five or more,very high,two,low,medium,0
+very high,four,high,more than four,medium,big,0
+low,four,low,more than four,medium,medium,2
+medium,three,high,two,low,small,0
+low,three,medium,more than four,high,small,2
+low,two,medium,two,high,big,0
+high,four,very high,four,medium,medium,0
+medium,four,very high,two,medium,medium,0
+low,four,low,more than four,high,big,3
+high,five or more,low,more than four,medium,small,0
+low,four,low,four,medium,big,2
+very high,three,very high,two,high,small,0
+high,five or more,medium,two,low,big,0
+very high,three,low,four,high,small,1
+medium,two,high,two,medium,small,0
+very high,four,low,two,high,big,0
+high,five or more,high,four,medium,medium,1
+low,five or more,very high,two,medium,small,0
+high,three,medium,four,high,medium,1
+medium,two,medium,four,low,medium,0
+very high,two,medium,four,high,small,1
+low,five or more,very high,more than four,medium,small,0
+low,two,medium,two,medium,medium,0
+high,three,very high,more than four,medium,small,0
+high,three,medium,two,medium,small,0
+very high,five or more,high,four,low,medium,0
+high,three,low,more than four,medium,medium,1
+low,four,very high,two,low,big,0
+high,five or more,medium,two,high,big,0
+very high,five or more,high,two,low,medium,0
+low,two,medium,four,low,medium,0
+medium,four,very high,more than four,medium,big,1
+medium,four,very high,four,low,medium,0
+low,three,medium,more than four,low,small,0
+very high,two,medium,more than four,medium,big,1
+very high,three,high,two,low,small,0
+low,four,low,four,low,small,0
+low,four,medium,two,medium,big,0
+medium,five or more,medium,more than four,medium,medium,1
+low,five or more,medium,more than four,high,big,3
+low,three,very high,more than four,medium,small,0
+very high,two,low,two,low,medium,0
+medium,three,very high,four,medium,small,0
+low,five or more,high,more than four,medium,small,1
+high,three,high,two,medium,medium,0
+very high,five or more,low,four,medium,big,1
+low,two,low,four,medium,medium,1
+low,two,very high,two,low,medium,0
+low,five or more,very high,two,high,medium,0
+very high,four,medium,four,high,small,1
+low,three,very high,two,medium,medium,0
+low,five or more,high,more than four,low,medium,0
+low,two,high,more than four,low,medium,0
+very high,five or more,medium,four,medium,medium,1
+high,five or more,very high,more than four,low,small,0
+very high,two,high,four,medium,big,0
+very high,three,medium,two,low,big,0
+low,five or more,medium,more than four,high,small,2
+medium,four,low,more than four,medium,medium,2
+very high,three,low,two,low,medium,0
+low,five or more,low,two,low,big,0
+low,five or more,low,four,low,medium,0
+high,two,medium,more than four,low,medium,0
+very high,four,very high,more than four,low,medium,0
+high,two,low,four,medium,medium,0
+high,four,low,more than four,low,medium,0
+high,four,medium,four,medium,big,1
+very high,five or more,low,more than four,medium,medium,1
+very high,two,high,more than four,medium,big,0
+high,two,medium,two,high,big,0
+high,three,medium,two,low,big,0
+very high,four,low,four,low,small,0
+medium,four,medium,two,low,small,0
+medium,three,low,two,medium,small,0
+medium,two,high,two,high,big,0
+high,three,high,more than four,medium,big,1
+high,three,medium,four,high,big,1
+medium,two,medium,two,low,big,0
+low,five or more,high,two,medium,medium,0
+low,five or more,low,more than four,high,big,3
+medium,three,medium,two,high,big,0
+high,two,very high,more than four,low,small,0
+high,five or more,high,more than four,medium,small,0
+low,five or more,very high,more than four,low,medium,0
+medium,four,low,four,high,big,3
+medium,three,very high,four,low,medium,0
+very high,five or more,very high,two,high,small,0
+high,four,medium,two,high,big,0
+high,five or more,very high,four,high,medium,0
+very high,two,very high,more than four,low,medium,0
+very high,two,very high,four,high,small,0
+low,two,very high,two,medium,big,0
+high,four,very high,more than four,low,big,0
+low,three,medium,four,high,small,2
+very high,two,very high,four,high,medium,0
+very high,five or more,very high,more than four,low,medium,0
+high,five or more,low,two,medium,medium,0
+low,four,very high,two,low,medium,0
+high,two,very high,two,medium,small,0
+low,three,high,two,low,small,0
+medium,five or more,high,four,low,big,0
+very high,five or more,medium,more than four,low,big,0
+very high,two,medium,four,low,small,0
+very high,five or more,high,four,medium,small,0
+high,five or more,low,two,medium,big,0
+low,four,medium,two,high,small,0
+high,four,low,four,medium,medium,1
+medium,two,very high,four,low,small,0
+low,three,medium,more than four,medium,big,2
+medium,three,medium,four,medium,big,1
+medium,two,medium,two,high,medium,0
+low,three,high,more than four,low,big,0
+very high,five or more,medium,two,medium,big,0
+high,two,high,more than four,high,small,0
+high,four,very high,two,high,big,0
+high,two,low,more than four,low,small,0
+high,four,high,two,low,medium,0
+medium,three,low,more than four,low,small,0
+very high,five or more,medium,more than four,medium,medium,1
+medium,three,low,four,high,medium,2
+very high,five or more,very high,two,low,small,0
+low,four,low,more than four,medium,small,1
+low,four,low,two,low,small,0
+medium,three,very high,more than four,high,small,1
+very high,five or more,medium,four,low,medium,0
+high,four,very high,more than four,low,small,0
+high,four,high,more than four,medium,big,1
+very high,five or more,low,more than four,low,big,0
+high,three,low,more than four,medium,small,0
+high,four,very high,two,high,medium,0
+medium,five or more,low,two,low,medium,0
+high,four,very high,more than four,high,big,0
+high,four,low,four,high,medium,1
+medium,four,medium,more than four,medium,small,1
+low,three,high,more than four,medium,big,1
+low,two,very high,more than four,medium,medium,0
+low,three,low,two,medium,small,0
+very high,five or more,low,more than four,high,big,1
+low,five or more,low,two,low,medium,0
+medium,three,very high,two,medium,medium,0
+very high,four,high,more than four,medium,small,0
+high,two,low,two,high,small,0
+medium,four,low,more than four,high,medium,3
+very high,three,medium,two,high,small,0
+low,three,medium,four,medium,big,2
+medium,four,low,four,high,small,2
+low,five or more,very high,two,low,small,0
+high,three,low,four,low,medium,0
+medium,three,low,two,low,medium,0
+low,two,medium,two,low,medium,0
+low,four,high,two,high,medium,0
+medium,four,medium,more than four,low,medium,0
+very high,two,very high,four,high,big,0
+low,four,medium,more than four,high,small,2
+low,four,medium,more than four,medium,small,1
+high,five or more,high,four,high,medium,1
+high,three,low,four,medium,medium,0
+medium,four,medium,more than four,high,small,1
+medium,two,high,two,medium,medium,0
+medium,three,very high,two,low,big,0
+medium,three,very high,more than four,medium,medium,1
+low,two,high,two,low,small,0
+high,three,very high,more than four,high,big,0
+high,five or more,medium,four,low,small,0
+low,four,medium,four,medium,small,1
+high,three,medium,more than four,medium,medium,1
+medium,four,very high,four,medium,small,0
+low,four,high,more than four,high,big,3
+very high,five or more,very high,four,high,small,0
+medium,three,high,two,high,small,0
+low,three,very high,more than four,high,medium,1
+high,three,high,two,low,big,0
+high,five or more,high,four,high,small,1
+medium,two,high,four,medium,medium,0
+very high,five or more,low,four,high,medium,1
+high,three,low,more than four,low,big,0
+medium,five or more,medium,two,medium,small,0
+high,five or more,low,more than four,low,big,0
+high,five or more,very high,two,medium,medium,0
+high,four,medium,more than four,low,small,0
+very high,three,high,more than four,high,small,0
+very high,five or more,medium,two,medium,medium,0
+high,five or more,low,two,high,big,0
+medium,four,low,more than four,low,small,0
+low,three,high,more than four,medium,medium,1
+high,four,high,four,low,big,0
+medium,three,medium,two,low,big,0
+high,three,very high,four,high,medium,0
+very high,four,low,more than four,low,big,0
+low,four,medium,more than four,low,small,0
+medium,five or more,high,two,medium,big,0
+very high,three,high,four,medium,big,0
+medium,two,low,four,medium,small,1
+very high,five or more,medium,four,low,small,0
+very high,three,very high,four,high,big,0
+high,four,low,two,medium,big,0
+high,two,high,more than four,high,medium,1
+low,three,low,four,low,small,0
+high,four,high,two,medium,medium,0
+very high,three,very high,two,low,big,0
+medium,two,very high,more than four,medium,small,0
+high,four,low,more than four,medium,medium,1
+low,two,high,two,medium,big,0
+high,two,very high,more than four,low,medium,0
+high,five or more,medium,more than four,low,medium,0
+high,four,medium,more than four,medium,small,0
+low,five or more,medium,two,medium,medium,0
+high,two,very high,more than four,low,big,0
+very high,four,very high,more than four,low,big,0
+low,three,very high,two,high,big,0
+high,three,medium,more than four,high,medium,1
+medium,five or more,medium,more than four,medium,big,1
+low,four,very high,four,high,small,1
+very high,three,low,four,medium,small,0
+high,four,very high,four,low,big,0
+medium,three,medium,more than four,low,small,0
+medium,five or more,very high,two,medium,medium,0
+low,two,low,two,medium,small,0
+medium,five or more,very high,two,medium,big,0
+low,four,high,four,medium,big,1
+low,five or more,very high,two,high,big,0
+medium,five or more,high,more than four,low,small,0
+low,three,very high,four,high,big,1
+low,two,medium,four,medium,medium,1
+very high,three,high,more than four,medium,big,0
+high,five or more,high,two,medium,big,0
+low,four,high,two,high,big,0
+very high,five or more,medium,two,low,big,0
+very high,four,very high,two,high,small,0
+very high,four,high,more than four,high,big,0
+very high,five or more,very high,two,low,big,0
+medium,four,very high,more than four,medium,medium,1
+high,four,medium,two,medium,big,0
+high,three,low,two,high,small,0
+low,two,high,four,medium,medium,1
+very high,three,medium,four,high,big,1
+high,two,low,two,low,big,0
+medium,five or more,high,more than four,high,medium,1
+very high,four,low,four,medium,big,1
+medium,four,low,more than four,low,big,0
+high,three,medium,four,low,medium,0
+medium,three,low,two,medium,big,0
+low,three,medium,two,medium,medium,0
+medium,four,very high,four,low,big,0
+high,two,very high,four,medium,big,0
+high,five or more,low,more than four,high,small,1
+high,three,very high,two,low,medium,0
+medium,three,high,two,high,big,0
+very high,four,medium,two,low,small,0
+low,two,medium,four,high,medium,2
+high,two,very high,four,low,small,0
+high,three,medium,four,low,small,0
+very high,two,low,more than four,low,small,0
+very high,three,high,two,medium,big,0
+medium,five or more,low,two,low,big,0
+high,two,very high,four,high,medium,0
+medium,two,low,two,medium,medium,0
+low,five or more,low,more than four,medium,big,2
+very high,two,very high,two,medium,small,0
+high,four,high,two,high,small,0
+high,two,medium,two,medium,medium,0
+low,three,medium,four,medium,small,1
+low,two,medium,four,medium,big,2
+high,five or more,high,more than four,medium,big,1
+high,two,high,two,low,big,0
+medium,five or more,very high,two,high,medium,0
+very high,five or more,medium,more than four,medium,small,0
+low,four,very high,two,high,big,0
+high,two,medium,two,medium,big,0
+very high,two,medium,more than four,medium,medium,0
+low,five or more,medium,four,low,small,0
+high,four,medium,four,medium,small,0
+very high,three,very high,two,high,medium,0
+very high,two,low,two,medium,medium,0
+low,five or more,low,four,medium,medium,2
+low,five or more,high,two,high,medium,0
+low,three,very high,four,low,big,0
+very high,three,low,more than four,medium,big,1
+very high,four,high,two,medium,medium,0
+medium,five or more,medium,two,high,medium,0
+medium,two,low,two,high,small,0
+high,two,high,two,medium,small,0
+medium,two,very high,four,medium,small,0
+low,five or more,high,four,high,medium,3
+medium,four,medium,four,medium,small,1
+low,five or more,low,four,low,small,0
+medium,four,medium,two,high,big,0
+low,five or more,low,more than four,low,medium,0
+very high,two,low,four,low,medium,0
+high,four,high,more than four,medium,small,0
+medium,three,very high,more than four,medium,small,0
+medium,three,high,more than four,medium,big,1
+medium,four,very high,two,high,small,0
+medium,five or more,very high,four,medium,medium,1
+medium,two,very high,two,high,medium,0
+low,three,medium,two,high,small,0
+medium,five or more,medium,two,high,small,0
+high,two,high,four,high,medium,1
+medium,four,low,two,medium,big,0
+medium,four,low,four,high,medium,3
+medium,four,medium,four,medium,medium,1
+high,two,very high,four,high,small,0
+low,five or more,very high,more than four,medium,medium,1
+low,four,high,four,high,medium,3
+very high,two,low,two,high,medium,0
+very high,five or more,very high,two,medium,medium,0
+high,two,medium,four,low,medium,0
+medium,three,low,more than four,high,small,2
+medium,three,high,more than four,low,big,0
+very high,five or more,high,four,low,small,0
+high,two,medium,four,medium,medium,0
+medium,five or more,very high,four,high,big,1
+medium,two,medium,four,high,small,1
+very high,four,very high,more than four,high,small,0
+high,four,medium,four,low,big,0
+low,four,very high,more than four,high,medium,1
+medium,three,low,more than four,medium,big,2
+medium,four,low,more than four,high,big,3
+very high,five or more,high,more than four,high,small,0
+low,three,low,more than four,low,small,0
+low,five or more,low,four,medium,big,2
+high,five or more,high,more than four,high,small,1
+low,two,very high,four,low,big,0
+high,three,low,four,low,small,0
+very high,five or more,low,four,high,small,1
+medium,three,very high,four,low,big,0
+low,four,low,four,medium,medium,2
+very high,five or more,high,four,high,small,0
+medium,four,medium,more than four,high,big,3
+low,two,very high,more than four,medium,big,1
+very high,four,medium,more than four,medium,medium,1
+medium,three,low,more than four,high,medium,3
+high,two,very high,more than four,high,medium,0
+high,three,very high,four,medium,big,0
+medium,two,high,four,low,small,0
+high,five or more,high,four,medium,small,0
+medium,three,medium,more than four,medium,small,1
+high,three,medium,two,low,small,0
+low,two,high,more than four,high,medium,1
+medium,three,low,four,medium,small,1
+high,four,medium,four,high,small,1
+low,three,very high,more than four,low,big,0
+low,five or more,medium,two,medium,big,0
+low,four,low,four,high,small,2
+very high,five or more,very high,more than four,high,small,0
+low,two,high,two,high,small,0
+low,four,high,four,low,small,0
+high,three,low,two,high,medium,0
+medium,four,low,more than four,medium,big,2
+medium,five or more,medium,two,low,medium,0
+high,three,medium,four,medium,small,0
+high,two,low,four,medium,small,0
+very high,five or more,high,two,medium,big,0
+medium,five or more,very high,four,medium,big,1
+medium,five or more,very high,four,high,medium,1
+medium,three,medium,four,high,small,1
+very high,five or more,low,more than four,medium,big,1
+low,three,low,two,medium,big,0
+very high,two,low,four,medium,small,0
+high,five or more,very high,four,high,small,0
+low,two,high,four,high,small,1
+high,four,very high,two,low,big,0
+high,five or more,high,two,high,small,0
+low,four,high,two,high,small,0
+medium,four,medium,more than four,medium,big,1
+very high,two,medium,four,medium,big,1
+high,two,low,four,high,medium,1
+medium,four,low,two,medium,small,0
+low,four,medium,two,medium,medium,0
+high,two,high,more than four,medium,big,1
+medium,three,low,four,medium,medium,1
+low,five or more,medium,four,medium,small,1
+high,two,medium,two,low,big,0
+very high,five or more,very high,more than four,low,small,0
+high,four,low,more than four,low,big,0
+low,five or more,medium,four,low,big,0
+medium,five or more,high,two,low,big,0
+medium,four,high,more than four,high,small,1
+medium,three,low,four,high,big,3
+medium,four,medium,more than four,low,big,0
+low,three,very high,four,high,medium,1
+low,two,low,more than four,high,medium,2
+medium,two,high,four,high,small,1
+medium,four,low,four,medium,big,2
+low,four,high,more than four,high,small,1
+very high,four,low,two,high,medium,0
+high,four,high,two,low,small,0
+very high,four,medium,four,medium,big,1
+very high,five or more,low,two,high,big,0
+very high,three,medium,two,medium,big,0
+medium,three,very high,four,medium,big,1
+medium,three,high,more than four,low,small,0
+medium,four,high,four,low,big,0
+low,two,high,two,low,medium,0
+low,five or more,medium,more than four,medium,small,1
+low,three,high,two,medium,medium,0
+low,four,medium,four,low,medium,0
+medium,four,very high,two,low,small,0
+medium,five or more,low,more than four,high,big,3
+high,two,medium,more than four,medium,big,1
+very high,four,low,four,medium,medium,1
+low,three,low,four,high,big,3
+medium,two,medium,four,high,medium,1
+very high,four,high,four,low,big,0
+very high,three,very high,more than four,medium,small,0
+very high,four,medium,two,low,big,0
+low,three,low,more than four,medium,medium,2
+high,two,high,more than four,low,small,0
+high,three,medium,two,high,small,0
+high,three,very high,two,high,big,0
+very high,five or more,very high,four,low,small,0
+medium,five or more,very high,more than four,high,small,1
+medium,three,high,four,high,big,1
+medium,two,medium,more than four,medium,big,1
+high,five or more,medium,more than four,high,medium,1
+medium,three,low,more than four,high,big,3
+medium,five or more,low,more than four,medium,big,2
+medium,four,medium,four,medium,big,1
+low,five or more,medium,four,medium,big,2
+medium,three,high,four,medium,medium,0
+medium,two,very high,more than four,high,medium,1
+low,five or more,high,more than four,medium,big,1
+very high,three,high,four,high,big,0
+medium,three,medium,more than four,medium,big,1
+very high,four,medium,two,medium,small,0
+low,four,low,more than four,low,medium,0
+high,two,low,two,low,small,0
+high,three,very high,four,low,small,0
+very high,two,high,two,high,small,0
+very high,four,medium,four,high,big,1
+very high,five or more,medium,more than four,low,small,0
+high,four,very high,more than four,medium,medium,0
+medium,three,medium,two,high,medium,0
+high,five or more,medium,more than four,low,small,0
+low,two,medium,two,low,big,0
+very high,four,medium,four,high,medium,1
+very high,five or more,very high,two,medium,big,0
+low,two,high,two,medium,small,0
+low,five or more,medium,four,medium,medium,2
+high,five or more,medium,four,medium,medium,1
+high,four,low,two,low,small,0
+very high,two,very high,four,low,small,0
+low,two,medium,more than four,high,big,3
+medium,five or more,low,two,medium,big,0
+very high,five or more,very high,more than four,low,big,0
+very high,three,very high,four,low,medium,0
+high,five or more,very high,four,low,big,0
+medium,four,very high,four,low,small,0
+high,five or more,very high,more than four,medium,big,0
+medium,five or more,low,two,low,small,0
+very high,four,medium,more than four,high,big,1
+high,four,medium,two,medium,medium,0
+very high,three,low,four,low,small,0
+high,two,very high,four,medium,medium,0
+medium,five or more,very high,two,high,small,0
+medium,five or more,medium,four,medium,medium,1
+low,five or more,low,four,high,big,3
+low,two,very high,two,low,small,0
+low,four,very high,more than four,medium,big,1
+very high,five or more,low,more than four,high,small,1
+low,five or more,very high,more than four,high,medium,1
+high,three,very high,more than four,low,big,0
+low,three,low,four,medium,big,2
+low,five or more,medium,two,high,small,0
+high,four,high,four,low,small,0
+medium,three,very high,more than four,high,medium,1
+medium,three,low,four,low,big,0
+medium,four,low,two,high,big,0
+very high,five or more,high,two,medium,small,0
+very high,five or more,very high,four,low,big,0
+very high,three,medium,two,high,medium,0
+low,four,high,four,low,medium,0
+high,four,very high,four,low,medium,0
+very high,two,very high,two,medium,medium,0
+low,five or more,high,two,medium,big,0
+very high,four,low,two,high,small,0
+very high,two,high,more than four,low,big,0
+high,two,very high,two,medium,medium,0
+very high,three,high,more than four,medium,small,0
+medium,two,medium,more than four,medium,small,0
+very high,two,low,four,high,big,1
+low,two,medium,two,high,small,0
+very high,three,very high,more than four,high,big,0
+very high,four,medium,more than four,low,big,0
+high,five or more,high,more than four,high,medium,1
+high,five or more,high,four,low,big,0
+medium,two,very high,two,low,medium,0
+medium,five or more,high,four,high,small,1
+low,five or more,low,more than four,low,small,0
+low,two,very high,four,low,medium,0
+high,two,medium,four,high,big,1
+very high,three,low,four,low,big,0
+high,four,medium,two,high,small,0
+low,three,very high,four,medium,small,0
+high,two,high,more than four,low,medium,0
+low,two,medium,four,low,small,0
+medium,two,high,more than four,low,big,0
+high,two,high,four,low,big,0
+low,three,high,four,high,small,1
+high,five or more,medium,more than four,medium,big,1
+low,three,very high,two,low,medium,0
+very high,five or more,medium,more than four,medium,big,1
+high,two,medium,four,high,small,1
+medium,two,low,more than four,low,big,0
+very high,four,low,two,low,small,0
+medium,two,high,more than four,low,medium,0
+low,five or more,high,more than four,high,big,3
+medium,five or more,very high,four,low,big,0
+very high,three,very high,two,medium,big,0
+medium,five or more,medium,more than four,high,big,3
+low,four,high,four,low,big,0
+very high,two,high,two,medium,small,0
+low,five or more,very high,two,medium,medium,0
+very high,four,high,four,high,small,0
+high,four,high,four,medium,small,0
+very high,five or more,very high,more than four,medium,big,0
+very high,five or more,low,four,medium,medium,1
+medium,five or more,low,four,low,small,0
+very high,five or more,high,more than four,medium,big,0
+high,four,very high,four,high,medium,0
+low,four,low,two,medium,big,0
+very high,five or more,high,more than four,medium,medium,0
+medium,four,high,more than four,medium,big,1
+very high,two,low,two,low,big,0
+high,three,high,four,medium,medium,0
+medium,two,very high,four,medium,big,1
+high,three,very high,two,low,big,0
+medium,two,low,four,medium,medium,1
+low,three,low,four,low,medium,0
+high,three,very high,two,low,small,0
+low,five or more,medium,more than four,medium,big,2
+high,three,medium,four,high,small,1
+high,five or more,medium,four,high,big,1
+very high,two,low,more than four,high,medium,1
+high,two,very high,two,high,big,0
+high,two,high,two,low,medium,0
+high,four,medium,two,medium,small,0
+medium,four,high,four,medium,medium,1
+medium,five or more,medium,more than four,low,medium,0
+medium,four,medium,four,high,small,1
+high,three,very high,more than four,low,small,0
+low,four,very high,four,medium,medium,1
+very high,three,high,four,low,medium,0
+high,three,low,more than four,high,small,1
+medium,four,very high,two,high,big,0
+low,three,high,four,high,medium,1
+very high,four,medium,more than four,medium,small,0
+high,five or more,medium,two,high,small,0
+low,two,low,two,low,small,0
+very high,four,very high,two,high,big,0
+medium,five or more,low,more than four,medium,small,1
+high,three,low,two,low,medium,0
+low,two,very high,more than four,medium,small,0
+medium,three,high,two,medium,big,0
+low,two,low,more than four,high,small,0
+medium,three,very high,more than four,low,medium,0
+very high,two,high,more than four,low,small,0
+low,three,low,more than four,low,medium,0
+low,four,low,two,high,big,0
+low,four,medium,four,high,big,3
+high,four,very high,two,medium,big,0
+low,two,low,more than four,low,big,0
+high,four,medium,two,low,medium,0
+medium,five or more,high,four,medium,small,0
+very high,three,medium,four,low,small,0
+high,two,low,more than four,medium,small,0
+high,four,very high,four,high,big,0
+low,three,low,four,high,small,2
+medium,five or more,low,four,high,big,3
+very high,three,high,four,high,small,0
+very high,two,high,more than four,medium,medium,0
+high,two,high,two,medium,big,0
+very high,five or more,low,two,medium,medium,0
+medium,five or more,high,more than four,medium,small,0
+very high,four,high,two,medium,big,0
+high,three,very high,more than four,high,small,0
+very high,five or more,low,more than four,high,medium,1
+low,four,medium,two,low,big,0
+high,four,high,two,high,medium,0
+high,two,very high,two,low,big,0
+low,three,medium,more than four,high,medium,3
+very high,four,very high,four,high,small,0
+very high,two,very high,more than four,medium,small,0
+high,three,medium,more than four,high,big,1
+medium,five or more,high,two,low,small,0
+high,three,very high,more than four,high,medium,0
+very high,two,medium,more than four,low,small,0
+medium,two,high,two,medium,big,0
+low,three,medium,two,high,medium,0
+high,five or more,high,more than four,medium,medium,1
+high,four,medium,more than four,medium,medium,1
+medium,three,high,four,high,small,1
+high,three,medium,more than four,high,small,1
+low,two,very high,four,medium,small,0
+medium,four,high,two,low,big,0
+low,four,low,more than four,low,big,0
+very high,three,medium,two,low,medium,0
+very high,four,high,two,high,small,0
+very high,three,very high,more than four,low,big,0
+high,two,high,two,high,big,0
+high,three,low,two,low,big,0
+medium,four,very high,two,medium,small,0
+low,four,very high,more than four,low,medium,0
+very high,five or more,high,four,high,medium,0
+very high,three,high,two,high,small,0
+high,three,high,four,low,big,0
+medium,five or more,medium,two,medium,medium,0
+low,four,high,two,low,medium,0
+high,three,medium,more than four,low,small,0
+low,four,high,four,medium,medium,1
+very high,three,medium,more than four,high,small,1
+medium,five or more,low,two,medium,medium,0
+medium,three,high,two,medium,small,0
+medium,five or more,low,two,high,small,0
+low,five or more,high,more than four,medium,medium,1
+low,two,high,four,medium,big,1
+high,five or more,low,four,high,small,1
+low,four,high,four,high,small,1
+low,two,low,more than four,medium,medium,1
+medium,two,medium,two,low,small,0
+very high,five or more,medium,two,medium,small,0
+medium,two,low,four,low,small,0
+very high,four,very high,more than four,high,medium,0
+low,three,very high,four,low,medium,0
+high,two,high,more than four,medium,small,0
+low,three,low,more than four,high,big,3
+low,two,very high,two,high,small,0
+high,two,high,more than four,high,big,1
+very high,four,medium,more than four,high,medium,1
+very high,four,medium,four,medium,medium,1
+very high,three,low,four,high,big,1
+high,five or more,medium,four,low,big,0
+medium,three,medium,more than four,high,big,3
+very high,four,medium,more than four,medium,big,1
+low,two,very high,more than four,high,big,1
+medium,five or more,high,two,medium,medium,0
+high,four,low,more than four,high,big,1
+very high,two,very high,four,low,medium,0
+high,three,high,four,high,big,1
+medium,five or more,medium,two,low,small,0
+high,three,low,four,high,small,1
+high,five or more,high,more than four,low,medium,0
+high,three,low,four,medium,small,0
+very high,three,very high,four,medium,big,0
+very high,two,very high,more than four,medium,medium,0
+low,three,low,four,medium,medium,1
+medium,two,high,four,medium,small,0
+very high,five or more,high,four,high,big,0
+high,two,low,two,high,medium,0
+low,four,low,more than four,low,small,0
+medium,three,medium,two,medium,big,0
+high,three,low,four,high,big,1
+low,three,medium,four,high,big,3
+low,five or more,very high,more than four,low,small,0
+very high,five or more,low,more than four,low,medium,0
+very high,two,low,two,high,big,0
+high,three,low,more than four,high,medium,1
+high,four,low,two,high,big,0
+low,two,high,more than four,medium,small,0
+high,five or more,high,two,medium,medium,0
+low,four,medium,more than four,low,big,0
+medium,three,high,four,low,small,0
+low,two,low,two,high,big,0
+low,four,high,four,medium,small,1
+very high,three,low,more than four,high,big,1
+medium,five or more,high,two,low,medium,0
+low,five or more,low,four,low,big,0
+very high,two,very high,more than four,high,medium,0
+very high,two,medium,two,high,big,0
+very high,five or more,very high,four,high,medium,0
+very high,two,very high,four,medium,small,0
+very high,four,high,two,low,big,0
+high,four,low,four,high,small,1
+medium,two,low,more than four,medium,big,2
+low,two,low,four,low,small,0
+low,five or more,low,two,medium,big,0
+very high,three,high,two,high,big,0
+medium,three,high,four,low,big,0
+very high,two,medium,two,high,small,0
+very high,two,low,more than four,high,big,1
+high,four,medium,more than four,low,big,0
+low,three,very high,four,medium,medium,0
+very high,five or more,very high,two,high,big,0
+high,four,high,four,high,small,1
+low,two,low,four,high,small,2
+low,three,medium,four,medium,medium,1
+medium,three,high,four,low,medium,0
+very high,five or more,very high,four,medium,medium,0
+high,two,very high,four,low,big,0
+high,four,low,more than four,medium,big,1
+low,three,very high,more than four,high,small,1
+low,two,medium,more than four,medium,small,0
+very high,four,low,two,medium,small,0
+medium,three,high,more than four,medium,medium,1
+very high,four,low,more than four,low,medium,0
+low,two,medium,more than four,low,big,0
+high,two,low,two,medium,big,0
+medium,three,very high,two,high,big,0
+very high,three,high,four,low,small,0
+low,four,medium,two,high,big,0
+high,five or more,very high,four,low,medium,0
+medium,two,medium,four,medium,medium,1
+very high,four,very high,four,medium,medium,0
+high,five or more,low,more than four,low,medium,0
+medium,four,high,two,high,small,0
+medium,five or more,medium,more than four,low,big,0
+medium,two,high,two,low,small,0
+high,five or more,very high,two,high,small,0
+low,five or more,very high,more than four,high,big,1
+high,four,low,two,low,medium,0
+low,five or more,medium,more than four,low,small,0
+medium,three,high,more than four,high,small,1
+high,four,very high,two,low,medium,0
+high,three,very high,four,high,small,0
+low,five or more,low,more than four,high,medium,3
+high,two,low,four,low,small,0
+medium,three,medium,more than four,high,small,1
+high,three,very high,four,high,big,0
+very high,three,low,more than four,low,big,0
+very high,five or more,high,two,low,small,0
+very high,three,medium,four,high,small,1
+very high,four,low,two,medium,big,0
+high,five or more,medium,two,medium,big,0
+low,two,very high,more than four,low,small,0
+high,five or more,very high,two,low,small,0
+low,five or more,very high,four,low,medium,0
+medium,two,high,two,low,medium,0
+medium,three,very high,two,low,small,0
+high,five or more,very high,more than four,low,big,0
+high,two,medium,four,low,big,0
+medium,five or more,low,two,high,big,0
+medium,five or more,high,four,low,small,0
+very high,three,high,two,high,medium,0
+low,five or more,high,more than four,low,big,0
+medium,three,very high,two,high,small,0
+medium,two,very high,four,high,medium,1
+high,two,medium,two,high,medium,0
+high,three,high,more than four,high,big,1
+low,three,high,two,low,big,0
+high,five or more,very high,four,low,small,0
+high,five or more,medium,more than four,low,big,0
+low,two,high,four,low,medium,0
+medium,five or more,low,four,high,small,2
+very high,three,low,two,high,small,0
+very high,four,high,four,high,big,0
+medium,five or more,very high,more than four,low,small,0
+high,four,high,more than four,high,small,1
+high,four,very high,more than four,high,medium,0
+very high,three,low,more than four,medium,medium,1
+medium,three,low,four,high,small,2
+low,two,low,four,high,big,3
+low,three,high,two,high,medium,0
+very high,two,medium,more than four,low,big,0
+low,five or more,high,four,high,big,3
+high,five or more,high,two,medium,small,0
+medium,five or more,medium,more than four,high,medium,3
+very high,four,low,four,high,medium,1
+high,three,high,four,low,small,0
+medium,four,high,four,medium,small,0
+high,four,high,more than four,low,small,0
+high,five or more,medium,more than four,high,small,1
+low,four,medium,two,medium,small,0
+low,four,low,more than four,high,small,2
+very high,two,low,two,medium,small,0
+medium,three,medium,four,low,big,0
+low,three,medium,more than four,low,medium,0
+medium,two,low,two,low,medium,0
+high,five or more,medium,four,medium,small,0
+high,two,very high,two,medium,big,0
+medium,five or more,high,more than four,high,big,1
+high,five or more,low,four,high,big,1
+high,five or more,very high,four,medium,big,0
+high,two,medium,four,high,medium,1
+high,two,low,more than four,medium,big,1
+medium,two,medium,more than four,low,small,0
+medium,two,high,four,high,medium,1
+very high,four,high,four,high,medium,0
+low,two,high,two,low,big,0
+low,four,medium,four,low,big,0
+medium,two,medium,four,low,big,0
+medium,four,high,more than four,medium,small,0
+medium,three,medium,more than four,medium,medium,1
+very high,four,high,more than four,low,medium,0
+very high,two,high,two,medium,medium,0
+very high,five or more,high,two,low,big,0
+high,two,low,two,medium,small,0
+medium,five or more,high,four,medium,medium,1
+very high,two,high,more than four,high,medium,0
+medium,five or more,low,two,medium,small,0
+very high,four,very high,four,high,medium,0
+very high,two,low,more than four,medium,big,1
+low,five or more,very high,four,high,small,1
+low,four,low,four,medium,small,1
+medium,four,very high,two,low,medium,0
+medium,five or more,high,more than four,low,medium,0
+medium,four,high,two,high,medium,0
+very high,two,high,two,low,medium,0
+medium,five or more,medium,four,medium,small,1
+high,three,medium,two,high,big,0
+very high,five or more,low,more than four,medium,small,0
+medium,five or more,high,four,high,big,1
+medium,three,high,four,high,medium,1
+low,four,high,more than four,low,big,0
+very high,three,very high,two,high,big,0
+low,four,very high,four,medium,big,1
+low,three,very high,four,low,small,0
+medium,three,very high,more than four,medium,big,1
+medium,two,medium,four,medium,big,1
+low,three,low,four,low,big,0
+medium,three,very high,four,high,medium,1
+very high,two,high,two,low,small,0
+medium,four,medium,two,high,small,0
+high,four,very high,two,medium,medium,0
+very high,three,high,more than four,high,big,0
+very high,four,very high,two,medium,small,0
+very high,five or more,medium,two,low,small,0
+medium,three,medium,more than four,high,medium,3
+medium,five or more,high,more than four,high,small,1
+medium,five or more,high,more than four,low,big,0
+very high,three,medium,more than four,low,medium,0
+medium,five or more,very high,four,medium,small,0
+very high,four,high,two,medium,small,0
+low,five or more,low,more than four,low,big,0
+very high,five or more,low,two,medium,small,0
+very high,three,low,two,low,small,0
+very high,two,medium,two,high,medium,0
+very high,three,high,more than four,high,medium,0
+low,three,high,more than four,medium,small,1
+low,four,very high,four,low,medium,0
+very high,five or more,medium,four,high,small,1
+medium,four,high,two,low,medium,0
+very high,five or more,medium,more than four,high,small,1
+very high,three,high,four,low,big,0
+low,four,very high,more than four,high,big,1
+low,three,high,more than four,low,small,0
+high,five or more,medium,more than four,medium,small,0
+low,five or more,high,four,low,big,0
+low,two,very high,four,medium,big,1
+low,four,medium,two,low,small,0
+medium,two,medium,two,medium,big,0
+high,two,high,two,high,small,0
+medium,two,medium,four,low,small,0
+very high,three,high,four,high,medium,0
+medium,three,low,two,high,medium,0
+low,two,medium,more than four,high,medium,2
+low,four,very high,two,low,small,0
+low,four,high,two,low,big,0
+high,five or more,medium,more than four,medium,medium,1
+very high,three,very high,two,low,small,0
+very high,four,high,four,medium,medium,0
+very high,four,low,more than four,high,medium,1
+very high,two,very high,four,low,big,0
+high,four,very high,four,medium,big,0
+high,four,low,more than four,medium,small,0
+medium,two,very high,two,low,small,0
+high,four,very high,more than four,low,medium,0
+high,five or more,medium,four,high,small,1
+very high,five or more,high,more than four,medium,small,0
+very high,three,very high,two,medium,small,0
+low,five or more,low,more than four,medium,small,1
+very high,three,high,four,medium,small,0
+low,four,high,two,medium,big,0
+very high,four,low,more than four,medium,medium,1
+very high,two,very high,more than four,high,small,0
+high,five or more,very high,more than four,medium,medium,0
+medium,four,high,two,medium,big,0
+high,five or more,very high,more than four,low,medium,0
+medium,five or more,high,two,high,small,0
+low,two,medium,four,high,small,2
+low,four,medium,four,low,small,0
+very high,four,very high,more than four,high,big,0
+medium,five or more,medium,two,high,big,0
+high,five or more,high,two,low,big,0
+high,four,very high,two,medium,small,0
+high,four,medium,more than four,high,big,1
+medium,three,very high,two,low,medium,0
+medium,five or more,very high,four,low,medium,0
+medium,two,very high,more than four,low,big,0
+high,two,medium,two,high,small,0
+very high,two,very high,two,high,big,0
+high,five or more,low,more than four,high,medium,1
+very high,five or more,low,two,low,small,0
+low,four,very high,four,medium,small,0
+high,five or more,medium,two,low,medium,0
+very high,two,low,more than four,high,small,0
+high,three,very high,more than four,medium,medium,0
+very high,five or more,high,four,medium,medium,0
+medium,two,very high,four,high,small,1
+low,two,low,more than four,medium,small,0
+low,four,low,two,medium,medium,0
+high,three,high,two,high,small,0
+low,three,low,four,high,medium,2
+high,four,low,two,medium,small,0
+very high,five or more,medium,more than four,high,medium,1
+low,four,low,four,low,big,0
+high,four,high,more than four,low,medium,0
+very high,two,low,two,low,small,0
+medium,five or more,high,four,medium,big,1
+medium,three,medium,two,high,small,0
+low,three,very high,two,medium,big,0
+high,four,high,two,medium,small,0
+medium,four,low,two,low,medium,0
+very high,five or more,very high,four,medium,big,0
+low,four,low,two,high,medium,0
+medium,four,low,two,high,medium,0
+high,two,high,four,low,small,0
+high,four,low,more than four,high,medium,1
+low,five or more,medium,four,high,medium,3
+very high,three,medium,four,high,medium,1
+very high,three,medium,four,low,medium,0
+low,two,low,more than four,low,small,0
+very high,three,medium,more than four,high,medium,1
+very high,three,very high,two,low,medium,0
+low,four,very high,four,low,small,0
+high,five or more,high,more than four,low,small,0
+low,five or more,low,two,high,medium,0
+high,three,medium,two,medium,medium,0
+low,four,high,two,low,small,0
+high,four,low,more than four,low,small,0
+very high,three,medium,four,medium,big,1
+low,two,very high,four,high,small,1
+low,three,low,two,high,small,0
+low,two,high,more than four,high,big,3
+medium,four,very high,more than four,medium,small,0
+high,three,medium,more than four,low,medium,0
+high,two,very high,four,high,big,0
+very high,three,medium,two,low,small,0
+high,four,low,four,high,big,1
+low,five or more,very high,two,high,small,0
+medium,four,low,two,low,small,0
+medium,four,medium,more than four,high,medium,3
+very high,two,low,four,high,medium,1
+very high,five or more,medium,four,high,medium,1
+high,two,very high,more than four,medium,medium,0
+medium,two,high,four,low,big,0
+very high,four,low,two,medium,medium,0
+high,five or more,low,two,high,medium,0
+very high,four,very high,four,medium,big,0
+low,three,very high,four,medium,big,1
+high,four,medium,four,low,medium,0
+very high,five or more,high,more than four,low,medium,0
+low,four,low,four,low,medium,0
+low,five or more,medium,two,medium,small,0
+medium,five or more,very high,more than four,medium,big,1
+high,two,very high,two,low,medium,0
+very high,three,high,more than four,low,small,0
+medium,two,high,four,low,medium,0
+high,three,high,four,low,medium,0
+very high,four,medium,four,low,medium,0
+very high,five or more,low,four,low,medium,0
+low,four,very high,more than four,medium,small,0
+very high,two,high,two,high,medium,0
+high,two,medium,two,low,small,0
+medium,four,high,more than four,high,big,1
+low,five or more,medium,four,low,medium,0
+low,two,high,two,high,big,0
+very high,three,high,two,medium,medium,0
+medium,two,medium,two,high,big,0
+high,five or more,low,two,medium,small,0
+low,five or more,low,more than four,medium,medium,2
+high,five or more,low,four,low,small,0
+very high,five or more,high,more than four,high,big,0
+high,two,medium,two,low,medium,0
+low,four,very high,two,high,small,0
+medium,five or more,very high,four,high,small,1
+low,four,medium,more than four,low,medium,0
+medium,two,low,two,medium,big,0
+high,five or more,medium,four,high,medium,1
+medium,four,very high,more than four,low,big,0
+medium,four,very high,more than four,high,small,1
+very high,four,very high,two,high,medium,0
+low,five or more,very high,more than four,medium,big,1
+high,three,low,two,medium,big,0
+low,two,medium,more than four,medium,medium,1
+medium,four,low,two,low,big,0
+very high,four,medium,two,high,small,0
+low,five or more,high,four,medium,small,1
+very high,three,medium,two,medium,medium,0
+very high,five or more,high,two,high,medium,0
+medium,five or more,medium,four,high,small,1
+medium,five or more,low,four,medium,medium,2
+high,four,medium,four,low,small,0
+high,two,medium,more than four,high,medium,1
+medium,two,very high,more than four,low,small,0
+very high,three,medium,more than four,medium,medium,1
+low,four,low,four,high,medium,3
+very high,five or more,medium,four,high,big,1
+low,four,very high,four,low,big,0
+medium,four,very high,four,medium,big,1
+high,two,medium,more than four,low,small,0
+low,three,very high,two,high,medium,0
+medium,four,low,four,low,small,0
+high,four,medium,two,low,big,0
+medium,two,high,two,high,small,0
+low,two,medium,two,medium,small,0
+very high,four,low,more than four,medium,small,0
+medium,four,high,four,medium,big,1
+low,two,high,four,high,medium,1
+very high,three,low,two,medium,small,0
+medium,four,high,more than four,low,big,0
+very high,three,very high,more than four,high,small,0
+high,two,very high,more than four,high,big,0
+medium,four,high,four,high,big,1
+medium,three,high,more than four,medium,small,0
+low,five or more,very high,four,low,small,0
+medium,five or more,very high,two,high,big,0
+medium,two,very high,two,medium,medium,0
+very high,four,low,four,medium,small,0
+low,five or more,high,two,high,big,0
+medium,three,high,more than four,high,big,1
+medium,five or more,medium,four,medium,big,1
+medium,two,medium,two,medium,medium,0
+medium,five or more,low,more than four,low,small,0
+low,five or more,low,four,medium,small,1
+medium,three,very high,more than four,high,big,1
+very high,three,low,two,high,medium,0
+high,two,medium,more than four,low,big,0
+very high,three,low,two,low,big,0
+very high,two,low,more than four,medium,small,0
+high,two,low,more than four,high,big,1
+very high,three,medium,more than four,medium,small,0
+high,two,very high,more than four,medium,big,0
+high,four,low,four,low,small,0
+low,three,low,two,medium,medium,0
+low,five or more,medium,four,high,big,3
+high,four,low,two,high,small,0
+high,four,high,more than four,low,big,0
+high,three,high,four,medium,big,1
+high,five or more,low,more than four,medium,medium,1
+very high,two,medium,more than four,medium,small,0
+high,two,medium,four,low,small,0
+medium,four,medium,two,low,big,0
+very high,five or more,high,more than four,high,medium,0
+low,five or more,very high,four,medium,big,1
+low,two,low,four,low,medium,0
+low,five or more,high,more than four,high,small,1
+high,five or more,very high,four,high,big,0
+low,two,high,more than four,low,big,0
+very high,four,low,two,low,big,0
+high,four,very high,four,high,small,0
+medium,two,very high,four,high,big,1
+very high,four,low,four,low,medium,0
+medium,three,low,four,low,medium,0
+very high,three,high,more than four,medium,medium,0
+very high,two,high,four,high,medium,0
+medium,four,medium,four,low,small,0
+high,two,low,four,low,medium,0
+medium,three,very high,four,high,big,1
+very high,two,very high,two,medium,big,0
+medium,five or more,low,four,high,medium,3
+very high,two,high,four,medium,medium,0
+high,two,low,two,low,medium,0
+low,four,high,more than four,medium,big,1
+very high,three,very high,four,low,big,0
+very high,four,high,more than four,high,small,0
+medium,two,very high,more than four,medium,medium,0
+very high,five or more,very high,two,high,medium,0
+medium,five or more,very high,more than four,low,big,0
+high,three,high,two,medium,small,0
+low,four,very high,four,high,big,1
+very high,four,high,four,medium,big,0
+medium,four,low,two,high,small,0
+very high,two,very high,two,high,medium,0
+high,five or more,very high,more than four,high,medium,0
+medium,two,very high,more than four,medium,big,1
+high,five or more,high,four,medium,big,1
+medium,three,very high,two,medium,small,0
+medium,five or more,medium,four,high,big,3
+very high,three,high,two,low,big,0
+high,three,low,two,low,small,0
+low,four,high,more than four,high,medium,3
+high,five or more,high,two,low,medium,0
+very high,five or more,medium,four,medium,big,1
+very high,five or more,low,two,low,big,0
+high,four,very high,four,medium,small,0
+high,three,high,two,high,medium,0
+very high,two,high,four,high,big,0
+very high,five or more,medium,two,high,big,0
+very high,two,low,more than four,medium,medium,0
+low,four,medium,two,low,medium,0
+high,five or more,low,two,high,small,0
+medium,four,low,two,medium,medium,0
+medium,five or more,high,more than four,medium,medium,1
+medium,four,high,two,high,big,0
+very high,two,medium,four,low,medium,0
+very high,four,low,more than four,low,small,0
+low,two,very high,more than four,high,small,0
+very high,three,low,more than four,high,small,1
+medium,four,medium,two,medium,medium,0
+medium,two,medium,four,high,big,3
+medium,two,very high,two,high,small,0
+low,five or more,low,more than four,high,small,2
+medium,five or more,very high,two,medium,small,0
+high,two,medium,four,medium,small,0
+medium,four,high,two,medium,medium,0
+very high,three,low,four,medium,medium,0
+medium,two,low,more than four,medium,small,0
+very high,two,very high,four,medium,big,0
+low,five or more,high,two,low,big,0
+low,four,medium,more than four,medium,medium,2
+medium,three,medium,more than four,low,big,0
+low,four,high,two,medium,medium,0
+medium,two,medium,four,medium,small,1
+very high,two,medium,two,medium,big,0
+high,three,medium,two,high,medium,0
+low,two,medium,more than four,low,medium,0
+medium,two,very high,four,low,big,0
+very high,four,high,more than four,low,small,0
+medium,three,medium,four,high,big,3
+very high,two,very high,four,medium,medium,0
+high,four,low,four,low,big,0
+medium,four,very high,more than four,high,medium,1
+low,two,high,four,low,big,0
+high,five or more,low,four,medium,small,0
+high,two,medium,more than four,medium,medium,0
+medium,three,low,more than four,medium,small,1
+low,two,low,two,high,medium,0
+low,three,low,two,low,medium,0
+medium,five or more,very high,four,low,small,0
+low,three,medium,four,high,medium,2
+very high,two,medium,more than four,high,big,1
+medium,two,medium,more than four,high,medium,1
+medium,three,very high,more than four,low,big,0
+low,five or more,very high,more than four,high,small,1
+high,three,high,four,medium,small,0
+low,five or more,high,more than four,low,small,0
+high,three,medium,two,low,medium,0
+very high,two,medium,two,medium,medium,0
+low,three,medium,two,low,small,0
+very high,five or more,low,two,low,medium,0
+very high,four,low,four,high,big,1
+high,five or more,high,four,low,medium,0
+very high,four,medium,four,low,big,0
+low,three,high,four,low,big,0
+low,three,high,two,low,medium,0
+very high,four,very high,more than four,low,small,0
+high,four,medium,more than four,low,medium,0
+low,five or more,very high,four,high,big,1
+very high,two,very high,more than four,low,big,0
+medium,two,low,four,high,small,2
+medium,two,medium,two,medium,small,0
+very high,four,very high,more than four,medium,medium,0
+very high,two,very high,more than four,low,small,0
+very high,four,high,more than four,high,medium,0
+high,three,medium,more than four,medium,big,1
+medium,five or more,high,two,high,medium,0
+low,two,high,four,medium,small,1
+medium,two,high,more than four,high,medium,1
+high,two,low,two,medium,medium,0
+low,five or more,very high,four,high,medium,1
+very high,four,very high,two,low,big,0
+very high,two,low,two,medium,big,0
+low,three,low,two,high,big,0
+high,four,medium,four,medium,medium,1
+low,two,high,two,medium,medium,0
+high,three,high,two,high,big,0
+high,four,high,two,medium,big,0
+medium,three,low,two,high,small,0
+high,three,very high,two,high,medium,0
+very high,two,low,four,medium,medium,0
+low,five or more,medium,two,low,small,0
+low,four,very high,more than four,low,big,0
+low,three,very high,two,low,big,0
+very high,four,high,four,low,medium,0
+medium,two,high,two,high,medium,0
+high,five or more,low,two,low,small,0
+very high,four,low,more than four,medium,big,1
+medium,five or more,high,more than four,medium,big,1
+high,five or more,medium,more than four,high,big,1
+low,three,very high,more than four,medium,big,1
+very high,four,very high,two,low,medium,0
+low,five or more,medium,four,high,small,2
+medium,four,very high,four,high,big,1
+low,two,low,two,low,medium,0
+high,four,very high,four,low,small,0
+very high,two,medium,two,medium,small,0
+medium,three,low,two,low,big,0
+medium,two,high,more than four,medium,small,0
+low,five or more,low,two,high,big,0
+medium,four,high,more than four,medium,medium,1
+low,two,low,four,medium,small,1
+high,four,low,more than four,high,small,1
+very high,two,high,four,low,small,0
+high,five or more,very high,four,medium,small,0
+very high,three,high,two,medium,small,0
+medium,two,medium,more than four,low,medium,0
+low,five or more,very high,four,low,big,0
+medium,four,very high,more than four,low,small,0
+very high,five or more,high,two,medium,medium,0
+high,two,high,four,low,medium,0
+low,two,medium,four,medium,small,1
+low,five or more,low,two,high,small,0
+low,two,medium,more than four,low,small,0
+very high,five or more,low,four,high,big,1
+low,five or more,medium,two,high,big,0
+medium,two,low,more than four,high,small,0
+medium,four,low,more than four,high,small,2
+low,two,very high,more than four,high,medium,1
+high,five or more,low,more than four,low,small,0
+very high,four,low,four,high,small,1
+very high,two,low,four,low,big,0
+medium,three,medium,four,low,small,0
+medium,two,high,more than four,high,big,1
+medium,two,low,two,low,small,0
+medium,five or more,very high,more than four,medium,small,0
+very high,four,very high,two,medium,medium,0
+medium,three,very high,two,medium,big,0
+medium,three,high,four,medium,small,0
+low,three,low,two,low,small,0
+high,four,high,two,high,big,0
+very high,four,medium,more than four,high,small,1
+low,three,high,two,high,small,0
+very high,five or more,low,two,high,small,0
+low,three,high,two,medium,big,0
+medium,four,high,two,low,small,0

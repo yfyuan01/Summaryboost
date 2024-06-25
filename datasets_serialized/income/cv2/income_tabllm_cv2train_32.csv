@@ -1,0 +1,33 @@
+Age,Race,Sex, Marital status,Relation to head of the household,Native country,Occupation,Work class,Capital gain last year,Capital loss last year,Education,Work hours per week,label
+72,White,Male,married,Husband,United States,sales sector,private sector employee,1455,0,bachelor's degree,6,False
+22,White,Male,never married,Own-child,United States,machine operator and inspector,private sector employee,0,0,college for less than one year,25,False
+55,White,Male,married,Husband,United States,execution and management,federal government,0,0,master's degree,60,True
+45,Black,Female,divorced,Unmarried,United States,professional specialty,private sector employee,0,3004,doctoral degree,35,True
+43,White,Male,divorced,Not-in-family,United States,execution and management,private sector employee,0,1564,bachelor's degree,45,True
+40,White,Male,married,Husband,United States,craft and repair sector,"owner of a non-incorporated business, professional practice, or farm",0,0,college for less than one year,50,False
+27,White,Male,married,Husband,United States,sales sector,private sector employee,0,0,high school graduate,60,False
+62,White,Male,married,Husband,United States,"transportation, communication, and other public utilities sector",state government,0,0,high school graduate,44,False
+57,White,Male,married,Husband,Hungary,"transportation, communication, and other public utilities sector","owner of a incorporated business, professional practice, or farm",5178,0,high school graduate,60,True
+43,White,Male,married,Husband,United States,office and administrative support,state government,0,0,bachelor's degree,40,True
+30,White,Male,never married,Own-child,United States,craft and repair sector,private sector employee,0,0,college for one or more years without a degree,40,True
+65,White,Female,married,Wife,United States,sales sector,"owner of a non-incorporated business, professional practice, or farm",0,0,high school graduate,40,False
+31,White,Male,married,Husband,United States,execution and management,state government,7298,0,doctoral degree,55,True
+43,White,Male,married,Husband,United States,professional specialty,federal government,0,0,master's degree,40,True
+22,White,Female,never married,Not-in-family,United States,office and administrative support,federal government,0,0,college for less than one year,40,False
+22,White,Female,never married,Own-child,United States,professional specialty,local government,594,0,college for less than one year,25,False
+18,White,Male,never married,Own-child,United States,cleaning and maintenance sector,private sector employee,0,0,finished 11th class,12,False
+32,White,Male,married,Husband,United States,craft and repair sector,private sector employee,0,2042,finished 11th class,30,False
+36,White,Male,divorced,Not-in-family,United States,craft and repair sector,private sector employee,0,0,high school graduate,55,False
+36,White,Male,divorced,Unmarried,United States,protective services sector,local government,0,0,college for less than one year,55,False
+37,White,Male,married,Husband,Mexico,craft and repair sector,private sector employee,0,0,finished 8th class,45,False
+37,Black,Female,never married,Unmarried,United States,cleaning and maintenance sector,private sector employee,0,0,high school graduate,30,False
+31,White,Female,married,Wife,United States,office and administrative support,private sector employee,0,0,bachelor's degree,40,True
+67,White,Female,divorced,Not-in-family,United States,sales sector,private sector employee,0,0,high school graduate,20,False
+43,White,Male,married,Husband,United States,craft and repair sector,private sector employee,0,0,high school graduate,40,False
+33,Black,Female,never married,Unmarried,United States,machine operator and inspector,private sector employee,0,0,college for one or more years without a degree,40,False
+25,White,Female,never married,Own-child,United States,machine operator and inspector,private sector employee,2176,0,high school graduate,40,False
+28,White,Male,never married,Not-in-family,United States,office and administrative support,private sector employee,0,0,high school graduate,40,False
+46,White,Female,divorced,Unmarried,Ecuador,private household,private sector employee,0,0,high school graduate,28,False
+25,White,Male,separated,Own-child,Mexico,craft and repair sector,private sector employee,0,0,high school graduate,40,False
+37,White,Male,married,Husband,United States,"agriculture, forestry, and fisheries sector",private sector employee,0,0,finished 10th class,40,False
+33,White,Male,divorced,Not-in-family,United States,"transportation, communication, and other public utilities sector",private sector employee,0,0,high school graduate,45,False

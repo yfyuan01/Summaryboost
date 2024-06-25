@@ -1,0 +1,65 @@
+Buying price,Doors,Maintenance costs,Persons,Safety score,Trunk size,label
+high,three,high,four,medium,medium,0
+medium,three,high,four,high,big,1
+low,three,very high,more than four,high,medium,1
+medium,five or more,very high,two,medium,medium,0
+very high,two,very high,four,high,small,0
+high,two,high,more than four,medium,big,1
+low,two,medium,more than four,low,medium,0
+high,five or more,very high,four,low,small,0
+high,four,high,four,medium,small,0
+very high,four,high,more than four,high,small,0
+high,three,medium,two,high,medium,0
+very high,three,high,two,low,big,0
+very high,four,medium,four,high,medium,1
+very high,four,high,more than four,high,medium,0
+medium,five or more,low,two,medium,medium,0
+high,four,low,more than four,medium,small,0
+very high,five or more,very high,four,low,small,0
+very high,five or more,low,four,high,big,1
+medium,three,medium,four,low,big,0
+low,three,very high,four,high,small,1
+very high,three,low,more than four,high,small,1
+low,four,medium,four,high,big,3
+medium,two,medium,two,low,small,0
+high,three,high,two,medium,medium,0
+medium,five or more,low,two,low,medium,0
+low,four,low,more than four,medium,medium,2
+medium,two,high,four,low,big,0
+very high,two,high,two,medium,small,0
+medium,three,high,more than four,medium,big,1
+high,five or more,high,more than four,high,small,1
+low,three,very high,two,medium,medium,0
+low,two,medium,four,high,big,3
+very high,three,medium,four,high,big,1
+medium,four,medium,more than four,high,small,1
+high,five or more,low,more than four,low,big,0
+high,three,high,two,low,big,0
+high,three,high,more than four,high,big,1
+medium,four,very high,more than four,high,medium,1
+very high,four,low,more than four,medium,big,1
+medium,three,low,more than four,high,medium,3
+very high,five or more,medium,four,medium,medium,1
+low,two,high,four,low,medium,0
+low,two,low,four,high,medium,2
+high,three,very high,more than four,medium,small,0
+high,four,low,two,high,medium,0
+medium,four,very high,more than four,low,small,0
+high,two,low,four,low,small,0
+low,two,low,two,medium,medium,0
+medium,five or more,medium,more than four,low,small,0
+medium,three,low,more than four,high,big,3
+very high,five or more,low,more than four,low,small,0
+medium,two,medium,four,low,medium,0
+very high,two,high,two,medium,medium,0
+medium,five or more,medium,more than four,medium,big,1
+very high,five or more,low,two,high,big,0
+very high,five or more,high,two,high,medium,0
+high,five or more,medium,two,high,small,0
+low,two,low,two,high,medium,0
+very high,four,medium,two,high,medium,0
+high,five or more,low,more than four,high,small,1
+medium,three,high,more than four,high,medium,1
+low,five or more,low,four,medium,small,1
+medium,four,very high,two,low,medium,0
+low,four,very high,two,high,big,0

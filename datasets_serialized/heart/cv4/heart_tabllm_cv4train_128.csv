@@ -1,0 +1,129 @@
+Age of the patient,Sex of the patient,Chest pain type,Resting blood pressure,Serum cholesterol,Fasting blood sugar > 120 mg/dl,Resting electrocardiogram results,Maximum heart rate achieved,Exercise-induced angina,ST depression induced by exercise relative to rest,Slope of the peak exercise ST segment,label
+64,female,asymptomatic,130,303,no,normal,122,no,2.0,flat,False
+59,male,atypical angina,140,287,no,normal,150,no,0.0,upsloping,False
+66,male,asymptomatic,150,0,no,normal,108,yes,2.0,flat,True
+48,male,asymptomatic,115,0,yes,normal,128,no,0.0,flat,True
+59,male,asymptomatic,125,222,no,normal,135,yes,2.5,downsloping,True
+67,male,typical angina,142,270,yes,normal,125,no,2.5,upsloping,True
+67,male,asymptomatic,160,286,no,probable or definite left ventricular hypertrophy,108,yes,1.5,flat,True
+54,female,atypical angina,132,288,yes,probable or definite left ventricular hypertrophy,159,yes,0.0,upsloping,False
+62,female,typical angina,160,193,no,normal,116,no,0.0,upsloping,False
+56,male,asymptomatic,120,85,no,normal,140,no,0.0,upsloping,False
+52,male,atypical angina,120,284,no,normal,118,no,0.0,upsloping,False
+66,male,asymptomatic,160,228,no,probable or definite left ventricular hypertrophy,138,no,2.3,upsloping,False
+56,male,asymptomatic,150,230,no,ST-T wave abnormality,124,yes,1.5,flat,True
+60,male,non-anginal pain,141,316,yes,ST-T wave abnormality,122,yes,1.7,flat,True
+37,male,non-anginal pain,130,250,no,normal,187,no,3.5,downsloping,False
+47,male,atypical angina,160,263,no,normal,174,no,0.0,upsloping,False
+60,male,asymptomatic,140,281,no,ST-T wave abnormality,118,yes,1.5,flat,True
+40,male,asymptomatic,110,167,no,probable or definite left ventricular hypertrophy,114,yes,2.0,flat,True
+45,male,asymptomatic,130,219,no,ST-T wave abnormality,130,yes,1.0,flat,True
+42,male,atypical angina,120,198,no,normal,155,no,0.0,upsloping,False
+54,female,atypical angina,120,221,no,normal,138,no,1.0,upsloping,False
+49,male,non-anginal pain,131,142,no,normal,127,yes,1.5,flat,True
+62,male,asymptomatic,120,220,no,ST-T wave abnormality,86,no,0.0,upsloping,False
+42,male,non-anginal pain,120,240,yes,normal,194,no,0.8,downsloping,False
+51,female,non-anginal pain,110,190,no,normal,120,no,0.0,upsloping,False
+50,female,non-anginal pain,140,288,no,normal,140,yes,0.0,flat,True
+58,male,non-anginal pain,140,211,yes,probable or definite left ventricular hypertrophy,165,no,0.0,upsloping,False
+36,male,non-anginal pain,112,340,no,normal,184,no,1.0,flat,False
+70,male,asymptomatic,140,0,yes,normal,157,yes,2.0,flat,True
+57,male,asymptomatic,144,270,yes,ST-T wave abnormality,160,yes,2.0,flat,True
+49,male,asymptomatic,130,206,no,normal,170,no,0.0,flat,True
+43,male,asymptomatic,140,288,no,normal,135,yes,2.0,flat,True
+42,male,atypical angina,120,295,no,normal,162,no,0.0,upsloping,False
+75,male,asymptomatic,170,203,yes,ST-T wave abnormality,108,no,0.0,flat,True
+54,male,asymptomatic,150,365,no,ST-T wave abnormality,134,no,1.0,upsloping,False
+58,male,non-anginal pain,140,179,no,normal,160,no,0.0,upsloping,False
+68,male,non-anginal pain,118,277,no,normal,151,no,1.0,upsloping,False
+54,male,asymptomatic,120,0,no,normal,155,no,0.0,flat,True
+40,male,non-anginal pain,140,235,no,normal,188,no,0.0,upsloping,False
+35,male,asymptomatic,120,0,yes,normal,130,yes,1.2,flat,True
+66,female,typical angina,150,226,no,normal,114,no,2.6,downsloping,False
+46,male,asymptomatic,110,238,no,ST-T wave abnormality,140,yes,1.0,flat,False
+60,male,asymptomatic,160,0,yes,normal,149,no,0.4,flat,True
+35,female,asymptomatic,140,167,no,normal,150,no,0.0,upsloping,False
+38,male,asymptomatic,110,289,no,normal,105,yes,1.5,downsloping,True
+36,male,atypical angina,120,267,no,normal,160,no,3.0,flat,True
+69,male,asymptomatic,142,210,yes,ST-T wave abnormality,112,yes,1.5,flat,True
+53,female,atypical angina,140,216,no,normal,142,yes,2.0,flat,False
+41,male,atypical angina,135,203,no,normal,132,no,0.0,flat,False
+50,male,asymptomatic,130,233,no,normal,121,yes,2.0,flat,True
+53,male,asymptomatic,126,0,no,normal,106,no,0.0,flat,True
+52,male,atypical angina,134,201,no,normal,158,no,0.8,upsloping,False
+49,male,asymptomatic,140,234,no,normal,140,yes,1.0,flat,True
+48,female,atypical angina,120,284,no,normal,120,no,0.0,upsloping,False
+67,female,non-anginal pain,115,564,no,probable or definite left ventricular hypertrophy,160,no,1.6,flat,False
+49,female,atypical angina,110,208,no,normal,160,no,0.0,upsloping,False
+58,male,asymptomatic,120,0,no,probable or definite left ventricular hypertrophy,106,yes,1.5,downsloping,True
+49,male,typical angina,130,0,no,ST-T wave abnormality,145,no,3.0,flat,True
+65,male,asymptomatic,115,0,no,normal,93,yes,0.0,flat,True
+55,male,atypical angina,145,326,no,normal,155,no,0.0,upsloping,False
+64,male,asymptomatic,134,273,no,normal,102,yes,4.0,downsloping,True
+41,female,atypical angina,126,306,no,normal,163,no,0.0,upsloping,False
+54,female,non-anginal pain,135,304,yes,normal,170,no,0.0,upsloping,False
+30,female,typical angina,170,237,no,ST-T wave abnormality,170,no,0.0,upsloping,False
+40,female,asymptomatic,150,392,no,normal,130,no,2.0,flat,True
+48,male,atypical angina,130,245,no,probable or definite left ventricular hypertrophy,180,no,0.2,flat,False
+54,male,asymptomatic,110,206,no,probable or definite left ventricular hypertrophy,108,yes,0.0,flat,True
+58,male,atypical angina,120,284,no,probable or definite left ventricular hypertrophy,160,no,1.8,flat,True
+46,male,asymptomatic,180,280,no,ST-T wave abnormality,120,no,0.0,upsloping,False
+50,male,asymptomatic,120,0,no,ST-T wave abnormality,156,yes,0.0,upsloping,True
+48,female,atypical angina,120,177,yes,ST-T wave abnormality,148,no,0.0,upsloping,False
+59,male,asymptomatic,125,0,yes,normal,119,yes,0.9,upsloping,True
+57,male,asymptomatic,122,264,no,probable or definite left ventricular hypertrophy,100,no,0.0,flat,True
+61,male,asymptomatic,125,292,no,ST-T wave abnormality,115,yes,0.0,upsloping,False
+51,male,asymptomatic,131,152,yes,probable or definite left ventricular hypertrophy,130,yes,1.0,flat,True
+57,male,asymptomatic,132,207,no,normal,168,yes,0.0,upsloping,False
+38,male,asymptomatic,92,117,no,normal,134,yes,2.5,flat,True
+57,male,atypical angina,140,260,yes,normal,140,no,0.0,upsloping,False
+47,female,atypical angina,140,257,no,normal,135,no,1.0,upsloping,False
+61,male,asymptomatic,110,0,yes,normal,108,yes,2.0,downsloping,True
+53,male,asymptomatic,130,0,no,probable or definite left ventricular hypertrophy,135,yes,1.0,flat,True
+51,female,non-anginal pain,150,200,no,normal,120,no,0.5,upsloping,False
+40,male,typical angina,140,199,no,normal,178,yes,1.4,upsloping,False
+55,male,atypical angina,110,214,yes,ST-T wave abnormality,180,no,0.4,upsloping,False
+62,male,atypical angina,131,0,no,normal,130,no,0.1,upsloping,False
+54,male,non-anginal pain,125,273,no,probable or definite left ventricular hypertrophy,152,no,0.5,downsloping,False
+58,female,atypical angina,136,319,yes,probable or definite left ventricular hypertrophy,152,no,0.0,upsloping,True
+48,male,asymptomatic,140,208,no,normal,159,yes,1.5,upsloping,True
+42,male,non-anginal pain,134,240,no,normal,160,no,0.0,upsloping,False
+59,male,asymptomatic,140,169,no,normal,140,no,0.0,upsloping,False
+46,male,asymptomatic,118,186,no,normal,124,no,0.0,flat,True
+59,male,asymptomatic,110,239,no,probable or definite left ventricular hypertrophy,142,yes,1.2,flat,True
+75,male,asymptomatic,160,310,yes,normal,112,yes,2.0,downsloping,False
+65,male,asymptomatic,140,306,yes,normal,87,yes,1.5,flat,True
+54,male,asymptomatic,125,216,no,normal,140,no,0.0,flat,True
+45,female,atypical angina,180,295,no,normal,180,no,0.0,upsloping,False
+62,male,asymptomatic,135,297,no,normal,130,yes,1.0,flat,True
+43,male,non-anginal pain,130,315,no,normal,162,no,1.9,upsloping,False
+62,female,typical angina,140,0,yes,normal,143,no,0.0,flat,True
+56,male,asymptomatic,120,0,no,ST-T wave abnormality,148,no,0.0,flat,True
+48,male,non-anginal pain,102,0,yes,ST-T wave abnormality,110,yes,1.0,downsloping,True
+59,female,atypical angina,130,188,no,normal,124,no,1.0,flat,False
+52,male,asymptomatic,112,230,no,normal,160,no,0.0,upsloping,True
+59,male,asymptomatic,135,234,no,normal,161,no,0.5,flat,False
+57,female,typical angina,130,308,no,normal,98,no,1.0,flat,False
+77,male,asymptomatic,125,304,no,probable or definite left ventricular hypertrophy,162,yes,0.0,upsloping,True
+68,male,typical angina,139,181,yes,ST-T wave abnormality,135,no,0.2,upsloping,False
+52,male,typical angina,152,298,yes,normal,178,no,1.2,flat,False
+57,male,asymptomatic,150,276,no,probable or definite left ventricular hypertrophy,112,yes,0.6,flat,True
+55,male,atypical angina,160,292,yes,normal,143,yes,2.0,flat,True
+51,male,asymptomatic,95,0,yes,normal,126,no,2.2,flat,True
+55,male,asymptomatic,158,217,no,normal,110,yes,2.5,flat,True
+54,male,asymptomatic,180,0,yes,normal,150,no,1.5,flat,True
+57,male,non-anginal pain,105,0,yes,normal,148,no,0.3,flat,True
+63,male,asymptomatic,110,252,no,ST-T wave abnormality,140,yes,2.0,flat,True
+51,male,non-anginal pain,110,175,no,normal,123,no,0.6,upsloping,False
+35,male,atypical angina,150,264,no,normal,168,no,0.0,upsloping,False
+58,male,asymptomatic,160,256,yes,probable or definite left ventricular hypertrophy,113,yes,1.0,upsloping,True
+71,male,non-anginal pain,144,221,no,normal,108,yes,1.8,flat,True
+59,male,asymptomatic,170,326,no,probable or definite left ventricular hypertrophy,140,yes,3.4,downsloping,True
+56,female,non-anginal pain,130,219,no,ST-T wave abnormality,164,no,0.0,upsloping,False
+44,male,atypical angina,120,184,no,normal,142,no,1.0,flat,False
+55,male,atypical angina,130,262,no,normal,155,no,0.0,upsloping,False
+62,male,typical angina,135,139,no,ST-T wave abnormality,137,no,0.2,upsloping,False
+48,male,non-anginal pain,132,220,yes,ST-T wave abnormality,162,no,0.0,flat,True
+62,male,atypical angina,128,208,yes,probable or definite left ventricular hypertrophy,140,no,0.0,upsloping,False
+47,male,asymptomatic,112,204,no,normal,143,no,0.1,upsloping,False
+57,male,atypical angina,140,265,no,ST-T wave abnormality,145,yes,1.0,flat,True

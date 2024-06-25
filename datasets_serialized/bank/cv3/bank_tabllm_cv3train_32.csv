@@ -1,0 +1,33 @@
+age,type of job,marital status,education,has credit in default?,"average yearly balance, in euros",has housing loan?,has personal loan?,contact communication type,last contact day of the month,last contact month of year,"last contact duration, in seconds",number of contacts performed during this campaign and for this client,number of days that passed by after the client was last contacted from a previous campaign,number of contacts performed before this campaign and for this client,outcome of the previous marketing campaign,label
+46,services,married,secondary,no,244,no,no,cellular,21,aug,139,2,client was not previously contacted,0,unknown,False
+42,management,married,tertiary,no,144,no,no,cellular,7,dec,143,1,283,3,failure,False
+37,blue-collar,married,primary,no,0,yes,no,unknown,26,may,24,1,client was not previously contacted,0,unknown,False
+40,services,married,secondary,no,5248,yes,yes,cellular,20,nov,194,4,188,8,other,False
+46,technician,married,tertiary,no,3941,yes,no,cellular,19,nov,499,1,client was not previously contacted,0,unknown,False
+57,management,divorced,tertiary,no,6468,yes,no,cellular,31,mar,684,4,client was not previously contacted,0,unknown,False
+41,technician,married,tertiary,no,91,no,yes,cellular,29,jul,204,3,client was not previously contacted,0,unknown,False
+26,unemployed,single,secondary,no,632,no,no,cellular,12,feb,218,1,client was not previously contacted,0,unknown,True
+50,technician,married,secondary,no,3503,yes,no,unknown,6,jun,103,2,client was not previously contacted,0,unknown,False
+47,entrepreneur,married,secondary,no,8480,no,no,cellular,29,aug,137,9,client was not previously contacted,0,unknown,False
+34,management,married,tertiary,no,2640,yes,no,cellular,6,may,181,1,client was not previously contacted,0,unknown,False
+50,admin.,married,secondary,no,-185,no,no,cellular,2,feb,97,1,client was not previously contacted,0,unknown,False
+46,technician,divorced,secondary,no,256,no,no,cellular,11,aug,105,2,client was not previously contacted,0,unknown,False
+58,self-employed,divorced,secondary,no,613,yes,no,unknown,8,may,154,2,client was not previously contacted,0,unknown,False
+35,entrepreneur,single,tertiary,yes,793,no,yes,cellular,8,jul,163,1,client was not previously contacted,0,unknown,False
+40,management,married,primary,no,395,yes,no,cellular,22,apr,232,4,client was not previously contacted,0,unknown,True
+36,blue-collar,married,secondary,no,139,yes,no,unknown,6,may,309,2,client was not previously contacted,0,unknown,False
+39,management,single,tertiary,no,202,yes,no,cellular,12,may,59,1,301,1,other,False
+37,entrepreneur,divorced,secondary,no,1190,yes,no,unknown,9,may,268,3,client was not previously contacted,0,unknown,False
+50,technician,married,tertiary,no,5907,yes,yes,cellular,12,aug,338,2,client was not previously contacted,0,unknown,False
+34,technician,single,tertiary,no,992,yes,no,cellular,5,feb,71,2,client was not previously contacted,0,unknown,True
+36,admin.,single,tertiary,no,5007,yes,no,cellular,8,oct,135,3,331,4,failure,False
+37,technician,married,secondary,no,157,yes,no,unknown,7,may,238,2,client was not previously contacted,0,unknown,False
+41,services,married,secondary,no,1319,yes,no,cellular,11,may,305,1,client was not previously contacted,0,unknown,False
+59,retired,married,primary,no,3400,yes,no,cellular,5,aug,515,3,client was not previously contacted,0,unknown,True
+40,admin.,single,secondary,no,664,no,no,cellular,19,nov,188,2,121,2,success,False
+36,self-employed,married,tertiary,no,15,yes,no,unknown,28,may,64,4,client was not previously contacted,0,unknown,False
+38,services,single,secondary,no,7695,yes,no,unknown,14,may,193,2,client was not previously contacted,0,unknown,False
+59,management,divorced,primary,no,13308,yes,no,unknown,13,may,131,1,client was not previously contacted,0,unknown,False
+28,student,single,tertiary,no,3054,no,no,cellular,30,apr,384,1,80,6,other,True
+41,services,married,tertiary,no,412,yes,no,unknown,3,jun,154,5,client was not previously contacted,0,unknown,False
+24,blue-collar,single,secondary,no,6,yes,no,cellular,18,may,16,10,client was not previously contacted,0,unknown,False
