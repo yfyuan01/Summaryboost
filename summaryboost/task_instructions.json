@@ -1,0 +1,103 @@
+{
+    "bank": {
+        "title": "Deposit subscription prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Does this client subscribe to a term deposit?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a client would subscribe to a term deposit. Output patterns only without any further explanations."
+    },
+    "blood": {
+        "title": "Blood donation prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Did the person donate blood?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person would donate blood. Output patterns only without any further explanations."
+    },
+    "calhousing": {
+        "title": "House value prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Is this house block valuable?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a house block is valuable. Output patterns only without any further explanations."
+    },
+    "car": {
+        "title": "Car safety prediction",
+        "answer_choices": [
+            "Unacceptable",
+            "Acceptable",
+            "Good",
+            "Very Good"
+        ],
+        "question": "How would you rate the decision to buy this car?",
+        "answer_requirement": "Answer the question with one of [Unacceptable, Acceptable, Good, Very Good].",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for rating the decision to buy a car. Output patterns only without any further explanations."
+    },
+    "creditg": {
+        "title": "Credit risk prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Does this person receive a credit?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person would receive a credit. Output patterns only without any further explanations."
+    },
+    "diabetes": {
+        "title": "Diabetes risk prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Does this patient have diabetes?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a patient has diabetes. Output patterns only without any further explanations."
+    },
+    "heart": {
+        "title": "Heart disease prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Does the coronary angiography of this patient show a heart disease?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether the coronary angiography of a patient shows a heart disease. Output patterns only without any further explanations."
+    },
+    "income": {
+        "title": "Income prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Does this person earn more than 50000 dollars per year?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person earns more than 50000 dollars per year. Output patterns only without any further explanations."
+    },
+    "jungle": {
+        "title": "Game winning prediction",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "question": "Does the white player win this two pieces endgame of Jungle Chess?",
+        "answer_requirement": "Answer the question with either Yes or No.",
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether the white player wins this two pieces endgame of Jungle Chess. Output patterns only without any further explanations."
+    }
+}

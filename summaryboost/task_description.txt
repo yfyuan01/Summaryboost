@@ -1,0 +1,9 @@
+blood: Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan - this is a classification problem. The goal is to predict whether a given individual will consent or avoid donating blood.
+bank: This data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. The classification goal is to predict if the client will subscribe a term deposit.
+calhousing: This dataset is collected on the variables using all the block groups in California from the 1990 Census. It computes distances among the centroids of each block group as measured in latitude and longitude, aims to predict whether the house value of district is below or above the median
+car:This dataset was derived from a simple hierarchical decision model originally developed for the demonstration of DEX. The goal is to evaluate the safety of cars.
+creditg: This dataset originates from the UCI Machine Learning Repository. It is used to classify individuals as good or bad credit risks based on various attributes.
+diabetes: This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has high/low risk of developing diabetes.
+heart: This dataset contains 11 features that can be used to predict a possible heart disease.
+income: This dataset predicts whether each person has an annual income over $50,000 based on some information about the person.
+jungle: This dataset predicts whether the white player will win based on some game information.
