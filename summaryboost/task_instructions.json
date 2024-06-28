@@ -16,7 +16,7 @@
             "No",
             "Yes"
         ],
-        "question": "Did the person donate blood?",
+        "question": "Will the person donate blood?",
         "answer_requirement": "Answer the question with either Yes or No.",
         "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
         "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person would donate blood. Output patterns only without any further explanations."

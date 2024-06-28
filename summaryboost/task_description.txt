@@ -1,4 +1,4 @@
-blood: Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan - this is a classification problem. The goal is to predict whether a given individual will consent or avoid donating blood.
+blood: This data is to predict whether a given individual will consent or avoid donating blood.
 bank: This data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. The classification goal is to predict if the client will subscribe a term deposit.
 calhousing: This dataset is collected on the variables using all the block groups in California from the 1990 Census. It computes distances among the centroids of each block group as measured in latitude and longitude, aims to predict whether the house value of district is below or above the median
 car:This dataset was derived from a simple hierarchical decision model originally developed for the demonstration of DEX. The goal is to evaluate the safety of cars.
