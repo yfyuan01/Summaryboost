@@ -185,6 +185,12 @@ if __name__ == '__main__':
         print(data_files[i])
         metadata = description_data[data_files[i]]
         description,y_dict,summaryprompt,ending,question = read_meta(meta_info[data_files[i]])
+        print("[[meatadata]]", metadata)
+        print("[[description]]", description)
+        print("[[y_dict]]", y_dict)
+        print("[[summaryprompt]]", summaryprompt)
+        print("[[ending]]", ending)
+        print("[[question]]", question)
         for j in range(5):
             X_train = read_data(os.path.join(data_file_address,f'{data_files[i]}/cv{str(j)}/{data_files[i]}_cv{str(j)}train_{portion}.jsonl'))
             y_train = read_label(os.path.join(data_file_address,f'{data_files[i]}/cv{str(j)}/{data_files[i]}_tabllm_cv{str(j)}train_{portion}.csv')) #bank_tabllm_cv0test.csv
