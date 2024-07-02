@@ -10,7 +10,16 @@ import pickle
 from tqdm import tqdm
 import json
 import csv
+import random
+import time 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import partial
+
+from eas_apis import init_eas_service, invoke_eas
+
 client = OpenAI()
+init_eas_service()
+
 # metadata = """Description: Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan - this is a classification problem. The goal is to predict whether a given individual will consent or avoid donating blood. It includes the regency - months since last donation, frequency - total number of donation, Monetary - total blood donated in c.c., and Time - months since first donation.\n"""
 # summaryprompt = """Tl;dr """
 # description = """Title: Blood donation Prediction.\n"""
@@ -110,6 +119,69 @@ def generate(prompt):
         return response.choices[0].message.content
     except Exception as e:
         print(e)
+
+
+def generate_osllm(prompt, model, max_new_tokens=4096, temperature=0.2):
+    """ completion by open-source llms with EAS
+    Support models:
+        - llama3-8b: llama-3-8b-instruct
+        - mistral-7b: mistral-7b-instruct-v0.2
+        - gemma-2-27b-it (in the near future)
+    """
+    request = {
+        "sys_input": "You are a helpful assistant.",
+        "input": prompt
+    }
+    
+    llm_response = invoke_eas(
+        request, model, input_col="input", output_col="output", 
+        max_new_tokens=max_new_tokens, temperature=temperature
+    )
+    return llm_response["output"]
+
+
+def generate_osllm_batch(prompts, model, outfile, num_threads=1, max_tokens=4096, temperature=0.2, num_invokes=0):
+    """ parallel invoke llm and sink results into a disk file {outfile}.jsonl
+
+    Args:
+        prompts: a list of dict, each dict d is a request, d["input"] is the prompt
+        model: llama3-8b / mistral-7b
+        outfile: results will be saved to {outfile}.jsonl
+        num_threads: concurrent threads for speedup, set to 16
+    """
+    if num_invokes > 0:
+        random.shuffle(prompts)
+        prompts = prompts[:num_invokes]
+        print(f"Remaining {len(prompts)} API calls after random sampling")
+
+    invoke_func_with_defaults = partial(
+        invoke_eas,
+        model=model,
+        system_prompt="You are a helpful assistant.",
+        input_col="input",
+        output_col="output",
+        temperature=temperature,
+        max_new_tokens=max_tokens,
+    ) 
+    num_completed = 0
+    ts = time.time()
+
+    with ThreadPoolExecutor(max_workers=num_threads) as executor,\
+        open(f"{outfile}.jsonl", 'w') as fout:
+        futures = [executor.submit(invoke_func_with_defaults, prompt) for prompt in prompts]
+        
+        for future in as_completed(futures):
+            result = future.result()
+            json.dump(result, fout, ensure_ascii=False)
+            fout.write('\n')
+            fout.flush()
+
+            num_completed += 1
+            if num_completed % 200 == 0:
+                print(f"Complete {num_completed}/{len(prompts)} prompts in {time.time() - ts:.1f} secs.", flush=True)
+    
+        print(f"Complete {num_completed}/{len(prompts)} prompts in {time.time() - ts:.1f} secs.")
+
 
 def error_cal(summary, X, y, description, metadata, y_dict, ending, question):
     error = 0
