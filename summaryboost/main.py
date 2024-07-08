@@ -149,6 +149,11 @@ def generate_osllm_batch(prompts, model, outfile, num_threads=1, max_tokens=4096
         outfile: results will be saved to {outfile}.jsonl
         num_threads: concurrent threads for speedup, set to 16
     """
+    if not prompts:
+        return 
+    if isinstance(prompts[0], str):
+        prompts = [{"input": prompt} for prompt in prompts]
+
     if num_invokes > 0:
         random.shuffle(prompts)
         prompts = prompts[:num_invokes]

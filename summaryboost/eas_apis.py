@@ -77,7 +77,7 @@ def invoke_eas(prompt: dict,
 
     for retry in range(3):
         try:
-            response = requests.post(endpoint, headers=headers, json=pload, stream=False, timeout=120)
+            response = requests.post(endpoint, headers=headers, json=pload, stream=False, timeout=600)
             data = json.loads(response.content)
             prompt[output_col] = data["response"]
             break
