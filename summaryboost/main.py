@@ -10,7 +10,16 @@ import pickle
 from tqdm import tqdm
 import json
 import csv
+import random
+import time 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import partial
+
+from eas_apis import init_eas_service, invoke_eas
+
 client = OpenAI()
+init_eas_service()
+
 # metadata = """Description: Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan - this is a classification problem. The goal is to predict whether a given individual will consent or avoid donating blood. It includes the regency - months since last donation, frequency - total number of donation, Monetary - total blood donated in c.c., and Time - months since first donation.\n"""
 # summaryprompt = """Tl;dr """
 # description = """Title: Blood donation Prediction.\n"""
@@ -111,6 +120,74 @@ def generate(prompt):
     except Exception as e:
         print(e)
 
+
+def generate_osllm(prompt, model, max_new_tokens=4096, temperature=0.2):
+    """ completion by open-source llms with EAS
+    Support models:
+        - llama3-8b: llama-3-8b-instruct
+        - mistral-7b: mistral-7b-instruct-v0.2
+        - gemma-2-27b-it (in the near future)
+    """
+    request = {
+        "sys_input": "You are a helpful assistant.",
+        "input": prompt
+    }
+    
+    llm_response = invoke_eas(
+        request, model, input_col="input", output_col="output", 
+        max_new_tokens=max_new_tokens, temperature=temperature
+    )
+    return llm_response["output"]
+
+
+def generate_osllm_batch(prompts, model, outfile, num_threads=1, max_tokens=4096, temperature=0.2, num_invokes=0):
+    """ parallel invoke llm and sink results into a disk file {outfile}.jsonl
+
+    Args:
+        prompts: a list of dict, each dict d is a request, d["input"] is the prompt
+        model: llama3-8b / mistral-7b
+        outfile: results will be saved to {outfile}.jsonl
+        num_threads: concurrent threads for speedup, set to 16
+    """
+    if not prompts:
+        return 
+    if isinstance(prompts[0], str):
+        prompts = [{"input": prompt} for prompt in prompts]
+
+    if num_invokes > 0:
+        random.shuffle(prompts)
+        prompts = prompts[:num_invokes]
+        print(f"Remaining {len(prompts)} API calls after random sampling")
+
+    invoke_func_with_defaults = partial(
+        invoke_eas,
+        model=model,
+        system_prompt="You are a helpful assistant.",
+        input_col="input",
+        output_col="output",
+        temperature=temperature,
+        max_new_tokens=max_tokens,
+    ) 
+    num_completed = 0
+    ts = time.time()
+
+    with ThreadPoolExecutor(max_workers=num_threads) as executor,\
+        open(f"{outfile}.jsonl", 'w') as fout:
+        futures = [executor.submit(invoke_func_with_defaults, prompt) for prompt in prompts]
+        
+        for future in as_completed(futures):
+            result = future.result()
+            json.dump(result, fout, ensure_ascii=False)
+            fout.write('\n')
+            fout.flush()
+
+            num_completed += 1
+            if num_completed % 200 == 0:
+                print(f"Complete {num_completed}/{len(prompts)} prompts in {time.time() - ts:.1f} secs.", flush=True)
+    
+        print(f"Complete {num_completed}/{len(prompts)} prompts in {time.time() - ts:.1f} secs.")
+
+
 def error_cal(summary, X, y, description, metadata, y_dict, ending, question):
     error = 0
     elist = []
@@ -185,6 +262,12 @@ if __name__ == '__main__':
         print(data_files[i])
         metadata = description_data[data_files[i]]
         description,y_dict,summaryprompt,ending,question = read_meta(meta_info[data_files[i]])
+        print("[[meatadata]]", metadata)
+        print("[[description]]", description)
+        print("[[y_dict]]", y_dict)
+        print("[[summaryprompt]]", summaryprompt)
+        print("[[ending]]", ending)
+        print("[[question]]", question)
         for j in range(5):
             X_train = read_data(os.path.join(data_file_address,f'{data_files[i]}/cv{str(j)}/{data_files[i]}_cv{str(j)}train_{portion}.jsonl'))
             y_train = read_label(os.path.join(data_file_address,f'{data_files[i]}/cv{str(j)}/{data_files[i]}_tabllm_cv{str(j)}train_{portion}.csv')) #bank_tabllm_cv0test.csv
