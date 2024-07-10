@@ -1,0 +1,107 @@
+{
+    "bank": {
+        "description": "You are dealing with a problem of predicting whether a customer subscribes to a term deposit or not based on the following features.\n# bank client features:\n1 - age (numeric)\n2 - type of job (categorical: \"admin.\", \"unknown\", \"unemployed\", \"management\", \"housemaid\", \"entrepreneur\", \"student\", \"blue-collar\", \"self-employed\", \"retired\", \"technician\", \"services\") \n3 - marital status (categorical: \"married\",\"divorced\",\"single\"; note: \"divorced\" means divorced or widowed)\n4 - education (categorical: \"unknown\", \"secondary\", \"primary\", \"tertiary\")\n5 - has credit in default? (binary: \"yes\", \"no\")\n6 - average yearly balance, in euros (numeric) \n7 - has housing loan? (binary: \"yes\", \"no\")\n8 - has personal loan? (binary: \"yes\", \"no\")\n# related with the last contact of the current campaign:\n9 - contact communication type (categorical: \"unknown\", \"telephone\", \"cellular\") \n10 - last contact day of the month (numeric)\n11 - last contact month of year (categorical: \"jan\", \"feb\", \"mar\", ..., \"nov\", \"dec\")\n12 - last contact duration, in seconds (numeric)\n# other attributes:\n13 - number of contacts performed during this campaign and for this client (numeric, includes last contact)\n14 - number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)\n15 - number of contacts performed before this campaign and for this client (numeric)\n16 - outcome of the previous marketing campaign (categorical: \"unknown\", \"other\", \"failure\", \"success\")",
+        "question": "Does this client subscribe to a term deposit?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a client would subscribe to a term deposit. Output patterns only without any further explanations."
+    },
+    "blood": {
+        "description": "You are dealing with a problem of predicting whether a blood donator returns for another donation based on the following features:\n1. Recency - months since last donation (numeric)\n2. Frequency - total number of donation (numeric)\n3. Monetary - total blood donated in c.c. (numeric)\n4. Time - months since first donation (numeric)",
+        "question": "Will the person donate blood?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person would donate blood. Output patterns only without any further explanations."
+    },
+    "calhousing": {
+        "description": "You are dealing with a problem of predicting whether the house value of district is below or above the median based on the following features:\n1. median income - median income of residents in the district (numeric)\n2. median age - median age of residents in the district (numeric)\n3. total rooms - total number of rooms in the district (numeric)\n4. total bedrooms - total number of bedrooms in the district (numeric)\n5. population - population in the district (numeric)\n6. households - total number of households in the district (numeric)\n7. latitude - latitude of the district (numeric)\n8. longitude - longitude of the district (numeric)",
+        "question": "Is this house block valuable?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a house block is valuable. Output patterns only without any further explanations."
+    },
+    "car": {
+        "description": "You are dealing with a problem of evaluating the state (Unacceptable/Acceptable/Good/Very Good) of each car based on the following features:\n1. Buying price (categorical: \"v-high\", \"high\", \"med\", \"low\")\n2. Doors - number of doors (categorical: \"2\", \"3\", \"4\", \"5-more\")\n3. Mainteance costs - price of the maintenance (categorical: \"v-high\", \"high\", \"med\", \"low\")\n4. Persons -  capacity in terms of persons to carry (categorical: \"2\", \"4\", \"more\")\n5. Safety score - estimated safety of the car (categorical: \"low\", \"med\", \"high\")\n6. Trunk size - the size of luggage boot (categorical: \"small\", \"med\", \"big\")",
+        "question": "How would you rate the decision to buy this car?",
+        "answer_requirement": "Answer the question with either 'Unacceptable', 'Acceptable', 'Good', or 'Very Good' (without quotes).",
+        "answer_choices": [
+            "Unacceptable",
+            "Acceptable",
+            "Good",
+            "Very Good"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for rating the decision to buy a car. Output patterns only without any further explanations."
+    },
+    "creditg": {
+        "description": "You are dealing with a problem of predicting whether a person has good or bad risk for receiving a credit based on the following features:\n1. Status of existing checking account (categorical: \"<0\", \"0<=X<200\", \">=200\", \"no checking\")\n2. Duration in month (numeric)\n3. Credit history (categorical: \"no credits/all paid\", \"all paid\", \"existing paid\", \"delayed previously\", \"critical/other existing credit\")\n4. Purpose (categorical: \"new car\", \"used car\", \"furniture/equipment\", \"radio/tv\", 'domestic appliance\", \"repairs\", \"education\", \"vacation\", \"retraining\", \"business\", \"other\")\n5. Credit amount (numeric)\n6. Savings account/bonds (categorical: \"<100\", \"100<=X<500\", \"500<=X<1000\", \">=1000\", \"no known savings\")\n7. Present employment since (categorical: \"unemployed\", \"<1\", \"1<=X<4\", \"4<=X<7\", \">=7\")\n8. Installment rate in percentage of disposable income (numeric)\n9. Personal status and sex (categorical: \"male div/sep\", \"female div/dep/mar\", \"male single\", \"male mar/wid\", \"female single\")\n10. Other debtors / guarantors (categorical: \"none\", \"co applicant\", \"guarantor\")\n11. Present residence since (numeric)\n12. Property (categorical: \"real estate\", \"life insurance\", \"car\", \"no known property\")\n13. Age in years (numeric)\n14. Other installment plans (categorical: \"bank\", \"stores\", \"none\")\n15. Housing (categorical: \"rent\", \"own\", \"for free\")\n16. Number of existing credits at this bank (numeric)\n17. Job (categorical: \"unemp/unskilled non res\", \"unskilled resident\", \"skilled\", \"high qualif/self emp/mgmt\")\n18. Number of people being liable to provide maintenance for (numeric)\n19. Telephone (categorical: \"none\", \"yes\")\n20. foreign worker (categorical: \"yes\", \"no\")",
+        "question": "Does this person receive a credit?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person would receive a credit. Output patterns only without any further explanations."
+    },
+    "diabetes": {
+        "description": "You are dealing with a problem of predicting whether a woman has diabete based on the following features:\n1. Age (numeric)\n2. Number of times pregnant (numeric)\n3. Diastolic blood pressure (numeric)\n4. Triceps skin fold thickness (numeric)\n5. Plasma glucose concentration at 2 hours in an oral glucose tolerance test (GTT) (numeric)\n6. 2-hour serum insulin (numeric)\n7. Body mass index (numeric)\n8. Diabetes pedigree function (numeric)",
+        "question": "Does this patient have diabetes?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a patient has diabetes. Output patterns only without any further explanations."
+    },
+    "heart": {
+        "description": "You are dealing with a problem of predicting whether a patient has coronary artery disease based on the following features:\n1. Age of the patient [years]\n2. Sex of the patient [M: Male, F: Female]\n3. Chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]\n4. Resting blood pressure [mm Hg]\n5. Serum cholesterol [mm/dl]\n6. Fasting blood sugar > 120 mg/dl [1: if FastingBS > 120 mg/dl, 0: otherwise]\n7. Resting electrocardiogram results [Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria]\n8. Maximum heart rate achieved [Numeric value between 60 and 202]\n9. Exercise-induced angina [Y: Yes, N: No]\n10. ST depression induced by exercise relative to rest [Numeric value measured in depression]\n11. Slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]",
+        "question": "Does the coronary angiography of this patient show a heart disease?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether the coronary angiography of a patient shows a heart disease. Output patterns only without any further explanations."
+    },
+    "income": {
+        "description": "You are dealing with a problem of predicting whether each person has an annual income over $50k based on the following features:\n1. Age (numeric)\n2. Race (categorical: \"White\", \"Asian-Pac-Islander\", \"Amer-Indian-Eskimo\", \"Other\", \"Black\")\n3. Sex (categorical: \"Female\", \"Male\")\n4. Marital status (categorical: \"Married-civ-spouse\", \"Divorced\", \"Never-married\", \"Separated\", \"Widowed\", \"Married-spouse-absent\", \"Married-AF-spouse\")\n5. Relation to head of the household (categorical: \"Wife\", \"Own-child\", \"Husband\", \"Not-in-family\", \"Other-relative\", \"Unmarried\")\n6. Native country (categorical: \"United-States\", \"Cambodia\", \"England\", \"Puerto-Rico\", \"Canada\", \"Germany\", \"Outlying-US(Guam-USVI-etc)\", \"India\", \"Japan\", \"Greece\", 'South\", \"China\", \"Cuba\", \"Iran\", \"Honduras\", \"Philippines\", \"Italy\", \"Poland\", \"Jamaica\", \"Vietnam\", \"Mexico\", \"Portugal\", \"Ireland\", \"France\", \"Dominican-Republic\", \"Laos\", \"Ecuador\", \"Taiwan\", \"Haiti\", \"Columbia\", \"Hungary\", \"Guatemala\", \"Nicaragua\", \"Scotland\", \"Thailand\", \"Yugoslavia\", \"El-Salvador\", \"Trinadad&Tobago\", \"Peru\", \"Hong\", \"Holand-Netherlands\")\n7. Occupation (categorical: \"Tech-support\", \"Craft-repair\", \"Other-service\", \"Sales\", \"Exec-managerial\", \"Prof-specialty\", \"Handlers-cleaners\", \"Machine-op-inspct\", \"Adm-clerical\", \"Farming-fishing\", \"Transport-moving\", \"Priv-house-serv\", \"Protective-serv\", \"Armed-Forces\")\n8. Work class (categorical: \"Private\", \"Self-emp-not-inc\", \"Self-emp-inc\", \"Federal-gov\", \"Local-gov\", \"State-gov\", \"Without-pay\", \"Never-worked\")\n9. Capital gain last year (numeric)\n10. Capital loss last year (numeric)\n11. Education (categorical: \"Bachelors\", \"Some-college\", \"11th\", \"HS-grad\", \"Prof-school\", \"Assoc-acdm\", \"Assoc-voc\", \"9th\", \"7th-8th\", \"12th\", \"Masters\", \"1st-4th\", \"10th\", \"Doctorate\", \"5th-6th\", \"Preschool\")\n12. Work hours per week (numeric)",
+        "question": "Does this person earn more than 50000 dollars per year?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether a person earns more than 50000 dollars per year. Output patterns only without any further explanations."
+    },
+    "jungle": {
+        "description": "You are dealing with a problem of predicting whether the white player will win a jungle chess game based on the following features:\n1. white piece strength (numeric)\n2. white piece file (numeric)\n3. white piece rank (numeric)\n4. black piece strength (numeric)\n5. black piece file (numeric)\n6. black piece rank (numeric)",
+        "question": "Does the white player win this two pieces endgame of Jungle Chess?",
+        "answer_requirement": "Answer the question with either 'Yes' or 'No' (without quotes).",
+        "answer_choices": [
+            "No",
+            "Yes"
+        ],
+        "trend": "Please distill the key trends that may assist an AI model in making future predictions. Output trends only without any further explanations.",
+        "summarization": "Tl;dr / Summarize the rules into a small set of non-conflicting and complementary patterns for predicting whether the white player wins this two pieces endgame of Jungle Chess. Output patterns only without any further explanations."
+    },
+    "support_vector": {
+        "selection": "",
+        "inference": ""
+    }
+}
