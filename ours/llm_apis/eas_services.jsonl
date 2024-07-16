@@ -1,0 +1,4 @@
+{"model": "mistral-7b", "endpoint": "http://llm-for-tabular-prediction-mistral-7b-v02.1730760139076263.cn-beijing.pai-eas.aliyuncs.com/", "token": "MGY5MDE3ODg4YmMyMDUxZDZiOWNmMTYxNWNiNWM4NDU2MGI3NTJjOQ==", "seqlen": 8192}
+{"model": "mistral-7b-2", "endpoint": "http://llmtab-mistral-7b-it-vllm.1730760139076263.cn-beijing.pai-eas.aliyuncs.com/", "token": "ODc1NjI0Y2RhZjhjYjFmMzNmZTRkMjVjNDU0MDkyYzkzODg0ZTk2ZQ==", "seqlen": 8192}
+{"model": "llama3-8b", "endpoint": "http://llmtab-llama3-8b-it-vllm.1730760139076263.cn-beijing.pai-eas.aliyuncs.com/", "token": "NmY0Mzk0MTU5NjM3MWFlOGI2ODkxOTQwYzllN2YxMGI2ZjBmNWJmZg==", "seqlen": 8192}
+{"model": "llama3-8b-2", "endpoint": "http://llmtab-llama3-8b-it-vllm.1730760139076263.cn-beijing.pai-eas.aliyuncs.com/", "token": "NmY0Mzk0MTU5NjM3MWFlOGI2ODkxOTQwYzllN2YxMGI2ZjBmNWJmZg==", "seqlen": 8192}

@@ -1,0 +1,2 @@
+{"model": "mistral-7b", "endpoint": "http://llm-for-tabular-prediction-llama2-13b.1730760139076263.cn-beijing.pai-eas.aliyuncs.com/", "token": "MjU0ODc1M2VmODYyNDJiODY4ZTdmZGYyZTYyNjBmOWQ0NTdkNzA2ZA==", "seqlen": 8192}
+{"model": "llama3-8b", "endpoint": "http://llm-for-tabular-prediction-llama2-13b.1730760139076263.cn-beijing.pai-eas.aliyuncs.com/", "token": "MjU0ODc1M2VmODYyNDJiODY4ZTdmZGYyZTYyNjBmOWQ0NTdkNzA2ZA==", "seqlen": 8192}
