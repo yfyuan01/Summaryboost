@@ -9,7 +9,7 @@ import argparse
 import os
 import numpy as np
 import pandas as pd
-from llm_apis.eas_apis import init_eas_service
+
 
 from collections import Counter
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
@@ -18,7 +18,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import roc_auc_score, balanced_accuracy_score
 from xgboost import XGBClassifier, DMatrix
-from llm_apis.common_api import parallel_invoke_llm, init_tracing
+
 from helper.utils import load_base_instructions, sink_to_jsonl
 from helper.serilization import serialize_by_tabllm
 from llm_apis.common_api import determine_invoke_func, batch_invoke_llm
@@ -145,7 +145,7 @@ def modeling(features, label, binary_task, gmethod):
 
     metric = "roc_auc" if binary_task else "balanced_accuracy"  # roc_auc_ovo
     clf = GridSearchCV(
-        estimator=estimator, param_grid=hps, cv=StratifiedKFold(n_splits=5),
+        estimator=estimator, param_grid=hps, cv=StratifiedKFold(n_splits=5), 
         scoring=metric, n_jobs=40, verbose=0
     )
     clf.fit(features, label)
@@ -284,14 +284,12 @@ def grouping_instructions(scores, notes, trend_cmd, sum_cmd, group_size, steps, 
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default="../../datasets_serialized", help="name of dataset to process.")
-    parser.add_argument("--dataset", type=str, default='blood', help="name of dataset to process If dataset = all, then run for all binary tabular datasets.")
+    parser.add_argument("--data_dir", type=str, default="./datasets_serialized", help="name of dataset to process.")
+    parser.add_argument("--dataset", type=str, required=True, help="name of dataset to process If dataset = all, then run for all binary tabular datasets.")
     parser.add_argument("--cv", type=int, default=0, help="cross validation number If cv = -1, then run for all cross validation datasets.")
-    parser.add_argument("--num_examples", type=str, default='32', help="number of training examples")
+    parser.add_argument("--num_examples", type=str, default='128', help="number of training examples")
     parser.add_argument("--group_size", type=int, default=16, help="number of training sample groups to be analyzed by a superior LLM, which is equivalent to num_shots in main.py. Default = 16")
-    parser.add_argument("--gmethod", default='lr', choices=["lr", "svc", "llm4sv", "xgboost"], help="example grouping method")
-    parser.add_argument("--llm", type=str, default='mistral-7b', help="llm model: mistral-7b/llama3-8b/{openai GPT models}")
-    parser.add_argument("--llm_meta_path", type=str, default="eas_services", help="meta data of llm apis")
+    parser.add_argument("--gmethod", required=True, choices=["lr", "svc", "llm4sv", "xgboost"], help="example grouping method")
     return parser.parse_args()
 
 
@@ -299,15 +297,11 @@ def main():
     args = parse_args()
     print(args)
     print("End of arg parsing.\n\n")
-    if args.llm.startswith("gpt"):
-        # gpt-3.5-turbo-0125
-        init_tracing()
-    elif args.llm in ["mistral-7b", "llama3-8b"]:
-        init_eas_service(data_dir="./llm_apis", filename=args.llm_meta_path)
+
     datasets = TABLLM_BINARY_DATASETS if args.dataset == "all" else [args.dataset]
-    instructions = load_base_instructions("task_instructions_formal.json")
+    instructions = load_base_instructions("task_instructions.json") 
     llm4sv_selections = []
-    cvs = [args.cv] if args.cv >=0 else [0,1,2,3,4]
+    cvs = args.cv if args.cv >=0 else [0,1,2,3,4]
     for dataset in datasets:
         for this_cv in cvs:
         # load training data w.r.t dataset&cv&num_examples
@@ -337,11 +331,7 @@ def main():
                 # print(f"#notes = {len(notes)}")
                 # return
                 # ---debug---
-                sink_to_jsonl(
-                    data_dir=os.path.join(args.data_dir, dataset, f"cv{this_cv}"),
-                    filename=f"{dataset}-{args.gmethod}score-cv{this_cv}-e{args.num_examples}",
-                    data=scores
-                )
+    
     
                 if sv_outputs is not None:
                     sink_to_jsonl(
@@ -353,7 +343,7 @@ def main():
                 prompts = grouping_instructions(scores, notes, 
                                                 trend_cmd=instructions[dataset]["trend"], 
                                                 sum_cmd=instructions[dataset]["summarization"], 
-                                                group_size=args.group_size, steps=args.group_size,llm_model=args.llm)
+                                                group_size=args.group_size, steps=args.group_size)
                 sink_to_jsonl(
                     data_dir=os.path.join(args.data_dir, dataset, f"cv{this_cv}"),
                     filename=f"{dataset}-rules{args.gmethod}-cv{this_cv}-e{args.num_examples}-s{args.group_size}",
