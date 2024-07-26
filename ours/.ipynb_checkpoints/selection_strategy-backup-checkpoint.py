@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import random
 
 import numpy as np
 
@@ -31,7 +32,24 @@ def sv_select_max_abs(svcoef:list, num_shots:int):
     select.sort(key=lambda x: x[1])
     return select
 
-def sv_select_equal_max_abs(svcoef:list, num_shots:int):
+def sv_select_min(svcoef:list, num_shots:int):
+    '''
+    Select num_shots samples from their svm coefficient info
+        with the strategy of maximum absolute value of coef.
+    Args:
+        svcoef:List[dict]. Key = "index" denotes te item id.
+            Key = "coef" denotes the coefficient value.
+        num_shots: the number of representative samples to be selected
+    Return:
+        select:List[Tuple]. The first element of each tuple
+            denotes the item id. The second element of each
+            tuple denotes the coefficient value.
+    '''
+    svcoef.sort(key=lambda x: x["coef"])
+    select = [(elem["index"], elem["coef"]) for elem in svcoef[:num_shots]]
+    return select
+
+def sv_select_balanced_max_abs(svcoef:list, num_shots:int):
     '''
     Select num_shots samples from their svm coefficient info
         with the strategy of maximum absolute value of coef.
@@ -57,48 +75,6 @@ def sv_select_equal_max_abs(svcoef:list, num_shots:int):
         le += 1
         ri -= 1
     select.sort(key=lambda x: x[1])
-    return select
-
-def sv_select_min(svcoef:list, num_shots:int):
-    '''
-    Select num_shots samples from their coefficient info
-        with the strategy of minimum value of coef.
-    Args:
-        svcoef:List[dict]. Key = "index" denotes te item id.
-            Key = "coef" denotes the coefficient value.
-        num_shots: the number of representative samples to be selected
-    Return:
-        select:List[Tuple]. The first element of each tuple
-            denotes the item id. The second element of each
-            tuple denotes the coefficient value.
-    '''
-    svcoef.sort(key=lambda x: x["coef"])
-    select = [(elem["index"], elem["coef"]) for elem in svcoef[:num_shots]]
-    return select
-
-def sv_select_balanced_min(svcoef:list, num_shots:int):
-    '''
-    Select num_shots samples from their coefficient info
-        with the strategy of balanced minimum value of coef.
-    Args:
-        svcoef:List[dict]. Key = "index" denotes te item id.
-            Key = "coef" denotes the coefficient value.
-        num_shots: the number of representative samples to be selected
-    Return:
-        select:List[Tuple]. The first element of each tuple
-            denotes the item id. The second element of each
-            tuple denotes the coefficient value.
-    '''
-    svcoef.sort(key=lambda x: x["coef"])
-    svcoef_label = {}
-    select = []
-    for elem in svcoef:
-        svcoef_label[elem['label']] = svcoef_label.get(elem['label'], [])
-        svcoef_label[elem['label']].append(elem)
-    for clabel in svcoef_label.keys():
-        this_num_shots = round(len(svcoef_label[clabel]) / len(svcoef) * num_shots)
-        select += [(elem["index"], elem["coef"]) for elem in svcoef_label[clabel][:this_num_shots]]
-    # select = [(elem["index"], elem["coef"]) for elem in svcoef[:num_shots]]
     return select
 
 def sv_select_systematic_sampling(svcoef:list, num_shots:int):
@@ -164,4 +140,55 @@ def sv_select_balanced_systematic_sampling(svcoef:list, num_shots:int):
             break
     select.sort(key=lambda x: x[1])
     return select
-    
+
+# Yifei: add the error sampling weights to the original selection algorithm
+def sv_select_systematic_sampling_renew(svcoef:list, num_shots:int, error_idx:list, temperature=2):
+    '''
+    Select num_shots samples from their svm coefficient info
+        with the strategy of systematic sampling.
+    Args:
+        svcoef:List[dict]. Key = "index" denotes te item id.
+            Key = "coef" denotes the coefficient value.
+        num_shots: the number of representative samples to be selected
+        error_idx: index of the wrong prediction samples
+        temperature: the temperature of to enlarge the error weight.
+    Return:
+        select:List[Tuple]. The first element of each tuple
+            denotes the item id. The second element of each
+            tuple denotes the coefficient value.
+    '''
+    svcoef.sort(key=lambda x: x["coef"])
+    candidate = [(s['index'],s['coef'])for s in svcoef]
+    gap = max(int(len(svcoef) / num_shots),1)
+    print(f"num_shots={num_shots}")
+    weight_dict = {i["index"]:0 for i in svcoef}
+    for current in range(0,len(svcoef), gap):
+        print(f"current={current}")
+        weight_dict[svcoef[current]["index"]] = 1
+        # select.append((svcoef[current]["index"], svcoef[current]["coef"]))
+    for e in error_idx:
+        if e in weight_dict:
+            weight_dict[e]+=temperature
+    candidate.sort(key=lambda x: x[0])
+    weights = [weight_dict[c[0]] for c in candidate]
+    weights = [w/sum(weights) for w in weights] #scale to make the total sum 1.0
+    select = np.random.choice(range(len(candidate)), size=num_shots, p=weights, replace=False)
+    select = [candidate[s] for s in select]
+    return select
+
+def sv_select_min_renew(svcoef:list, num_shots:int, weights:list):
+    '''
+    Select num_shots samples from their svm coefficient info
+        with the strategy of maximum absolute value of coef.
+    Args:
+        svcoef:List[dict]. Key = "index" denotes te item id.
+            Key = "coef" denotes the coefficient value.
+        num_shots: the number of representative samples to be selected
+    Return:
+        select:List[Tuple]. The first element of each tuple
+            denotes the item id. The second element of each
+            tuple denotes the coefficient value.
+    '''
+    svcoef.sort(key=lambda x: x["coef"])
+    select = [(elem["index"], elem["coef"]) for elem in svcoef[:num_shots]]
+    return select

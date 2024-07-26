@@ -17,11 +17,10 @@ from helper.utils import load_jsonl_with_keys, file_rank_key
 
 
 def trans_pred_labels(records, dataset):
-    num_err, y_true, y_pred, idx_list = 0, [], [], []
+    num_err, y_true, y_pred = 0, [], []
     for idx, record in enumerate(records):
         err = False
         output = record["output"].strip()
-        idx_list.append(idx)
         if dataset != "car":
             if output.lower().startswith('yes') \
             or output.lower().endswith('yes.') \
@@ -31,7 +30,7 @@ def trans_pred_labels(records, dataset):
             or output.lower().find("answer is 'yes'") >= 0 \
             or output.lower().find("shows a heart disease") >= 0: # heart dataset
                 y_pred.append(1)
-            # elif output.lower().find('no') >= 0 or output.lower().find('avoid') >= 0:
+                
             elif output.lower().startswith('no') \
             or output.lower().endswith('no.') \
             or output.lower().endswith("'no'.") \
@@ -58,9 +57,7 @@ def trans_pred_labels(records, dataset):
             num_err += 1
         else:
             y_true.append(int(record["label"]))
-    return y_true, y_pred, len(records), num_err / max(len(records),1), idx_list
-
-
+    return y_true, y_pred, len(records), num_err / max(len(records),1)
 
 
 def parse_args():
@@ -71,8 +68,7 @@ def parse_args():
     parser.add_argument("--llm", type=str, default=None, help="only parse result by a specific llm")
     parser.add_argument("--method", type=str, default=None, help="cocktail/rule/sv. If empty, the method is tabllm (by default).")
     parser.add_argument("--num_shots", type=int, default=16, help="The number of learning shots. Default = 16")
-    parser.add_argument("--num_examples", type=str, default='all', help="The number of learning examples. Default = 128")
-    parser.add_argument("--additional_rules", type=str, default='True', help='whether evaluate for using additional rules. Default True')
+    parser.add_argument("--num_examples", type=int, default=128, help="The number of learning examples. Default = 128")
     return parser.parse_args()
 
 def add_eval_results(tb, file, dsize, valid, acc, error_rate, bacc, prec, recall, f1):
@@ -91,7 +87,6 @@ def main():
     datasets = TABLLM_BINARY_DATASETS if args.dataset == "all" else [args.dataset]
     cvs = [x for x in range(5)] if args.cv == -1 else [args.cv]
     prefix = f"ours{args.method}" if args.method is not None else "tabllm"
-    additional_rule_part = f"-additionalrule{args.additional_rules}-" if args.method is not None else ''
     tb_results = {
         "file":[],
         "dsize":[],
@@ -123,12 +118,11 @@ def main():
                      if file.startswith(prefix)
                      and file.find(f"-s{args.num_shots}-") >= 0
                      and file.find(f"-e{args.num_examples}-") >= 0
-                     and file.find(additional_rule_part) >= 0
                      and file.endswith(".jsonl") 
                      and (not args.llm or args.llm in file)]
             files.sort(key=lambda x: x[1])
             for file, _ in files:
-                y_true, y_pred, dsize, err_ratio, _ = trans_pred_labels(
+                y_true, y_pred, dsize, err_ratio = trans_pred_labels(
                     records=load_jsonl_with_keys(working_dir, file[:-6], keys=None, silent=True),
                     dataset=dataset
                 )
@@ -143,9 +137,8 @@ def main():
                 else:
                     acc, bacc, prec, recall, f1 = 0., 0., 0., 0., 0.
                     error_rate = 0.
-                # print(len(y_true), len(y_pred), err_ratio, prec, recall, f1)
                 # print(f"{file[:-6]} {dsize} {valid:.3f} {acc:.3f} {error_rate:.3f} {bacc:.3f} {prec:.3f} {recall:.3f} {f1:.3f}")
-                # print(f"{file[:-6]}\t {dsize}\t {valid:.3f}\t {error_rate:.3f}\t {bacc:.3f}\t {f1:.3f}")
+                print(f"{file[:-6]}\t {dsize}\t {valid:.3f}\t {error_rate:.3f}\t {bacc:.3f}\t {f1:.3f}")
                 add_eval_results(tb_results, file[:-6], dsize, valid, acc, error_rate, bacc, prec, recall, f1)
                 add_eval_results(mean_results, file[:-6], dsize, valid, acc, error_rate, bacc, prec, recall, f1)     
         print(f"{mean_results['file'][0].replace('cv0','all')}\t {np.mean(mean_results['dsize']).round(1)}\t {np.mean(mean_results['valid']).round(3)}\t {np.mean(mean_results['error_rate']).round(3)}\t {np.mean(mean_results['bacc']).round(3)}\t {np.mean(mean_results['f1']).round(3)}")
