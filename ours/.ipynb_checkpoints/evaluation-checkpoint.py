@@ -21,8 +21,6 @@ def trans_pred_labels(records, dataset):
     for idx, record in enumerate(records):
         err = False
         output = record["output"].strip()
-        # Jiatong: debug
-        print(f"Output: {output}")
         idx_list.append(idx)
         if dataset != "car":
             if output.lower().startswith('yes') \
@@ -46,34 +44,14 @@ def trans_pred_labels(records, dataset):
                 err = True
                 
         else:
-            if output.lower().startswith('unacceptable') \
-            or output.lower().endswith('unacceptable.') \
-            or output.lower().endswith("'unacceptable'.") \
-            or output.lower().find('answer: unacceptable') >= 0 \
-            or output.lower().find('answer is unacceptable') >= 0 \
-            or output.lower().find("answer is 'unacceptable'") >= 0:
+            if output.startswith("Unacceptable"):
                 y_pred.append(0)
-            elif output.lower().startswith('acceptable') \
-            or output.lower().endswith('acceptable.') \
-            or output.lower().endswith("'acceptable'.") \
-            or output.lower().find('answer: acceptable') >= 0 \
-            or output.lower().find('answer is acceptable') >= 0 \
-            or output.lower().find("answer is 'acceptable'") >= 0:
+            elif output.startswith("Acceptable"):
                 y_pred.append(1)
-            elif output.lower().startswith('very good') \
-            or output.lower().endswith('very good.') \
-            or output.lower().endswith("'very good'.") \
-            or output.lower().find('answer: very good') >= 0 \
-            or output.lower().find('answer is very good') >= 0 \
-            or output.lower().find("answer is 'very good'") >= 0:
-                y_pred.append(3)
-            elif output.lower().startswith('good') \
-            or output.lower().endswith('good.') \
-            or output.lower().endswith("'good'.") \
-            or output.lower().find('answer: good') >= 0 \
-            or output.lower().find('answer is good') >= 0 \
-            or output.lower().find("answer is 'good'") >= 0:
+            elif output.startswith("Good"):
                 y_pred.append(2)
+            elif output.startswith("Very Good"):
+                y_pred.append(3)
             else:
                 err = True
         if err:
@@ -147,8 +125,7 @@ def main():
                      and file.find(f"-e{args.num_examples}-") >= 0
                      and file.find(additional_rule_part) >= 0
                      and file.endswith(".jsonl") 
-                     and (not args.llm or args.llm in file)
-                     and "eval" not in file]
+                     and (not args.llm or args.llm in file)]
             files.sort(key=lambda x: x[1])
             for file, _ in files:
                 y_true, y_pred, dsize, err_ratio, _ = trans_pred_labels(

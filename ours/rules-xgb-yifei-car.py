@@ -88,9 +88,10 @@ def load_training_data(data_dir:str, dataset:str, cv:int, task_instruction:dict,
     columns = list(data.columns)
     notes = []
     is_train = True if usage == "train" else False
-    answer_cond = answer_choices if usage == "train" else answer_requirement
+    # Jiatong: Add parameter answer_requirement to serialize_by_tabllm
+    answer_cond = answer_choices # if usage == "train" else answer_requirement
     for row in data.itertuples(index=False):
-        notes.append((serialize_by_tabllm(tuple(row), columns, question, answer_cond, is_train=is_train),
+        notes.append((serialize_by_tabllm(tuple(row), columns, question, answer_cond, is_train=is_train, answer_requirement = answer_requirement),
                       row[-1]))
     
     # load raw features
@@ -180,20 +181,28 @@ def modelling_entropy(features:pd.DataFrame, label: pd.DataFrame, task_type:str 
     group_ids = model.get_booster().predict(dtrain, iteration_range = (0,1), pred_leaf=True)
 
     if task_type == "binary":
-        pred_proba_show = predictions_proba[:,1]
+        extracted_train_info = [
+                {
+                    "index": int(i), 
+                    "label": int(label[i]), 
+                    "coef": float(xg_results[0]),
+                    "group_id": int(xg_results[1]),
+                    "pred_proba": float(xg_results[2])
+                } 
+                for i, xg_results in enumerate(zip(entropy, group_ids, predictions_proba[:,1]))
+            ]
     else:
-        pred_proba_show = predictions_proba
-
-    extracted_train_info = [
-            {
-                "index": int(i), 
-                "label": int(label[i]), 
-                "coef": float(xg_results[0]),
-                "group_id": int(xg_results[1]),
-                "pred_proba": float(xg_results[2])
-            } 
-            for i, xg_results in enumerate(zip(entropy, group_ids, pred_proba_show))
-        ]
+        extracted_train_info = [
+                {
+                    "index": int(i), 
+                    "label": int(label[i]), 
+                    "coef": float(xg_results[0]),
+                    "group_id": int(xg_results[1]),
+                    "pred_proba": [float(p) for p in xg_results[2]]
+                } 
+                for i, xg_results in enumerate(zip(entropy, group_ids[:,0], predictions_proba))
+            ]
+        
     return extracted_train_info
 
 def grouping_with_llm(train_info: list, train_notes:list, trend_cmd:str, sum_cmd:str, llm_model:str = "gpt-4o-mini"):
@@ -226,8 +235,8 @@ def grouping_with_llm(train_info: list, train_notes:list, trend_cmd:str, sum_cmd
         batch_prompts.append({
             'cmd': 'trend',
             'input': prompt,
-            'num_pos': num_pos,
-            'num_neg': num_neg,
+            'num_pos': num_pos, # Invalid when dataset = "car"
+            'num_neg': num_neg, # Invalid when dataset = "car"
             'sample_indices': [elem['index'] for elem in current_group]
         })
 
@@ -332,6 +341,7 @@ def boost_grouping(train_info:list, meta_rule:str, train_notes:list, train_eval_
         dataset = dataset
     )
     prec, recall, f1, _ = precision_recall_fscore_support(y_true, y_pred, average=average_method)
+    print(f"error_ratio = {err_ratio}")
     print(f"At the current step, f1: {f1}")
     import pickle
     if not os.path.exists('eval'):
@@ -364,7 +374,7 @@ def boost_grouping(train_info:list, meta_rule:str, train_notes:list, train_eval_
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default="../../datasets_serialized", help="name of dataset to process.")
+    parser.add_argument("--data_dir", type=str, default="./datasets_serialized", help="name of dataset to process.")
     parser.add_argument("--dataset", type=str, required=True, help="name of dataset to process If dataset = all, then run for all binary tabular datasets.")
     parser.add_argument("--cv", type=int, default=0, help="cross validation number If cv = -1, then run for all cross validation datasets.")
     parser.add_argument("--num_examples", type=str, default='128', help="number of training examples")
@@ -385,7 +395,6 @@ def main():
     for dataset in datasets:
         task_type = "multi" if dataset == "car" else "binary"
         num_class = 4 if dataset == "car" else 2
-        
         for this_cv in cvs:
         # load training data w.r.t dataset&cv&num_examples
             raw_fts, norm_fts, label, train_notes = load_training_data(
