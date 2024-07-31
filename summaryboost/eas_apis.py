@@ -12,21 +12,33 @@
 import os
 import json
 import requests
+from ours.helper.utils import load_jsonl_with_keys
 
 
-def init_eas_service():
-    with open("eas_services.jsonl", 'r') as file:
-        services = [json.loads(tmp) for tmp in file.readlines()]
-        # services = tmp["services"]
+def init_eas_service(data_dir, filename):
+    services = load_jsonl_with_keys(data_dir=data_dir, filename=filename, keys=None)
     models = []
     for service in services:
         model, endpoint, token, seqlen = service["model"], service["endpoint"], service["token"], service["seqlen"]
         if not "offline" in model:
-            os.environ[f"{model}_ENDPOINT"] = endpoint 
-            os.environ[f"{model}_TOKEN"] = token 
+            os.environ[f"{model}_ENDPOINT"] = endpoint
+            os.environ[f"{model}_TOKEN"] = token
             os.environ[f"{model}_SEQLEN"] = str(seqlen)
             models.append(model)
     print(f"Init {len(models)} eas services: {models}")
+# def init_eas_service():
+#     with open("eas_services.jsonl", 'r') as file:
+#         services = [json.loads(tmp) for tmp in file.readlines()]
+#
+#     models = []
+#     for service in services:
+#         model, endpoint, token, seqlen = service["model"], service["endpoint"], service["token"], service["seqlen"]
+#         if not "offline" in model:
+#             os.environ[f"{model}_ENDPOINT"] = endpoint
+#             os.environ[f"{model}_TOKEN"] = token
+#             os.environ[f"{model}_SEQLEN"] = str(seqlen)
+#             models.append(model)
+#     print(f"Init {len(models)} eas services: {models}")
 
 
 def invoke_eas(prompt: dict,
@@ -42,7 +54,7 @@ def invoke_eas(prompt: dict,
                presence_penalty: float = 0.,
                lang: str = "English") -> dict:
     """ Invoking LLM EAS service for single-turn chat.
-    The query to LLM is specified in prompt[input_col], and the response should be written to 
+    The query to LLM is specified in prompt[input_col], and the response should be written to
     prompt[output_col]. Finally, the appended prompt dict is returned.
     """
     try:
@@ -51,15 +63,12 @@ def invoke_eas(prompt: dict,
         seqlen = int(os.environ.get(f"{model}_SEQLEN"))
     except:
         raise RuntimeError("EAS service of {model} not found")
-    
+
     headers = {
         "Authorization": token,
     }
-    print(prompt)
-    if type(prompt) == str:
-        est_input_tokens = len(prompt) if lang == "Chinese" else len(prompt) // 4
-    elif type(prompt) == dict:
-        est_input_tokens = len(prompt[input_col]) if lang == "Chinese" else len(prompt[input_col]) // 4
+
+    est_input_tokens = len(prompt[input_col]) if lang == "Chinese" else len(prompt[input_col]) // 4
 
     pload = {
         "prompt": prompt[input_col],
@@ -79,7 +88,7 @@ def invoke_eas(prompt: dict,
 
     for retry in range(3):
         try:
-            response = requests.post(endpoint, headers=headers, json=pload, stream=False, timeout=600)
+            response = requests.post(endpoint, headers=headers, json=pload, stream=False, timeout=12000)
             data = json.loads(response.content)
             prompt[output_col] = data["response"]
             break
@@ -96,5 +105,5 @@ def invoke_eas(prompt: dict,
                 print("Response:", response.content)
                 prompt[output_col] = "Error: runtime error."
                 print()
-                
+
     return prompt

@@ -8,12 +8,13 @@ from tqdm import tqdm
 import random
 from functools import partial
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from eas_apis import init_eas_service, invoke_eas
+from eas_apis import init_eas_service,invoke_eas
+# from ours.llm_apis.eas_apis import init_eas_service
 import pickle
 import numpy as np
 client = OpenAI()
-model = 'gpt-3.5-turbo'
-# model = 'llama3-8b'
+init_eas_service(data_dir="./ours/llm_apis", filename='eas_services')
+
 
 def my_metrics(y_true, y_pred, print_result=False):
 # This is borrowed from renjun
@@ -50,38 +51,49 @@ def Summary(X,y,shot=4):
     r = random.sample(range(len(X)), shot)
     X_s = [X[i] for i in r]
     y_s = [y[i] for i in r]
-    return 'Example: '.join([X_s[i] + '\nPrediction: '+str(y_s[i])+'\n' for i in range(len(X_s))])
+    return 'Example: '.join([X_s[i] + '\nAnswer: '+str(y_s[i])+'\n' for i in range(len(X_s))])
 
-def Original(X_train,y_train, X_test, y_test, shot, metadata,description,ending,question):
+def Original(X_train,y_train, X_test, y_test, shot, metadata,description,ending,question,model,y_dict):
     sample = Summary(X_train, y_train,shot)
-    error_rate, f1_rate, error_list = error_cal(sample, X_test, y_test, description, metadata,  ending, question)
+    error_rate, f1_rate, error_list = error_cal(sample, X_test, y_test, description, metadata,  ending, question, model,y_dict)
     print(f'final error rate: {error_rate}')
     print(f'final f1 rate: {f1_rate}')
-    return error_rate, error_list
+    return error_rate, error_list, f1_rate
 def DataPreprocessor(file_address):
-    df = pd.read_csv(file_address)
-    ndf = df.to_numpy()
-    col = df.columns
-    y = df[col[-1]]
-    text = []
-    for r in ndf:
-        text.append('\t'.join([col[i]+': '+str(r[i]) for i in range(len(r)-1)])) #add threshold
-    return text,y
+    if file_address.endswith('.csv'):
+        df = pd.read_csv(file_address)
+        ndf = df.to_numpy()
+        col = df.columns
+        y = df[col[-1]]
+        text = []
+        for r in ndf:
+            text.append('\t'.join([col[i]+': '+str(r[i]) for i in range(len(r)-1)])) #add threshold
+        return text,y
+    else:
+        examples = [json.loads(line.strip('\n')) for line in open(file_address).readlines()]
+        rows = [e['row']for e in examples]
+        cols = [e['column'] for e in examples]
+        y = [r[-1] for r in rows]
+        text = []
+        for col,r in zip(cols,rows):
+            text.append('\t'.join([col[i] + ': ' + str(r[i]) for i in range(len(r) - 1)]))  # add threshold
+        return text, y
 
-def error_cal(summary, X, y, description, metadata, ending, question):
+def error_cal(summary, X, y, description, metadata, ending, question, model,y_dict):
     error = 0
     elist = []
     a_list = []
     prompts = []
     results = []
+    candidates = '/'.join(list(y_dict.keys()))
     for k,query in tqdm(enumerate(X)):
-        prompt = f"{description}\n{metadata}\nExample: {summary}\nNow here's the question: {query}\n{question}\n{ending}"
+        prompt = f"{description}\n{metadata}\n###\n[FEW-SHOT EXAMPLES START]\n{summary}\n[FEW-SHOT EXAMPLES END]\n###\n[CURRENT QUESTION START]\nNow here's the question: {query}\n{question}\n{ending}\nAnswer: <xxx, {candidates}>"
         prompts.append(prompt)
         if model == 'gpt-3.5-turbo':
             s = generate(prompt)
             results.append(s)
     if model != 'gpt-3.5-turbo':
-        results = generate_osllm_batch(prompts)
+        results = generate_osllm_batch(prompts,model,num_threads=16)
     for s in results:
         # try:
         #     answer = s
@@ -92,7 +104,7 @@ def error_cal(summary, X, y, description, metadata, ending, question):
             elif s.lower().find('no')>=0 or s.lower().find('false')>=0:
                 answer = False
             else:
-                print(s)
+                # print(s)
                 answer='Not sure'
         else:
             if s.lower().find('unacceptable')>=0:
@@ -104,7 +116,7 @@ def error_cal(summary, X, y, description, metadata, ending, question):
             elif s.lower().find('very good')>=0:
                 answer = 3
             else:
-                print(s)
+                # print(s)
                 answer = -1
         a_list.append(answer)
         if str(answer)!=str(y[k]):
@@ -128,7 +140,7 @@ def generate(prompt):
         return response.choices[0].message.content
     except Exception as e:
         print(e)
-def generate_osllm_batch(prompts, num_threads=16, max_tokens=4096, temperature=0.2, num_invokes=0):
+def generate_osllm_batch(prompts, model, num_threads=16, max_tokens=4096, temperature=0.2, num_invokes=0):
     """ parallel invoke llm and sink results into a disk file {outfile}.jsonl
 
     Args:
@@ -155,7 +167,6 @@ def generate_osllm_batch(prompts, num_threads=16, max_tokens=4096, temperature=0
         temperature=temperature,
         max_new_tokens=max_tokens,
     )
-    print(model)
     results = []
     with ThreadPoolExecutor(max_workers=num_threads) as executor:
         futures = [executor.submit(invoke_func_with_defaults, prompt) for prompt in prompts]
@@ -172,31 +183,50 @@ if __name__ == '__main__':
     description_data = {i.split(':')[0]: i.split(':')[1].strip('\n').lstrip(' ') for i in description_data}
     parser = argparse.ArgumentParser(description='Some arguments')
     parser.add_argument('--portion', type=str, default='32', choices=['16','32', '64', '128', '256', 'all'])
-    parser.add_argument('--category', type=str, default='diabetes',
+    parser.add_argument('--category', type=str, default='bank',
                         choices=['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income',
                                  'jungle'])
+    parser.add_argument('--model', type=str, default='mistral-7b',)
     parser.add_argument('--shot', type=int, default=16)
+    parser.add_argument("--shuffled", type=str, default='False', help='whether evaluate for shuffled version of testing set. Default False')
     args = parser.parse_args()
     portion = args.portion
     shot = args.shot
+    model = args.model
+    # model = 'gpt-3.5-turbo'
+    # model = 'mistral-7b'
+    # model = 'llama3-8b'
+    print(f'Using the model: {model}')
+    print(f'Using the portion: {portion}')
     for category in [args.category]:
+    # for category in ['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income']:
+        print(f'category: {category}')
+        f = 0.
         for j in range(5):
             print(j)
             metadata = description_data[category]
             description, y_dict, summaryprompt, ending, question = read_meta(meta_info[category])
-            if category not in ['income', 'jungle', 'calhousing', 'bank']:
-                test_file = os.path.join(file_folder,
-                                           f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test.csv')
+            if args.shuffled=='False':
+                if category not in ['income', 'jungle', 'calhousing', 'bank']:
+                    test_file = os.path.join(file_folder,
+                                               f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test.csv')
+                else:
+                    test_file = os.path.join(file_folder,
+                                               f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000.csv')
             else:
-                test_file = os.path.join(file_folder,
-                                           f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000.csv')
-
+                if category not in ['income', 'jungle', 'calhousing', 'bank']:
+                    test_file = os.path.join(file_folder,
+                                             f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_shuffled.jsonl')
+                else:
+                    test_file = os.path.join(file_folder,
+                                             f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000_shuffled.jsonl')
             X_test,y_test = DataPreprocessor(test_file)
             X_train,y_train = DataPreprocessor(os.path.join(file_folder,category,f'cv{str(j)}',f'{category}_tabllm_cv{str(j)}train_{portion}.csv'))
-            error_rate, error_list = Original(X_train, y_train, X_test, y_test, shot, metadata, description, ending, question)
+            error_rate, error_list, f1 = Original(X_train, y_train, X_test, y_test, shot, metadata, description, ending, question, model,y_dict)
+            f+=f1
             output_address = os.path.join(file_folder,
-                                          f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}.pkl')
+                                          f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_shuffled.pkl')
             with open(output_address, 'wb') as f:
                 pickle.dump({'error_rate': error_rate, 'error_list': error_list}, f, protocol=1)
-
+        print(f'average f1:{f/5.0}')
         # answers = Preprocessor(X,y,meta_data[category],y_dict)
