@@ -201,7 +201,7 @@ if __name__ == '__main__':
     for category in [args.category]:
     # for category in ['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income']:
         print(f'category: {category}')
-        f = 0.
+        f_score = 0.
         for j in range(5):
             print(j)
             metadata = description_data[category]
@@ -223,10 +223,10 @@ if __name__ == '__main__':
             X_test,y_test = DataPreprocessor(test_file)
             X_train,y_train = DataPreprocessor(os.path.join(file_folder,category,f'cv{str(j)}',f'{category}_tabllm_cv{str(j)}train_{portion}.csv'))
             error_rate, error_list, f1 = Original(X_train, y_train, X_test, y_test, shot, metadata, description, ending, question, model,y_dict)
-            f+=f1
+            f_score+=f1
             output_address = os.path.join(file_folder,
                                           f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_shuffled.pkl')
             with open(output_address, 'wb') as f:
                 pickle.dump({'error_rate': error_rate, 'error_list': error_list}, f, protocol=1)
-        print(f'average f1:{f/5.0}')
+        print(f'average f1:{f_score/5.0}')
         # answers = Preprocessor(X,y,meta_data[category],y_dict)
