@@ -87,7 +87,7 @@ def trans_pred_labels(records, dataset):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default="./datasets_serialized", help="name of dataset to process")
+    parser.add_argument("--data_dir", type=str, default="../../datasets_serialized", help="name of dataset to process")
     parser.add_argument("--dataset", type=str, required=True, help="name of dataset to process")
     parser.add_argument("--cv", type=int, default=0, help="cross validation number")
     parser.add_argument("--llm", type=str, default=None, help="only parse result by a specific llm")
@@ -95,6 +95,7 @@ def parse_args():
     parser.add_argument("--num_shots", type=int, default=16, help="The number of learning shots. Default = 16")
     parser.add_argument("--num_examples", type=str, default='all', help="The number of learning examples. Default = 128")
     parser.add_argument("--additional_rules", type=str, default='True', help='whether evaluate for using additional rules. Default True')
+    parser.add_argument("--shuffled", type=str, default='False', help='whether evaluate for shuffled version of testing set. Default False')
     return parser.parse_args()
 
 def add_eval_results(tb, file, dsize, valid, acc, error_rate, bacc, prec, recall, f1):
@@ -149,6 +150,8 @@ def main():
                      and file.endswith(".jsonl") 
                      and (not args.llm or args.llm in file)
                      and "eval" not in file]
+            if args.shuffled != "False":
+                files = [f for f in files if f[0].find('shuffle')>=0]
             files.sort(key=lambda x: x[1])
             for file, _ in files:
                 y_true, y_pred, dsize, err_ratio, _ = trans_pred_labels(

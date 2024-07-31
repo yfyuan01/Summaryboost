@@ -1,0 +1,345 @@
+{"column": ["Buying price", "Trunk size", "Maintenance costs", "Safety score", "Doors", "Persons", "label"], "row": ["high", "medium", "very high", "medium", "five or more", "two", 0]}
+{"column": ["Buying price", "Safety score", "Persons", "Trunk size", "Maintenance costs", "Doors", "label"], "row": ["high", "low", "more than four", "small", "medium", "four", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Buying price", "Persons", "Maintenance costs", "label"], "row": ["three", "high", "small", "very high", "more than four", "high", 0]}
+{"column": ["Maintenance costs", "Buying price", "Safety score", "Doors", "Trunk size", "Persons", "label"], "row": ["medium", "very high", "medium", "five or more", "medium", "two", 0]}
+{"column": ["Buying price", "Safety score", "Maintenance costs", "Doors", "Persons", "Trunk size", "label"], "row": ["high", "high", "low", "five or more", "two", "big", 0]}
+{"column": ["Trunk size", "Doors", "Persons", "Buying price", "Maintenance costs", "Safety score", "label"], "row": ["small", "four", "more than four", "medium", "low", "low", 0]}
+{"column": ["Persons", "Doors", "Trunk size", "Safety score", "Maintenance costs", "Buying price", "label"], "row": ["more than four", "three", "medium", "medium", "high", "low", 1]}
+{"column": ["Persons", "Buying price", "Safety score", "Trunk size", "Doors", "Maintenance costs", "label"], "row": ["four", "high", "low", "big", "four", "high", 0]}
+{"column": ["Trunk size", "Buying price", "Persons", "Doors", "Safety score", "Maintenance costs", "label"], "row": ["big", "medium", "two", "three", "low", "medium", 0]}
+{"column": ["Persons", "Trunk size", "Doors", "Maintenance costs", "Safety score", "Buying price", "label"], "row": ["four", "medium", "three", "very high", "high", "high", 0]}
+{"column": ["Buying price", "Trunk size", "Doors", "Safety score", "Maintenance costs", "Persons", "label"], "row": ["very high", "big", "four", "low", "low", "more than four", 0]}
+{"column": ["Safety score", "Buying price", "Maintenance costs", "Persons", "Trunk size", "Doors", "label"], "row": ["low", "low", "medium", "more than four", "small", "four", 0]}
+{"column": ["Doors", "Trunk size", "Persons", "Safety score", "Maintenance costs", "Buying price", "label"], "row": ["five or more", "big", "two", "medium", "high", "medium", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Persons", "Buying price", "Safety score", "label"], "row": ["big", "high", "three", "four", "very high", "medium", 0]}
+{"column": ["Doors", "Buying price", "Safety score", "Persons", "Trunk size", "Maintenance costs", "label"], "row": ["two", "medium", "medium", "four", "small", "low", 1]}
+{"column": ["Trunk size", "Maintenance costs", "Buying price", "Doors", "Persons", "Safety score", "label"], "row": ["small", "medium", "very high", "five or more", "four", "low", 0]}
+{"column": ["Safety score", "Persons", "Buying price", "Maintenance costs", "Doors", "Trunk size", "label"], "row": ["high", "four", "very high", "very high", "three", "big", 0]}
+{"column": ["Persons", "Buying price", "Maintenance costs", "Safety score", "Doors", "Trunk size", "label"], "row": ["two", "high", "low", "medium", "four", "big", 0]}
+{"column": ["Persons", "Buying price", "Trunk size", "Maintenance costs", "Doors", "Safety score", "label"], "row": ["more than four", "high", "medium", "high", "two", "high", 1]}
+{"column": ["Buying price", "Safety score", "Trunk size", "Persons", "Doors", "Maintenance costs", "label"], "row": ["low", "low", "small", "four", "three", "low", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Persons", "Doors", "Buying price", "Safety score", "label"], "row": ["medium", "high", "two", "four", "high", "medium", 0]}
+{"column": ["Doors", "Buying price", "Trunk size", "Maintenance costs", "Persons", "Safety score", "label"], "row": ["three", "very high", "big", "very high", "two", "low", 0]}
+{"column": ["Maintenance costs", "Doors", "Trunk size", "Safety score", "Buying price", "Persons", "label"], "row": ["very high", "two", "small", "medium", "medium", "more than four", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Safety score", "Maintenance costs", "Trunk size", "label"], "row": ["more than four", "four", "high", "medium", "low", "medium", 1]}
+{"column": ["Trunk size", "Maintenance costs", "Persons", "Safety score", "Buying price", "Doors", "label"], "row": ["big", "high", "two", "medium", "low", "two", 0]}
+{"column": ["Buying price", "Doors", "Persons", "Maintenance costs", "Safety score", "Trunk size", "label"], "row": ["high", "two", "more than four", "very high", "low", "medium", 0]}
+{"column": ["Safety score", "Maintenance costs", "Doors", "Trunk size", "Persons", "Buying price", "label"], "row": ["low", "medium", "five or more", "medium", "more than four", "high", 0]}
+{"column": ["Maintenance costs", "Persons", "Buying price", "Doors", "Trunk size", "Safety score", "label"], "row": ["medium", "more than four", "high", "four", "small", "medium", 0]}
+{"column": ["Trunk size", "Persons", "Maintenance costs", "Doors", "Buying price", "Safety score", "label"], "row": ["medium", "two", "medium", "five or more", "low", "medium", 0]}
+{"column": ["Doors", "Persons", "Trunk size", "Buying price", "Safety score", "Maintenance costs", "label"], "row": ["two", "more than four", "big", "high", "low", "very high", 0]}
+{"column": ["Maintenance costs", "Persons", "Safety score", "Buying price", "Doors", "Trunk size", "label"], "row": ["very high", "more than four", "low", "very high", "four", "big", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Trunk size", "Safety score", "Maintenance costs", "label"], "row": ["two", "three", "low", "big", "high", "very high", 0]}
+{"column": ["Doors", "Safety score", "Persons", "Maintenance costs", "Trunk size", "Buying price", "label"], "row": ["three", "high", "more than four", "medium", "medium", "high", 1]}
+{"column": ["Persons", "Maintenance costs", "Doors", "Buying price", "Trunk size", "Safety score", "label"], "row": ["more than four", "medium", "five or more", "medium", "big", "medium", 1]}
+{"column": ["Safety score", "Buying price", "Doors", "Maintenance costs", "Trunk size", "Persons", "label"], "row": ["high", "low", "four", "very high", "small", "four", 1]}
+{"column": ["Persons", "Doors", "Maintenance costs", "Trunk size", "Buying price", "Safety score", "label"], "row": ["four", "three", "low", "small", "very high", "medium", 0]}
+{"column": ["Buying price", "Maintenance costs", "Safety score", "Doors", "Persons", "Trunk size", "label"], "row": ["high", "very high", "low", "four", "four", "big", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Buying price", "Doors", "Safety score", "Persons", "label"], "row": ["small", "medium", "medium", "three", "low", "more than four", 0]}
+{"column": ["Safety score", "Buying price", "Doors", "Maintenance costs", "Persons", "Trunk size", "label"], "row": ["medium", "medium", "five or more", "very high", "two", "medium", 0]}
+{"column": ["Maintenance costs", "Doors", "Persons", "Safety score", "Buying price", "Trunk size", "label"], "row": ["low", "two", "two", "medium", "low", "small", 0]}
+{"column": ["Doors", "Maintenance costs", "Buying price", "Trunk size", "Persons", "Safety score", "label"], "row": ["five or more", "very high", "medium", "big", "two", "medium", 0]}
+{"column": ["Persons", "Maintenance costs", "Safety score", "Trunk size", "Buying price", "Doors", "label"], "row": ["four", "high", "medium", "big", "low", "four", 1]}
+{"column": ["Safety score", "Persons", "Buying price", "Trunk size", "Doors", "Maintenance costs", "label"], "row": ["high", "two", "low", "big", "five or more", "very high", 0]}
+{"column": ["Maintenance costs", "Safety score", "Doors", "Buying price", "Persons", "Trunk size", "label"], "row": ["high", "low", "five or more", "medium", "more than four", "small", 0]}
+{"column": ["Safety score", "Persons", "Buying price", "Trunk size", "Maintenance costs", "Doors", "label"], "row": ["high", "four", "low", "big", "very high", "three", 1]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Trunk size", "Safety score", "Doors", "label"], "row": ["four", "medium", "low", "medium", "medium", "two", 1]}
+{"column": ["Buying price", "Persons", "Trunk size", "Safety score", "Maintenance costs", "Doors", "label"], "row": ["very high", "more than four", "big", "medium", "high", "three", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Safety score", "Maintenance costs", "Trunk size", "label"], "row": ["two", "five or more", "high", "medium", "high", "big", 0]}
+{"column": ["Maintenance costs", "Buying price", "Persons", "Safety score", "Doors", "Trunk size", "label"], "row": ["high", "low", "two", "high", "four", "big", 0]}
+{"column": ["Persons", "Safety score", "Maintenance costs", "Doors", "Buying price", "Trunk size", "label"], "row": ["two", "low", "medium", "five or more", "very high", "big", 0]}
+{"column": ["Safety score", "Maintenance costs", "Doors", "Persons", "Buying price", "Trunk size", "label"], "row": ["high", "very high", "four", "two", "very high", "small", 0]}
+{"column": ["Trunk size", "Buying price", "Maintenance costs", "Persons", "Doors", "Safety score", "label"], "row": ["big", "very high", "high", "more than four", "four", "high", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Buying price", "Persons", "Maintenance costs", "label"], "row": ["five or more", "low", "big", "very high", "two", "very high", 0]}
+{"column": ["Doors", "Trunk size", "Maintenance costs", "Safety score", "Persons", "Buying price", "label"], "row": ["four", "medium", "very high", "medium", "more than four", "medium", 1]}
+{"column": ["Safety score", "Doors", "Maintenance costs", "Trunk size", "Persons", "Buying price", "label"], "row": ["medium", "four", "medium", "big", "two", "high", 0]}
+{"column": ["Buying price", "Safety score", "Doors", "Trunk size", "Persons", "Maintenance costs", "label"], "row": ["high", "high", "three", "small", "two", "low", 0]}
+{"column": ["Maintenance costs", "Safety score", "Persons", "Trunk size", "Buying price", "Doors", "label"], "row": ["high", "medium", "four", "medium", "low", "two", 1]}
+{"column": ["Maintenance costs", "Trunk size", "Safety score", "Persons", "Doors", "Buying price", "label"], "row": ["medium", "big", "high", "four", "three", "very high", 1]}
+{"column": ["Doors", "Buying price", "Safety score", "Maintenance costs", "Persons", "Trunk size", "label"], "row": ["two", "high", "low", "low", "two", "big", 0]}
+{"column": ["Buying price", "Safety score", "Doors", "Trunk size", "Persons", "Maintenance costs", "label"], "row": ["medium", "high", "five or more", "medium", "more than four", "high", 1]}
+{"column": ["Persons", "Safety score", "Maintenance costs", "Buying price", "Doors", "Trunk size", "label"], "row": ["four", "medium", "low", "very high", "four", "big", 1]}
+{"column": ["Maintenance costs", "Buying price", "Doors", "Persons", "Safety score", "Trunk size", "label"], "row": ["low", "medium", "four", "more than four", "low", "big", 0]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Safety score", "Doors", "Trunk size", "label"], "row": ["four", "medium", "high", "low", "three", "medium", 0]}
+{"column": ["Doors", "Safety score", "Persons", "Maintenance costs", "Trunk size", "Buying price", "label"], "row": ["three", "medium", "two", "low", "big", "medium", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Safety score", "Doors", "Persons", "Buying price", "label"], "row": ["medium", "medium", "medium", "three", "two", "low", 0]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Doors", "Trunk size", "Safety score", "label"], "row": ["four", "very high", "medium", "four", "big", "low", 0]}
+{"column": ["Doors", "Buying price", "Maintenance costs", "Persons", "Safety score", "Trunk size", "label"], "row": ["two", "high", "very high", "four", "medium", "big", 0]}
+{"column": ["Safety score", "Buying price", "Persons", "Trunk size", "Maintenance costs", "Doors", "label"], "row": ["high", "high", "more than four", "small", "low", "five or more", 1]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Persons", "Safety score", "Buying price", "label"], "row": ["medium", "very high", "three", "two", "low", "high", 0]}
+{"column": ["Buying price", "Trunk size", "Maintenance costs", "Persons", "Doors", "Safety score", "label"], "row": ["medium", "big", "high", "two", "three", "high", 0]}
+{"column": ["Maintenance costs", "Safety score", "Persons", "Buying price", "Doors", "Trunk size", "label"], "row": ["medium", "low", "two", "very high", "four", "small", 0]}
+{"column": ["Trunk size", "Doors", "Buying price", "Maintenance costs", "Safety score", "Persons", "label"], "row": ["medium", "two", "low", "medium", "high", "four", 2]}
+{"column": ["Doors", "Trunk size", "Buying price", "Persons", "Safety score", "Maintenance costs", "label"], "row": ["two", "small", "high", "four", "low", "very high", 0]}
+{"column": ["Buying price", "Persons", "Safety score", "Maintenance costs", "Doors", "Trunk size", "label"], "row": ["high", "four", "low", "medium", "three", "small", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Persons", "Safety score", "Doors", "Buying price", "label"], "row": ["small", "low", "more than four", "low", "two", "very high", 0]}
+{"column": ["Safety score", "Buying price", "Trunk size", "Doors", "Maintenance costs", "Persons", "label"], "row": ["medium", "very high", "big", "three", "high", "two", 0]}
+{"column": ["Maintenance costs", "Safety score", "Trunk size", "Buying price", "Persons", "Doors", "label"], "row": ["low", "low", "big", "medium", "two", "five or more", 0]}
+{"column": ["Safety score", "Buying price", "Maintenance costs", "Trunk size", "Persons", "Doors", "label"], "row": ["high", "high", "very high", "medium", "four", "two", 0]}
+{"column": ["Persons", "Trunk size", "Doors", "Safety score", "Maintenance costs", "Buying price", "label"], "row": ["two", "medium", "two", "medium", "low", "medium", 0]}
+{"column": ["Trunk size", "Safety score", "Maintenance costs", "Doors", "Persons", "Buying price", "label"], "row": ["big", "medium", "low", "five or more", "more than four", "low", 2]}
+{"column": ["Persons", "Buying price", "Safety score", "Trunk size", "Maintenance costs", "Doors", "label"], "row": ["two", "very high", "medium", "small", "very high", "two", 0]}
+{"column": ["Safety score", "Persons", "Maintenance costs", "Buying price", "Doors", "Trunk size", "label"], "row": ["high", "two", "high", "high", "four", "small", 0]}
+{"column": ["Trunk size", "Persons", "Buying price", "Safety score", "Doors", "Maintenance costs", "label"], "row": ["medium", "two", "high", "medium", "two", "medium", 0]}
+{"column": ["Buying price", "Persons", "Maintenance costs", "Safety score", "Trunk size", "Doors", "label"], "row": ["low", "four", "medium", "medium", "small", "three", 1]}
+{"column": ["Trunk size", "Safety score", "Buying price", "Doors", "Persons", "Maintenance costs", "label"], "row": ["big", "medium", "low", "two", "four", "medium", 2]}
+{"column": ["Doors", "Maintenance costs", "Buying price", "Safety score", "Persons", "Trunk size", "label"], "row": ["five or more", "high", "high", "medium", "more than four", "big", 1]}
+{"column": ["Safety score", "Buying price", "Doors", "Trunk size", "Maintenance costs", "Persons", "label"], "row": ["low", "high", "two", "big", "high", "two", 0]}
+{"column": ["Trunk size", "Doors", "Buying price", "Safety score", "Persons", "Maintenance costs", "label"], "row": ["medium", "five or more", "medium", "high", "two", "very high", 0]}
+{"column": ["Doors", "Persons", "Maintenance costs", "Safety score", "Trunk size", "Buying price", "label"], "row": ["five or more", "more than four", "medium", "medium", "small", "very high", 0]}
+{"column": ["Trunk size", "Safety score", "Maintenance costs", "Buying price", "Doors", "Persons", "label"], "row": ["big", "high", "very high", "low", "four", "two", 0]}
+{"column": ["Trunk size", "Doors", "Maintenance costs", "Buying price", "Persons", "Safety score", "label"], "row": ["big", "two", "medium", "high", "two", "medium", 0]}
+{"column": ["Persons", "Buying price", "Trunk size", "Safety score", "Doors", "Maintenance costs", "label"], "row": ["more than four", "very high", "medium", "medium", "two", "medium", 0]}
+{"column": ["Trunk size", "Buying price", "Maintenance costs", "Doors", "Safety score", "Persons", "label"], "row": ["small", "low", "medium", "five or more", "low", "four", 0]}
+{"column": ["Buying price", "Persons", "Maintenance costs", "Safety score", "Trunk size", "Doors", "label"], "row": ["high", "four", "medium", "medium", "small", "four", 0]}
+{"column": ["Trunk size", "Doors", "Persons", "Maintenance costs", "Buying price", "Safety score", "label"], "row": ["medium", "three", "two", "very high", "very high", "high", 0]}
+{"column": ["Buying price", "Maintenance costs", "Safety score", "Trunk size", "Doors", "Persons", "label"], "row": ["very high", "low", "medium", "medium", "two", "two", 0]}
+{"column": ["Persons", "Buying price", "Safety score", "Maintenance costs", "Trunk size", "Doors", "label"], "row": ["four", "low", "medium", "low", "medium", "five or more", 2]}
+{"column": ["Safety score", "Trunk size", "Buying price", "Maintenance costs", "Persons", "Doors", "label"], "row": ["high", "medium", "low", "high", "two", "five or more", 0]}
+{"column": ["Persons", "Maintenance costs", "Trunk size", "Doors", "Buying price", "Safety score", "label"], "row": ["four", "very high", "big", "three", "low", "low", 0]}
+{"column": ["Maintenance costs", "Buying price", "Trunk size", "Safety score", "Doors", "Persons", "label"], "row": ["low", "very high", "big", "medium", "three", "more than four", 1]}
+{"column": ["Safety score", "Persons", "Doors", "Trunk size", "Maintenance costs", "Buying price", "label"], "row": ["medium", "two", "four", "medium", "high", "very high", 0]}
+{"column": ["Buying price", "Doors", "Persons", "Safety score", "Maintenance costs", "Trunk size", "label"], "row": ["medium", "five or more", "two", "high", "medium", "medium", 0]}
+{"column": ["Buying price", "Safety score", "Doors", "Trunk size", "Persons", "Maintenance costs", "label"], "row": ["medium", "high", "two", "small", "two", "low", 0]}
+{"column": ["Trunk size", "Safety score", "Maintenance costs", "Persons", "Buying price", "Doors", "label"], "row": ["small", "medium", "high", "two", "high", "two", 0]}
+{"column": ["Maintenance costs", "Safety score", "Persons", "Doors", "Buying price", "Trunk size", "label"], "row": ["very high", "medium", "four", "two", "medium", "small", 0]}
+{"column": ["Doors", "Persons", "Trunk size", "Maintenance costs", "Buying price", "Safety score", "label"], "row": ["five or more", "four", "medium", "high", "low", "high", 3]}
+{"column": ["Buying price", "Persons", "Trunk size", "Safety score", "Maintenance costs", "Doors", "label"], "row": ["medium", "four", "small", "medium", "medium", "four", 1]}
+{"column": ["Trunk size", "Doors", "Persons", "Buying price", "Safety score", "Maintenance costs", "label"], "row": ["small", "five or more", "four", "low", "low", "low", 0]}
+{"column": ["Safety score", "Persons", "Maintenance costs", "Buying price", "Doors", "Trunk size", "label"], "row": ["high", "two", "medium", "medium", "four", "big", 0]}
+{"column": ["Safety score", "Trunk size", "Doors", "Buying price", "Persons", "Maintenance costs", "label"], "row": ["low", "medium", "five or more", "low", "more than four", "low", 0]}
+{"column": ["Buying price", "Trunk size", "Maintenance costs", "Doors", "Safety score", "Persons", "label"], "row": ["very high", "medium", "low", "two", "low", "four", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Persons", "Buying price", "Doors", "Safety score", "label"], "row": ["small", "high", "more than four", "high", "four", "medium", 0]}
+{"column": ["Safety score", "Doors", "Trunk size", "Buying price", "Maintenance costs", "Persons", "label"], "row": ["medium", "three", "small", "medium", "very high", "more than four", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Safety score", "Maintenance costs", "Trunk size", "label"], "row": ["more than four", "three", "medium", "medium", "high", "big", 1]}
+{"column": ["Persons", "Trunk size", "Safety score", "Maintenance costs", "Doors", "Buying price", "label"], "row": ["two", "small", "high", "very high", "four", "medium", 0]}
+{"column": ["Trunk size", "Persons", "Doors", "Safety score", "Maintenance costs", "Buying price", "label"], "row": ["medium", "four", "five or more", "medium", "very high", "medium", 1]}
+{"column": ["Persons", "Trunk size", "Safety score", "Buying price", "Maintenance costs", "Doors", "label"], "row": ["two", "medium", "high", "medium", "very high", "two", 0]}
+{"column": ["Maintenance costs", "Persons", "Doors", "Safety score", "Buying price", "Trunk size", "label"], "row": ["medium", "two", "three", "high", "low", "small", 0]}
+{"column": ["Buying price", "Maintenance costs", "Safety score", "Persons", "Doors", "Trunk size", "label"], "row": ["medium", "medium", "high", "two", "five or more", "small", 0]}
+{"column": ["Safety score", "Persons", "Buying price", "Trunk size", "Doors", "Maintenance costs", "label"], "row": ["high", "four", "high", "medium", "two", "high", 1]}
+{"column": ["Buying price", "Persons", "Doors", "Trunk size", "Safety score", "Maintenance costs", "label"], "row": ["medium", "two", "four", "big", "medium", "low", 0]}
+{"column": ["Doors", "Safety score", "Buying price", "Trunk size", "Maintenance costs", "Persons", "label"], "row": ["four", "high", "medium", "medium", "low", "four", 3]}
+{"column": ["Trunk size", "Persons", "Buying price", "Maintenance costs", "Doors", "Safety score", "label"], "row": ["medium", "four", "medium", "medium", "four", "medium", 1]}
+{"column": ["Maintenance costs", "Trunk size", "Persons", "Buying price", "Safety score", "Doors", "label"], "row": ["very high", "small", "four", "high", "high", "two", 0]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Safety score", "Doors", "Trunk size", "label"], "row": ["more than four", "very high", "low", "medium", "five or more", "medium", 1]}
+{"column": ["Buying price", "Persons", "Doors", "Trunk size", "Safety score", "Maintenance costs", "label"], "row": ["low", "four", "four", "medium", "high", "high", 3]}
+{"column": ["Trunk size", "Maintenance costs", "Safety score", "Doors", "Persons", "Buying price", "label"], "row": ["medium", "low", "high", "two", "two", "very high", 0]}
+{"column": ["Buying price", "Safety score", "Doors", "Persons", "Trunk size", "Maintenance costs", "label"], "row": ["very high", "medium", "five or more", "two", "medium", "very high", 0]}
+{"column": ["Persons", "Safety score", "Maintenance costs", "Doors", "Buying price", "Trunk size", "label"], "row": ["four", "low", "medium", "two", "high", "medium", 0]}
+{"column": ["Buying price", "Persons", "Maintenance costs", "Safety score", "Doors", "Trunk size", "label"], "row": ["medium", "more than four", "low", "high", "three", "small", 2]}
+{"column": ["Buying price", "Doors", "Safety score", "Persons", "Trunk size", "Maintenance costs", "label"], "row": ["medium", "three", "low", "more than four", "big", "high", 0]}
+{"column": ["Buying price", "Doors", "Trunk size", "Maintenance costs", "Persons", "Safety score", "label"], "row": ["very high", "five or more", "small", "high", "four", "low", 0]}
+{"column": ["Doors", "Persons", "Safety score", "Trunk size", "Maintenance costs", "Buying price", "label"], "row": ["two", "four", "medium", "medium", "medium", "high", 0]}
+{"column": ["Safety score", "Maintenance costs", "Trunk size", "Doors", "Buying price", "Persons", "label"], "row": ["high", "very high", "big", "five or more", "medium", "four", 1]}
+{"column": ["Buying price", "Trunk size", "Persons", "Maintenance costs", "Doors", "Safety score", "label"], "row": ["medium", "small", "four", "medium", "two", "high", 1]}
+{"column": ["Buying price", "Doors", "Maintenance costs", "Safety score", "Persons", "Trunk size", "label"], "row": ["very high", "four", "very high", "high", "more than four", "small", 0]}
+{"column": ["Maintenance costs", "Doors", "Persons", "Safety score", "Trunk size", "Buying price", "label"], "row": ["medium", "four", "four", "low", "big", "high", 0]}
+{"column": ["Doors", "Persons", "Buying price", "Trunk size", "Maintenance costs", "Safety score", "label"], "row": ["four", "more than four", "low", "medium", "very high", "high", 1]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Persons", "Safety score", "Buying price", "label"], "row": ["big", "low", "three", "more than four", "medium", "medium", 2]}
+{"column": ["Persons", "Buying price", "Doors", "Safety score", "Maintenance costs", "Trunk size", "label"], "row": ["more than four", "medium", "four", "high", "low", "big", 3]}
+{"column": ["Persons", "Buying price", "Safety score", "Maintenance costs", "Doors", "Trunk size", "label"], "row": ["more than four", "very high", "high", "high", "five or more", "small", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Buying price", "Doors", "Safety score", "Persons", "label"], "row": ["small", "low", "low", "three", "low", "more than four", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Safety score", "Persons", "Buying price", "label"], "row": ["big", "low", "five or more", "medium", "four", "low", 2]}
+{"column": ["Doors", "Buying price", "Maintenance costs", "Safety score", "Persons", "Trunk size", "label"], "row": ["five or more", "high", "high", "high", "more than four", "small", 1]}
+{"column": ["Safety score", "Buying price", "Doors", "Maintenance costs", "Persons", "Trunk size", "label"], "row": ["low", "low", "two", "very high", "four", "big", 0]}
+{"column": ["Safety score", "Doors", "Trunk size", "Buying price", "Maintenance costs", "Persons", "label"], "row": ["low", "three", "small", "high", "low", "four", 0]}
+{"column": ["Safety score", "Maintenance costs", "Doors", "Trunk size", "Buying price", "Persons", "label"], "row": ["high", "low", "five or more", "small", "very high", "four", 1]}
+{"column": ["Maintenance costs", "Doors", "Persons", "Safety score", "Buying price", "Trunk size", "label"], "row": ["very high", "three", "four", "low", "medium", "big", 0]}
+{"column": ["Persons", "Maintenance costs", "Doors", "Trunk size", "Buying price", "Safety score", "label"], "row": ["four", "low", "four", "medium", "low", "medium", 2]}
+{"column": ["Persons", "Safety score", "Maintenance costs", "Trunk size", "Doors", "Buying price", "label"], "row": ["four", "high", "high", "small", "five or more", "very high", 0]}
+{"column": ["Safety score", "Doors", "Trunk size", "Maintenance costs", "Buying price", "Persons", "label"], "row": ["high", "four", "big", "medium", "medium", "more than four", 3]}
+{"column": ["Buying price", "Trunk size", "Safety score", "Maintenance costs", "Doors", "Persons", "label"], "row": ["low", "big", "medium", "very high", "two", "more than four", 1]}
+{"column": ["Maintenance costs", "Buying price", "Safety score", "Persons", "Doors", "Trunk size", "label"], "row": ["medium", "very high", "medium", "more than four", "four", "medium", 1]}
+{"column": ["Buying price", "Safety score", "Trunk size", "Maintenance costs", "Persons", "Doors", "label"], "row": ["medium", "high", "medium", "low", "more than four", "three", 3]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Safety score", "Persons", "Buying price", "label"], "row": ["medium", "very high", "two", "high", "more than four", "high", 0]}
+{"column": ["Persons", "Trunk size", "Buying price", "Safety score", "Maintenance costs", "Doors", "label"], "row": ["four", "big", "high", "medium", "very high", "three", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Safety score", "Trunk size", "Maintenance costs", "label"], "row": ["four", "two", "medium", "low", "small", "high", 0]}
+{"column": ["Safety score", "Maintenance costs", "Doors", "Buying price", "Trunk size", "Persons", "label"], "row": ["medium", "high", "five or more", "high", "small", "four", 0]}
+{"column": ["Trunk size", "Buying price", "Safety score", "Doors", "Maintenance costs", "Persons", "label"], "row": ["small", "medium", "medium", "three", "medium", "more than four", 1]}
+{"column": ["Maintenance costs", "Buying price", "Safety score", "Trunk size", "Doors", "Persons", "label"], "row": ["medium", "high", "low", "small", "three", "two", 0]}
+{"column": ["Safety score", "Maintenance costs", "Buying price", "Persons", "Trunk size", "Doors", "label"], "row": ["high", "high", "low", "more than four", "medium", "two", 1]}
+{"column": ["Buying price", "Persons", "Maintenance costs", "Trunk size", "Doors", "Safety score", "label"], "row": ["medium", "four", "low", "small", "three", "medium", 1]}
+{"column": ["Buying price", "Maintenance costs", "Trunk size", "Doors", "Persons", "Safety score", "label"], "row": ["high", "medium", "small", "four", "four", "high", 1]}
+{"column": ["Buying price", "Persons", "Trunk size", "Safety score", "Maintenance costs", "Doors", "label"], "row": ["low", "more than four", "big", "low", "very high", "three", 0]}
+{"column": ["Persons", "Trunk size", "Maintenance costs", "Safety score", "Buying price", "Doors", "label"], "row": ["two", "big", "medium", "medium", "low", "five or more", 0]}
+{"column": ["Safety score", "Buying price", "Trunk size", "Maintenance costs", "Persons", "Doors", "label"], "row": ["high", "low", "small", "low", "four", "four", 2]}
+{"column": ["Trunk size", "Doors", "Buying price", "Safety score", "Persons", "Maintenance costs", "label"], "row": ["small", "five or more", "very high", "high", "more than four", "very high", 0]}
+{"column": ["Safety score", "Doors", "Persons", "Buying price", "Trunk size", "Maintenance costs", "label"], "row": ["high", "two", "two", "low", "small", "high", 0]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Doors", "Safety score", "Trunk size", "label"], "row": ["four", "high", "low", "four", "low", "small", 0]}
+{"column": ["Maintenance costs", "Buying price", "Trunk size", "Persons", "Safety score", "Doors", "label"], "row": ["low", "high", "medium", "two", "high", "three", 0]}
+{"column": ["Safety score", "Trunk size", "Buying price", "Maintenance costs", "Persons", "Doors", "label"], "row": ["medium", "big", "medium", "low", "more than four", "four", 2]}
+{"column": ["Buying price", "Doors", "Persons", "Trunk size", "Maintenance costs", "Safety score", "label"], "row": ["medium", "five or more", "two", "medium", "medium", "low", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Maintenance costs", "Buying price", "Persons", "label"], "row": ["three", "medium", "small", "medium", "high", "four", 0]}
+{"column": ["Safety score", "Buying price", "Doors", "Persons", "Maintenance costs", "Trunk size", "label"], "row": ["medium", "high", "two", "four", "low", "small", 0]}
+{"column": ["Persons", "Trunk size", "Doors", "Buying price", "Maintenance costs", "Safety score", "label"], "row": ["two", "big", "five or more", "very high", "high", "medium", 0]}
+{"column": ["Buying price", "Doors", "Maintenance costs", "Trunk size", "Safety score", "Persons", "label"], "row": ["medium", "five or more", "very high", "big", "medium", "four", 1]}
+{"column": ["Persons", "Doors", "Trunk size", "Buying price", "Safety score", "Maintenance costs", "label"], "row": ["four", "five or more", "medium", "medium", "high", "very high", 1]}
+{"column": ["Trunk size", "Safety score", "Buying price", "Persons", "Maintenance costs", "Doors", "label"], "row": ["small", "high", "medium", "four", "medium", "three", 1]}
+{"column": ["Safety score", "Doors", "Trunk size", "Maintenance costs", "Buying price", "Persons", "label"], "row": ["medium", "five or more", "big", "low", "very high", "more than four", 1]}
+{"column": ["Trunk size", "Safety score", "Doors", "Persons", "Buying price", "Maintenance costs", "label"], "row": ["big", "medium", "three", "two", "low", "low", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Buying price", "Persons", "Safety score", "Doors", "label"], "row": ["small", "low", "very high", "four", "medium", "two", 0]}
+{"column": ["Buying price", "Safety score", "Persons", "Trunk size", "Maintenance costs", "Doors", "label"], "row": ["high", "high", "four", "small", "very high", "five or more", 0]}
+{"column": ["Safety score", "Doors", "Maintenance costs", "Trunk size", "Persons", "Buying price", "label"], "row": ["high", "two", "high", "small", "four", "low", 1]}
+{"column": ["Maintenance costs", "Doors", "Safety score", "Persons", "Buying price", "Trunk size", "label"], "row": ["very high", "four", "low", "two", "high", "big", 0]}
+{"column": ["Doors", "Trunk size", "Maintenance costs", "Safety score", "Buying price", "Persons", "label"], "row": ["five or more", "small", "high", "high", "high", "two", 0]}
+{"column": ["Buying price", "Maintenance costs", "Persons", "Doors", "Safety score", "Trunk size", "label"], "row": ["low", "high", "two", "four", "high", "small", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Safety score", "Buying price", "Persons", "label"], "row": ["big", "medium", "four", "medium", "medium", "more than four", 1]}
+{"column": ["Doors", "Buying price", "Trunk size", "Maintenance costs", "Persons", "Safety score", "label"], "row": ["two", "very high", "big", "medium", "four", "medium", 1]}
+{"column": ["Persons", "Doors", "Trunk size", "Safety score", "Buying price", "Maintenance costs", "label"], "row": ["four", "two", "medium", "high", "high", "low", 1]}
+{"column": ["Maintenance costs", "Persons", "Trunk size", "Doors", "Buying price", "Safety score", "label"], "row": ["low", "two", "small", "four", "medium", "medium", 0]}
+{"column": ["Safety score", "Buying price", "Persons", "Doors", "Trunk size", "Maintenance costs", "label"], "row": ["medium", "low", "two", "four", "medium", "medium", 0]}
+{"column": ["Trunk size", "Buying price", "Persons", "Doors", "Safety score", "Maintenance costs", "label"], "row": ["big", "high", "more than four", "two", "medium", "high", 1]}
+{"column": ["Persons", "Buying price", "Maintenance costs", "Doors", "Trunk size", "Safety score", "label"], "row": ["four", "medium", "low", "three", "medium", "medium", 1]}
+{"column": ["Doors", "Safety score", "Trunk size", "Persons", "Buying price", "Maintenance costs", "label"], "row": ["five or more", "medium", "small", "four", "low", "medium", 1]}
+{"column": ["Persons", "Doors", "Safety score", "Maintenance costs", "Buying price", "Trunk size", "label"], "row": ["two", "two", "low", "medium", "high", "big", 0]}
+{"column": ["Maintenance costs", "Doors", "Safety score", "Buying price", "Trunk size", "Persons", "label"], "row": ["very high", "five or more", "low", "very high", "small", "more than four", 0]}
+{"column": ["Buying price", "Safety score", "Maintenance costs", "Persons", "Doors", "Trunk size", "label"], "row": ["high", "low", "low", "more than four", "four", "big", 0]}
+{"column": ["Maintenance costs", "Trunk size", "Safety score", "Persons", "Doors", "Buying price", "label"], "row": ["medium", "big", "low", "four", "five or more", "low", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Persons", "Maintenance costs", "Buying price", "label"], "row": ["five or more", "low", "big", "two", "high", "medium", 0]}
+{"column": ["Persons", "Buying price", "Safety score", "Doors", "Maintenance costs", "Trunk size", "label"], "row": ["more than four", "medium", "high", "four", "high", "small", 1]}
+{"column": ["Trunk size", "Safety score", "Maintenance costs", "Persons", "Doors", "Buying price", "label"], "row": ["big", "high", "low", "four", "three", "medium", 3]}
+{"column": ["Maintenance costs", "Persons", "Buying price", "Doors", "Trunk size", "Safety score", "label"], "row": ["medium", "more than four", "medium", "four", "big", "low", 0]}
+{"column": ["Persons", "Trunk size", "Maintenance costs", "Doors", "Safety score", "Buying price", "label"], "row": ["four", "medium", "very high", "three", "high", "low", 1]}
+{"column": ["Trunk size", "Persons", "Buying price", "Maintenance costs", "Safety score", "Doors", "label"], "row": ["medium", "more than four", "low", "low", "high", "two", 2]}
+{"column": ["Doors", "Persons", "Buying price", "Maintenance costs", "Safety score", "Trunk size", "label"], "row": ["two", "four", "medium", "high", "high", "small", 1]}
+{"column": ["Safety score", "Trunk size", "Maintenance costs", "Persons", "Doors", "Buying price", "label"], "row": ["medium", "big", "low", "four", "four", "medium", 2]}
+{"column": ["Buying price", "Safety score", "Doors", "Maintenance costs", "Trunk size", "Persons", "label"], "row": ["low", "high", "four", "high", "small", "more than four", 1]}
+{"column": ["Maintenance costs", "Safety score", "Trunk size", "Persons", "Doors", "Buying price", "label"], "row": ["low", "high", "medium", "two", "four", "very high", 0]}
+{"column": ["Persons", "Doors", "Maintenance costs", "Trunk size", "Buying price", "Safety score", "label"], "row": ["two", "four", "high", "small", "high", "low", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Doors", "Buying price", "Persons", "Safety score", "label"], "row": ["big", "medium", "four", "very high", "four", "medium", 1]}
+{"column": ["Trunk size", "Buying price", "Maintenance costs", "Doors", "Persons", "Safety score", "label"], "row": ["big", "very high", "low", "five or more", "two", "high", 0]}
+{"column": ["Safety score", "Doors", "Maintenance costs", "Buying price", "Trunk size", "Persons", "label"], "row": ["medium", "three", "medium", "very high", "big", "two", 0]}
+{"column": ["Trunk size", "Safety score", "Maintenance costs", "Buying price", "Persons", "Doors", "label"], "row": ["big", "medium", "very high", "medium", "four", "three", 1]}
+{"column": ["Buying price", "Doors", "Trunk size", "Safety score", "Maintenance costs", "Persons", "label"], "row": ["medium", "three", "small", "low", "high", "more than four", 0]}
+{"column": ["Buying price", "Safety score", "Persons", "Maintenance costs", "Trunk size", "Doors", "label"], "row": ["medium", "low", "four", "high", "big", "four", 0]}
+{"column": ["Trunk size", "Doors", "Maintenance costs", "Buying price", "Persons", "Safety score", "label"], "row": ["medium", "two", "high", "low", "two", "low", 0]}
+{"column": ["Trunk size", "Buying price", "Doors", "Safety score", "Persons", "Maintenance costs", "label"], "row": ["small", "low", "five or more", "medium", "more than four", "medium", 1]}
+{"column": ["Safety score", "Maintenance costs", "Doors", "Persons", "Buying price", "Trunk size", "label"], "row": ["medium", "high", "three", "two", "low", "medium", 0]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Safety score", "Trunk size", "Doors", "label"], "row": ["four", "medium", "low", "low", "medium", "four", 0]}
+{"column": ["Safety score", "Persons", "Maintenance costs", "Doors", "Buying price", "Trunk size", "label"], "row": ["low", "two", "very high", "four", "medium", "small", 0]}
+{"column": ["Trunk size", "Safety score", "Maintenance costs", "Persons", "Buying price", "Doors", "label"], "row": ["big", "high", "low", "more than four", "medium", "five or more", 3]}
+{"column": ["Trunk size", "Persons", "Doors", "Maintenance costs", "Safety score", "Buying price", "label"], "row": ["big", "more than four", "two", "medium", "medium", "high", 1]}
+{"column": ["Trunk size", "Buying price", "Maintenance costs", "Persons", "Safety score", "Doors", "label"], "row": ["medium", "very high", "low", "four", "medium", "four", 1]}
+{"column": ["Trunk size", "Persons", "Maintenance costs", "Safety score", "Buying price", "Doors", "label"], "row": ["big", "four", "low", "high", "low", "three", 3]}
+{"column": ["Buying price", "Trunk size", "Safety score", "Persons", "Maintenance costs", "Doors", "label"], "row": ["medium", "medium", "high", "four", "medium", "two", 1]}
+{"column": ["Maintenance costs", "Trunk size", "Safety score", "Doors", "Persons", "Buying price", "label"], "row": ["high", "big", "low", "four", "four", "very high", 0]}
+{"column": ["Buying price", "Persons", "Trunk size", "Doors", "Safety score", "Maintenance costs", "label"], "row": ["very high", "more than four", "small", "three", "medium", "very high", 0]}
+{"column": ["Maintenance costs", "Persons", "Trunk size", "Buying price", "Safety score", "Doors", "label"], "row": ["medium", "two", "big", "very high", "low", "four", 0]}
+{"column": ["Buying price", "Safety score", "Maintenance costs", "Persons", "Trunk size", "Doors", "label"], "row": ["low", "medium", "low", "more than four", "medium", "three", 2]}
+{"column": ["Maintenance costs", "Safety score", "Buying price", "Persons", "Doors", "Trunk size", "label"], "row": ["high", "low", "high", "more than four", "two", "small", 0]}
+{"column": ["Persons", "Maintenance costs", "Doors", "Trunk size", "Safety score", "Buying price", "label"], "row": ["two", "medium", "three", "small", "high", "high", 0]}
+{"column": ["Safety score", "Doors", "Persons", "Maintenance costs", "Buying price", "Trunk size", "label"], "row": ["high", "three", "two", "very high", "high", "big", 0]}
+{"column": ["Trunk size", "Buying price", "Maintenance costs", "Persons", "Doors", "Safety score", "label"], "row": ["small", "very high", "very high", "four", "five or more", "low", 0]}
+{"column": ["Persons", "Trunk size", "Doors", "Buying price", "Safety score", "Maintenance costs", "label"], "row": ["more than four", "small", "five or more", "medium", "high", "very high", 1]}
+{"column": ["Persons", "Buying price", "Trunk size", "Safety score", "Maintenance costs", "Doors", "label"], "row": ["four", "medium", "big", "high", "high", "three", 1]}
+{"column": ["Trunk size", "Safety score", "Buying price", "Maintenance costs", "Doors", "Persons", "label"], "row": ["big", "medium", "medium", "medium", "two", "more than four", 1]}
+{"column": ["Trunk size", "Buying price", "Safety score", "Doors", "Maintenance costs", "Persons", "label"], "row": ["medium", "high", "high", "five or more", "medium", "more than four", 1]}
+{"column": ["Maintenance costs", "Safety score", "Persons", "Trunk size", "Buying price", "Doors", "label"], "row": ["low", "high", "more than four", "big", "medium", "three", 3]}
+{"column": ["Safety score", "Persons", "Doors", "Trunk size", "Buying price", "Maintenance costs", "label"], "row": ["medium", "more than four", "five or more", "big", "medium", "low", 2]}
+{"column": ["Safety score", "Doors", "Buying price", "Trunk size", "Maintenance costs", "Persons", "label"], "row": ["medium", "four", "medium", "big", "medium", "four", 1]}
+{"column": ["Maintenance costs", "Persons", "Buying price", "Safety score", "Doors", "Trunk size", "label"], "row": ["medium", "four", "low", "medium", "five or more", "big", 2]}
+{"column": ["Persons", "Safety score", "Buying price", "Trunk size", "Doors", "Maintenance costs", "label"], "row": ["four", "medium", "medium", "medium", "three", "high", 0]}
+{"column": ["Trunk size", "Persons", "Safety score", "Doors", "Buying price", "Maintenance costs", "label"], "row": ["medium", "more than four", "high", "two", "medium", "very high", 1]}
+{"column": ["Trunk size", "Doors", "Safety score", "Maintenance costs", "Persons", "Buying price", "label"], "row": ["big", "five or more", "medium", "high", "more than four", "low", 1]}
+{"column": ["Safety score", "Doors", "Persons", "Maintenance costs", "Trunk size", "Buying price", "label"], "row": ["high", "three", "four", "high", "big", "very high", 0]}
+{"column": ["Trunk size", "Doors", "Buying price", "Safety score", "Maintenance costs", "Persons", "label"], "row": ["big", "three", "medium", "medium", "medium", "more than four", 1]}
+{"column": ["Trunk size", "Maintenance costs", "Buying price", "Safety score", "Doors", "Persons", "label"], "row": ["small", "medium", "very high", "medium", "four", "two", 0]}
+{"column": ["Doors", "Trunk size", "Persons", "Maintenance costs", "Safety score", "Buying price", "label"], "row": ["four", "medium", "more than four", "low", "low", "low", 0]}
+{"column": ["Doors", "Persons", "Maintenance costs", "Buying price", "Safety score", "Trunk size", "label"], "row": ["two", "two", "low", "high", "low", "small", 0]}
+{"column": ["Persons", "Buying price", "Maintenance costs", "Safety score", "Doors", "Trunk size", "label"], "row": ["four", "high", "very high", "low", "three", "small", 0]}
+{"column": ["Buying price", "Trunk size", "Safety score", "Persons", "Maintenance costs", "Doors", "label"], "row": ["very high", "small", "high", "two", "high", "two", 0]}
+{"column": ["Persons", "Trunk size", "Maintenance costs", "Safety score", "Buying price", "Doors", "label"], "row": ["four", "big", "medium", "high", "very high", "four", 1]}
+{"column": ["Trunk size", "Doors", "Persons", "Buying price", "Safety score", "Maintenance costs", "label"], "row": ["small", "five or more", "more than four", "very high", "low", "medium", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Buying price", "Persons", "Maintenance costs", "label"], "row": ["four", "medium", "medium", "high", "more than four", "very high", 0]}
+{"column": ["Persons", "Doors", "Safety score", "Maintenance costs", "Trunk size", "Buying price", "label"], "row": ["two", "three", "high", "medium", "medium", "medium", 0]}
+{"column": ["Maintenance costs", "Safety score", "Doors", "Trunk size", "Persons", "Buying price", "label"], "row": ["medium", "low", "five or more", "small", "more than four", "high", 0]}
+{"column": ["Buying price", "Safety score", "Doors", "Trunk size", "Persons", "Maintenance costs", "label"], "row": ["low", "low", "two", "big", "two", "medium", 0]}
+{"column": ["Persons", "Maintenance costs", "Buying price", "Trunk size", "Safety score", "Doors", "label"], "row": ["four", "medium", "very high", "medium", "high", "four", 1]}
+{"column": ["Safety score", "Persons", "Doors", "Maintenance costs", "Trunk size", "Buying price", "label"], "row": ["medium", "two", "five or more", "very high", "big", "very high", 0]}
+{"column": ["Maintenance costs", "Doors", "Buying price", "Trunk size", "Safety score", "Persons", "label"], "row": ["high", "two", "low", "small", "medium", "two", 0]}
+{"column": ["Doors", "Maintenance costs", "Buying price", "Persons", "Trunk size", "Safety score", "label"], "row": ["five or more", "medium", "low", "four", "medium", "medium", 2]}
+{"column": ["Trunk size", "Persons", "Maintenance costs", "Doors", "Safety score", "Buying price", "label"], "row": ["medium", "four", "medium", "five or more", "medium", "high", 1]}
+{"column": ["Doors", "Persons", "Buying price", "Maintenance costs", "Trunk size", "Safety score", "label"], "row": ["four", "two", "high", "low", "small", "low", 0]}
+{"column": ["Trunk size", "Buying price", "Persons", "Safety score", "Doors", "Maintenance costs", "label"], "row": ["small", "very high", "four", "low", "two", "very high", 0]}
+{"column": ["Buying price", "Safety score", "Trunk size", "Maintenance costs", "Persons", "Doors", "label"], "row": ["low", "high", "big", "medium", "more than four", "two", 3]}
+{"column": ["Doors", "Trunk size", "Persons", "Maintenance costs", "Buying price", "Safety score", "label"], "row": ["five or more", "big", "two", "low", "medium", "medium", 0]}
+{"column": ["Trunk size", "Maintenance costs", "Buying price", "Safety score", "Persons", "Doors", "label"], "row": ["big", "very high", "very high", "low", "more than four", "five or more", 0]}
+{"column": ["Trunk size", "Safety score", "Doors", "Buying price", "Maintenance costs", "Persons", "label"], "row": ["medium", "low", "three", "very high", "very high", "four", 0]}
+{"column": ["Trunk size", "Safety score", "Buying price", "Doors", "Persons", "Maintenance costs", "label"], "row": ["big", "low", "high", "five or more", "four", "very high", 0]}
+{"column": ["Buying price", "Safety score", "Maintenance costs", "Trunk size", "Doors", "Persons", "label"], "row": ["medium", "low", "very high", "small", "four", "four", 0]}
+{"column": ["Safety score", "Trunk size", "Maintenance costs", "Persons", "Buying price", "Doors", "label"], "row": ["medium", "big", "very high", "more than four", "high", "five or more", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Buying price", "Maintenance costs", "Persons", "label"], "row": ["five or more", "low", "small", "medium", "low", "two", 0]}
+{"column": ["Persons", "Maintenance costs", "Doors", "Safety score", "Trunk size", "Buying price", "label"], "row": ["more than four", "medium", "four", "high", "big", "very high", 1]}
+{"column": ["Maintenance costs", "Persons", "Buying price", "Doors", "Trunk size", "Safety score", "label"], "row": ["medium", "two", "high", "four", "medium", "medium", 0]}
+{"column": ["Doors", "Buying price", "Safety score", "Trunk size", "Maintenance costs", "Persons", "label"], "row": ["three", "very high", "low", "small", "low", "four", 0]}
+{"column": ["Maintenance costs", "Persons", "Trunk size", "Safety score", "Doors", "Buying price", "label"], "row": ["very high", "four", "medium", "medium", "two", "high", 0]}
+{"column": ["Buying price", "Trunk size", "Persons", "Maintenance costs", "Safety score", "Doors", "label"], "row": ["medium", "small", "two", "very high", "high", "five or more", 0]}
+{"column": ["Maintenance costs", "Doors", "Safety score", "Trunk size", "Buying price", "Persons", "label"], "row": ["medium", "five or more", "medium", "medium", "medium", "four", 1]}
+{"column": ["Buying price", "Trunk size", "Safety score", "Maintenance costs", "Doors", "Persons", "label"], "row": ["low", "big", "high", "low", "five or more", "four", 3]}
+{"column": ["Persons", "Maintenance costs", "Doors", "Buying price", "Safety score", "Trunk size", "label"], "row": ["two", "very high", "two", "low", "low", "small", 0]}
+{"column": ["Trunk size", "Buying price", "Doors", "Maintenance costs", "Safety score", "Persons", "label"], "row": ["big", "low", "four", "very high", "medium", "more than four", 1]}
+{"column": ["Maintenance costs", "Doors", "Safety score", "Buying price", "Persons", "Trunk size", "label"], "row": ["low", "five or more", "high", "very high", "more than four", "small", 1]}
+{"column": ["Maintenance costs", "Persons", "Trunk size", "Buying price", "Safety score", "Doors", "label"], "row": ["very high", "more than four", "medium", "low", "high", "five or more", 1]}
+{"column": ["Trunk size", "Buying price", "Doors", "Safety score", "Maintenance costs", "Persons", "label"], "row": ["big", "high", "three", "low", "very high", "more than four", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Safety score", "Trunk size", "Maintenance costs", "label"], "row": ["four", "three", "low", "medium", "big", "low", 2]}
+{"column": ["Doors", "Trunk size", "Maintenance costs", "Safety score", "Persons", "Buying price", "label"], "row": ["five or more", "small", "medium", "high", "two", "low", 0]}
+{"column": ["Persons", "Buying price", "Maintenance costs", "Trunk size", "Doors", "Safety score", "label"], "row": ["four", "high", "high", "small", "four", "low", 0]}
+{"column": ["Trunk size", "Persons", "Maintenance costs", "Safety score", "Doors", "Buying price", "label"], "row": ["medium", "more than four", "very high", "high", "three", "medium", 1]}
+{"column": ["Persons", "Trunk size", "Safety score", "Buying price", "Doors", "Maintenance costs", "label"], "row": ["four", "big", "low", "medium", "three", "low", 0]}
+{"column": ["Trunk size", "Safety score", "Persons", "Buying price", "Maintenance costs", "Doors", "label"], "row": ["big", "high", "two", "medium", "low", "four", 0]}
+{"column": ["Doors", "Buying price", "Safety score", "Persons", "Maintenance costs", "Trunk size", "label"], "row": ["five or more", "very high", "medium", "two", "high", "small", 0]}
+{"column": ["Safety score", "Doors", "Trunk size", "Buying price", "Persons", "Maintenance costs", "label"], "row": ["low", "five or more", "big", "very high", "four", "very high", 0]}
+{"column": ["Maintenance costs", "Buying price", "Safety score", "Persons", "Doors", "Trunk size", "label"], "row": ["medium", "very high", "high", "two", "three", "medium", 0]}
+{"column": ["Trunk size", "Doors", "Maintenance costs", "Safety score", "Buying price", "Persons", "label"], "row": ["medium", "four", "high", "low", "low", "four", 0]}
+{"column": ["Buying price", "Safety score", "Trunk size", "Doors", "Maintenance costs", "Persons", "label"], "row": ["high", "low", "medium", "four", "very high", "four", 0]}
+{"column": ["Doors", "Maintenance costs", "Safety score", "Trunk size", "Persons", "Buying price", "label"], "row": ["two", "very high", "medium", "medium", "two", "very high", 0]}
+{"column": ["Buying price", "Trunk size", "Persons", "Safety score", "Doors", "Maintenance costs", "label"], "row": ["low", "big", "two", "medium", "five or more", "high", 0]}
+{"column": ["Doors", "Maintenance costs", "Trunk size", "Persons", "Buying price", "Safety score", "label"], "row": ["four", "low", "small", "two", "very high", "high", 0]}
+{"column": ["Buying price", "Maintenance costs", "Doors", "Safety score", "Persons", "Trunk size", "label"], "row": ["very high", "high", "two", "low", "more than four", "big", 0]}
+{"column": ["Trunk size", "Doors", "Safety score", "Persons", "Maintenance costs", "Buying price", "label"], "row": ["medium", "two", "medium", "two", "very high", "high", 0]}
+{"column": ["Persons", "Doors", "Safety score", "Buying price", "Maintenance costs", "Trunk size", "label"], "row": ["more than four", "three", "medium", "very high", "high", "small", 0]}
+{"column": ["Maintenance costs", "Buying price", "Trunk size", "Doors", "Safety score", "Persons", "label"], "row": ["medium", "medium", "small", "two", "medium", "more than four", 0]}
+{"column": ["Doors", "Maintenance costs", "Safety score", "Buying price", "Persons", "Trunk size", "label"], "row": ["two", "low", "high", "very high", "four", "big", 1]}
+{"column": ["Buying price", "Persons", "Maintenance costs", "Safety score", "Doors", "Trunk size", "label"], "row": ["low", "two", "medium", "high", "two", "small", 0]}
+{"column": ["Safety score", "Trunk size", "Maintenance costs", "Doors", "Persons", "Buying price", "label"], "row": ["high", "big", "very high", "three", "more than four", "very high", 0]}
+{"column": ["Buying price", "Trunk size", "Maintenance costs", "Safety score", "Doors", "Persons", "label"], "row": ["very high", "big", "medium", "low", "four", "more than four", 0]}
+{"column": ["Persons", "Doors", "Trunk size", "Maintenance costs", "Safety score", "Buying price", "label"], "row": ["more than four", "five or more", "medium", "high", "high", "high", 1]}
+{"column": ["Persons", "Trunk size", "Maintenance costs", "Safety score", "Doors", "Buying price", "label"], "row": ["four", "big", "high", "low", "five or more", "high", 0]}
+{"column": ["Doors", "Maintenance costs", "Trunk size", "Safety score", "Buying price", "Persons", "label"], "row": ["two", "very high", "medium", "low", "medium", "two", 0]}
+{"column": ["Trunk size", "Doors", "Maintenance costs", "Persons", "Safety score", "Buying price", "label"], "row": ["small", "five or more", "high", "four", "high", "medium", 1]}
+{"column": ["Persons", "Safety score", "Maintenance costs", "Buying price", "Doors", "Trunk size", "label"], "row": ["more than four", "low", "low", "low", "five or more", "small", 0]}
+{"column": ["Maintenance costs", "Doors", "Safety score", "Persons", "Trunk size", "Buying price", "label"], "row": ["very high", "two", "low", "four", "medium", "low", 0]}
+{"column": ["Buying price", "Trunk size", "Doors", "Safety score", "Persons", "Maintenance costs", "label"], "row": ["high", "big", "two", "high", "four", "medium", 1]}
+{"column": ["Trunk size", "Maintenance costs", "Safety score", "Doors", "Buying price", "Persons", "label"], "row": ["big", "low", "low", "three", "very high", "four", 0]}
+{"column": ["Doors", "Safety score", "Trunk size", "Maintenance costs", "Persons", "Buying price", "label"], "row": ["four", "high", "small", "medium", "two", "high", 0]}
+{"column": ["Maintenance costs", "Doors", "Trunk size", "Persons", "Safety score", "Buying price", "label"], "row": ["very high", "three", "small", "four", "medium", "low", 0]}
+{"column": ["Maintenance costs", "Trunk size", "Safety score", "Persons", "Buying price", "Doors", "label"], "row": ["high", "medium", "low", "more than four", "high", "two", 0]}
+{"column": ["Safety score", "Trunk size", "Persons", "Buying price", "Doors", "Maintenance costs", "label"], "row": ["low", "small", "four", "low", "two", "medium", 0]}
+{"column": ["Safety score", "Buying price", "Doors", "Persons", "Maintenance costs", "Trunk size", "label"], "row": ["low", "medium", "two", "more than four", "high", "big", 0]}
+{"column": ["Doors", "Maintenance costs", "Trunk size", "Safety score", "Persons", "Buying price", "label"], "row": ["two", "high", "big", "low", "four", "high", 0]}
+{"column": ["Maintenance costs", "Safety score", "Trunk size", "Doors", "Persons", "Buying price", "label"], "row": ["high", "high", "small", "three", "four", "low", 1]}
+{"column": ["Buying price", "Maintenance costs", "Trunk size", "Persons", "Safety score", "Doors", "label"], "row": ["high", "medium", "big", "more than four", "medium", "five or more", 1]}
+{"column": ["Persons", "Trunk size", "Safety score", "Buying price", "Doors", "Maintenance costs", "label"], "row": ["two", "medium", "low", "low", "three", "very high", 0]}
+{"column": ["Buying price", "Persons", "Safety score", "Doors", "Trunk size", "Maintenance costs", "label"], "row": ["very high", "more than four", "medium", "five or more", "big", "medium", 1]}
+{"column": ["Trunk size", "Doors", "Buying price", "Safety score", "Persons", "Maintenance costs", "label"], "row": ["small", "two", "high", "high", "four", "medium", 1]}
+{"column": ["Persons", "Maintenance costs", "Safety score", "Buying price", "Trunk size", "Doors", "label"], "row": ["more than four", "low", "low", "medium", "big", "two", 0]}
+{"column": ["Trunk size", "Buying price", "Safety score", "Doors", "Maintenance costs", "Persons", "label"], "row": ["small", "very high", "low", "four", "low", "two", 0]}
+{"column": ["Maintenance costs", "Doors", "Safety score", "Persons", "Buying price", "Trunk size", "label"], "row": ["high", "two", "low", "more than four", "medium", "medium", 0]}
+{"column": ["Maintenance costs", "Trunk size", "Doors", "Safety score", "Buying price", "Persons", "label"], "row": ["high", "big", "five or more", "high", "low", "more than four", 3]}
+{"column": ["Trunk size", "Safety score", "Buying price", "Maintenance costs", "Persons", "Doors", "label"], "row": ["big", "low", "medium", "very high", "four", "five or more", 0]}
+{"column": ["Persons", "Doors", "Buying price", "Safety score", "Trunk size", "Maintenance costs", "label"], "row": ["two", "three", "very high", "medium", "big", "very high", 0]}
+{"column": ["Buying price", "Doors", "Persons", "Maintenance costs", "Safety score", "Trunk size", "label"], "row": ["medium", "five or more", "more than four", "medium", "high", "big", 3]}
+{"column": ["Maintenance costs", "Persons", "Trunk size", "Safety score", "Buying price", "Doors", "label"], "row": ["high", "four", "big", "low", "low", "four", 0]}
+{"column": ["Doors", "Persons", "Maintenance costs", "Buying price", "Trunk size", "Safety score", "label"], "row": ["two", "two", "high", "very high", "small", "medium", 0]}
+{"column": ["Trunk size", "Buying price", "Safety score", "Doors", "Maintenance costs", "Persons", "label"], "row": ["medium", "low", "medium", "five or more", "very high", "two", 0]}
+{"column": ["Persons", "Maintenance costs", "Trunk size", "Buying price", "Doors", "Safety score", "label"], "row": ["four", "high", "small", "very high", "four", "high", 0]}
+{"column": ["Trunk size", "Safety score", "Persons", "Doors", "Maintenance costs", "Buying price", "label"], "row": ["small", "medium", "four", "four", "high", "high", 0]}
+{"column": ["Trunk size", "Safety score", "Persons", "Doors", "Maintenance costs", "Buying price", "label"], "row": ["big", "medium", "more than four", "five or more", "very high", "very high", 0]}
+{"column": ["Safety score", "Persons", "Trunk size", "Doors", "Maintenance costs", "Buying price", "label"], "row": ["medium", "four", "medium", "five or more", "low", "very high", 1]}
+{"column": ["Doors", "Persons", "Trunk size", "Buying price", "Safety score", "Maintenance costs", "label"], "row": ["five or more", "four", "small", "medium", "low", "low", 0]}
+{"column": ["Doors", "Maintenance costs", "Safety score", "Buying price", "Persons", "Trunk size", "label"], "row": ["five or more", "high", "medium", "very high", "more than four", "big", 0]}
+{"column": ["Buying price", "Persons", "Doors", "Safety score", "Maintenance costs", "Trunk size", "label"], "row": ["high", "four", "four", "high", "very high", "medium", 0]}
+{"column": ["Trunk size", "Doors", "Persons", "Buying price", "Maintenance costs", "Safety score", "label"], "row": ["big", "four", "two", "low", "low", "medium", 0]}
+{"column": ["Persons", "Buying price", "Doors", "Maintenance costs", "Trunk size", "Safety score", "label"], "row": ["more than four", "very high", "five or more", "high", "medium", "medium", 0]}
+{"column": ["Trunk size", "Doors", "Safety score", "Maintenance costs", "Buying price", "Persons", "label"], "row": ["big", "four", "medium", "high", "medium", "more than four", 1]}

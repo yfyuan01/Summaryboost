@@ -4,9 +4,14 @@
 # 
 
 
-def serialize_by_tabllm(row:list, columns:list, question:str, answer_cond:list, is_train:bool, answer_requirement:str = None):
+def serialize_by_tabllm(data, columns:list, question:str, answer_cond:list, is_train:bool, answer_requirement:str = None):
     # row = [f1, ..., fk, label]
-    note = " ".join([f"The {col} is {val}." for col, val in zip(columns[:-1], row[:-1]) if val is not None])
+    if type(data)==dict:
+        note = " ".join([f"The {col} is {val}." for col, val in zip(data['column'][:-1], data['row'][:-1]) if val is not None])
+        row = data['row']
+    else:
+        note = " ".join([f"The {col} is {val}." for col, val in zip(columns[:-1], data[:-1]) if val is not None])
+        row = data
     if is_train is True:
         """ serilization for training examples
         {description of the instance}
