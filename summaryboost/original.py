@@ -185,7 +185,7 @@ if __name__ == '__main__':
     parser.add_argument('--portion', type=str, default='32', choices=['16','32', '64', '128', '256', 'all'])
     parser.add_argument('--category', type=str, default='bank',
                         choices=['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income',
-                                 'jungle'])
+                                 'jungle', 'all'])
     parser.add_argument('--model', type=str, default='mistral-7b',)
     parser.add_argument('--shot', type=int, default=16)
     parser.add_argument("--shuffled", type=str, default='False', help='whether evaluate for shuffled version of testing set. Default False')
@@ -198,7 +198,11 @@ if __name__ == '__main__':
     # model = 'llama3-8b'
     print(f'Using the model: {model}')
     print(f'Using the portion: {portion}')
-    for category in [args.category]:
+    if args.category == 'all':
+        all_list = ['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income','jungle']
+    else:
+        all_list = [args.category]
+    for category in all_list:
     # for category in ['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income']:
         print(f'category: {category}')
         f_score = 0.
@@ -224,8 +228,12 @@ if __name__ == '__main__':
             X_train,y_train = DataPreprocessor(os.path.join(file_folder,category,f'cv{str(j)}',f'{category}_tabllm_cv{str(j)}train_{portion}.csv'))
             error_rate, error_list, f1 = Original(X_train, y_train, X_test, y_test, shot, metadata, description, ending, question, model,y_dict)
             f_score+=f1
-            output_address = os.path.join(file_folder,
-                                          f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_shuffled.pkl')
+            if args.shuffled=='False':
+                output_address = os.path.join(file_folder,
+                                              f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_{shot}.pkl')
+            else:
+                output_address = os.path.join(file_folder,
+                                          f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_{shot}_shuffled.pkl')
             with open(output_address, 'wb') as f:
                 pickle.dump({'error_rate': error_rate, 'error_list': error_list}, f, protocol=1)
         print(f'average f1:{f_score/5.0}')
