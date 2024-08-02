@@ -1,0 +1,626 @@
+age,type of job,marital status,education,has credit in default?,"average yearly balance, in euros",has housing loan?,has personal loan?,contact communication type,last contact day of the month,last contact month of year,"last contact duration, in seconds",number of contacts performed during this campaign and for this client,number of days that passed by after the client was last contacted from a previous campaign,number of contacts performed before this campaign and for this client,outcome of the previous marketing campaign,label
+35,management,married,tertiary,no,2717,no,no,cellular,13,aug,394,6,client was not previously contacted,0,unknown,True
+41,admin.,divorced,secondary,no,6046,yes,yes,telephone,15,mar,300,6,182,2,success,True
+36,technician,single,secondary,no,12264,no,no,cellular,12,apr,158,2,client was not previously contacted,0,unknown,True
+57,admin.,married,secondary,no,2120,no,no,cellular,19,aug,687,4,client was not previously contacted,0,unknown,True
+50,management,divorced,tertiary,no,810,no,no,cellular,4,jun,510,3,client was not previously contacted,0,unknown,True
+43,services,married,secondary,no,774,no,no,cellular,24,jun,482,1,91,2,success,True
+58,unemployed,married,secondary,no,687,yes,no,cellular,30,apr,341,2,client was not previously contacted,0,unknown,True
+29,admin.,married,tertiary,no,332,no,no,cellular,9,apr,179,1,client was not previously contacted,0,unknown,True
+71,housemaid,divorced,primary,no,1311,no,no,cellular,10,nov,301,2,91,1,success,True
+31,technician,single,secondary,no,53,yes,yes,cellular,6,may,530,1,client was not previously contacted,0,unknown,True
+50,technician,married,secondary,no,156,no,yes,cellular,14,jul,1130,3,client was not previously contacted,0,unknown,True
+25,admin.,single,secondary,no,285,no,no,cellular,3,jul,658,3,client was not previously contacted,0,unknown,True
+57,technician,married,tertiary,no,1181,no,no,cellular,29,jul,169,2,182,2,success,True
+65,management,divorced,tertiary,no,90,yes,no,cellular,22,apr,416,1,client was not previously contacted,0,unknown,True
+29,self-employed,single,tertiary,no,655,no,no,cellular,23,mar,273,1,client was not previously contacted,0,unknown,True
+29,admin.,single,secondary,no,27,yes,no,cellular,6,may,754,1,client was not previously contacted,0,unknown,True
+38,management,married,tertiary,no,179,no,no,unknown,8,aug,317,4,client was not previously contacted,0,unknown,True
+59,retired,married,secondary,no,0,no,no,unknown,5,jun,812,1,client was not previously contacted,0,unknown,True
+40,unemployed,divorced,secondary,no,1694,no,no,cellular,12,aug,473,6,client was not previously contacted,0,unknown,True
+34,unemployed,single,tertiary,no,1974,no,no,cellular,22,jul,355,1,342,3,success,True
+28,services,single,primary,no,198,no,no,cellular,4,feb,976,2,client was not previously contacted,0,unknown,True
+39,technician,divorced,secondary,no,291,yes,no,cellular,7,may,882,2,client was not previously contacted,0,unknown,True
+48,management,single,tertiary,no,159,no,no,telephone,7,jul,229,1,251,6,success,True
+29,technician,married,secondary,no,95,no,yes,cellular,3,feb,172,3,client was not previously contacted,0,unknown,True
+24,blue-collar,single,secondary,no,167,no,yes,cellular,25,may,288,1,96,2,success,True
+24,management,single,tertiary,no,393,no,no,cellular,27,sep,1298,1,client was not previously contacted,0,unknown,True
+38,management,married,tertiary,no,413,no,no,cellular,13,oct,252,2,183,3,success,True
+60,retired,married,secondary,no,2722,no,no,cellular,12,aug,506,2,client was not previously contacted,0,unknown,True
+52,blue-collar,married,secondary,no,2230,no,no,cellular,29,oct,423,3,client was not previously contacted,0,unknown,True
+27,technician,single,secondary,no,1742,yes,no,unknown,16,may,787,1,client was not previously contacted,0,unknown,True
+37,management,single,tertiary,no,3141,no,no,cellular,4,may,384,2,client was not previously contacted,0,unknown,True
+29,housemaid,single,tertiary,no,19,no,no,cellular,3,dec,274,1,230,1,success,True
+40,management,married,tertiary,no,158,no,no,telephone,30,apr,712,2,client was not previously contacted,0,unknown,True
+30,management,single,tertiary,no,364,no,no,cellular,30,apr,306,2,client was not previously contacted,0,unknown,True
+36,management,married,primary,no,1506,no,no,cellular,14,aug,326,3,client was not previously contacted,0,unknown,True
+35,admin.,single,secondary,no,-32,no,yes,cellular,6,aug,366,2,178,9,success,True
+32,management,single,tertiary,no,10281,no,no,cellular,22,apr,400,1,client was not previously contacted,0,unknown,True
+42,blue-collar,divorced,primary,no,301,yes,no,cellular,17,jul,1175,2,client was not previously contacted,0,unknown,True
+48,housemaid,married,tertiary,no,5473,no,no,cellular,24,feb,127,2,184,2,success,True
+37,technician,single,secondary,no,1130,no,no,cellular,26,feb,152,1,client was not previously contacted,0,unknown,True
+49,unemployed,married,primary,no,518,no,no,cellular,29,jan,1917,2,client was not previously contacted,0,unknown,True
+41,services,divorced,secondary,no,840,yes,no,cellular,2,feb,938,1,client was not previously contacted,0,unknown,True
+30,management,single,tertiary,no,536,no,no,cellular,14,jan,362,2,91,2,success,True
+50,management,married,tertiary,no,469,no,no,cellular,16,oct,170,1,183,1,success,True
+24,admin.,single,secondary,no,1295,no,no,cellular,21,apr,476,1,client was not previously contacted,0,unknown,True
+46,self-employed,married,secondary,no,706,no,no,cellular,21,may,588,1,386,3,failure,True
+38,management,married,tertiary,no,1477,no,no,cellular,15,sep,385,3,769,2,failure,True
+39,management,single,tertiary,no,2454,yes,no,cellular,4,may,716,3,263,2,failure,True
+35,unemployed,single,tertiary,no,154,no,no,cellular,29,jul,200,4,181,2,failure,True
+34,technician,married,secondary,no,133,no,no,cellular,15,nov,401,2,187,5,success,True
+45,admin.,married,secondary,no,153,no,no,cellular,5,aug,277,1,client was not previously contacted,0,unknown,True
+25,student,married,tertiary,no,10,yes,no,cellular,21,jul,857,4,client was not previously contacted,0,unknown,True
+29,management,single,tertiary,no,1026,no,no,cellular,12,nov,226,1,92,1,other,True
+42,management,single,tertiary,no,0,yes,yes,unknown,5,may,562,2,client was not previously contacted,0,unknown,True
+50,management,single,tertiary,no,1200,no,no,cellular,14,aug,904,3,client was not previously contacted,0,unknown,True
+30,management,single,tertiary,no,502,no,yes,cellular,18,jul,572,1,client was not previously contacted,0,unknown,True
+55,management,married,unknown,no,1504,yes,no,cellular,31,aug,186,3,101,2,success,True
+31,admin.,single,secondary,no,0,no,no,cellular,17,apr,188,3,client was not previously contacted,0,unknown,True
+25,admin.,single,secondary,no,1871,no,no,cellular,8,sep,260,1,96,1,success,True
+60,blue-collar,divorced,secondary,no,0,yes,no,unknown,29,may,1207,1,client was not previously contacted,0,unknown,True
+52,unemployed,married,secondary,no,94,no,no,cellular,10,feb,153,1,92,13,success,True
+52,services,married,secondary,no,992,yes,no,cellular,27,oct,424,1,515,1,failure,True
+30,management,married,tertiary,no,1942,yes,yes,cellular,21,nov,436,2,178,3,other,True
+59,retired,divorced,tertiary,no,3444,no,no,cellular,6,feb,241,2,client was not previously contacted,0,unknown,True
+77,unknown,married,unknown,no,397,no,no,telephone,7,may,300,3,client was not previously contacted,0,unknown,True
+27,student,single,tertiary,no,39,no,no,cellular,17,may,379,1,258,10,other,True
+53,admin.,married,secondary,no,109,no,no,telephone,2,jun,270,1,client was not previously contacted,0,unknown,True
+28,blue-collar,single,tertiary,no,4099,no,no,cellular,23,apr,116,4,client was not previously contacted,0,unknown,True
+50,blue-collar,married,primary,no,-522,yes,no,cellular,13,may,863,3,client was not previously contacted,0,unknown,True
+27,technician,single,tertiary,no,2781,yes,no,cellular,24,may,168,1,389,1,failure,True
+35,management,single,tertiary,no,1756,no,no,cellular,20,aug,195,1,client was not previously contacted,0,unknown,True
+51,blue-collar,married,primary,no,541,no,no,cellular,11,aug,663,3,client was not previously contacted,0,unknown,True
+52,management,married,tertiary,no,576,no,no,cellular,18,aug,762,3,client was not previously contacted,0,unknown,True
+31,blue-collar,married,secondary,no,1406,yes,yes,cellular,13,apr,1091,2,client was not previously contacted,0,unknown,True
+35,technician,single,secondary,no,354,no,no,cellular,11,aug,444,3,client was not previously contacted,0,unknown,True
+53,management,married,tertiary,no,3591,yes,no,cellular,5,aug,306,2,181,2,other,True
+32,management,divorced,tertiary,no,874,no,no,cellular,12,aug,1282,6,client was not previously contacted,0,unknown,True
+53,management,divorced,tertiary,no,380,no,yes,cellular,5,jun,438,2,client was not previously contacted,0,unknown,True
+35,blue-collar,married,secondary,no,1330,no,no,cellular,10,jul,901,1,client was not previously contacted,0,unknown,True
+35,admin.,divorced,secondary,no,3636,no,yes,cellular,21,nov,808,2,client was not previously contacted,0,unknown,True
+23,student,single,secondary,no,794,no,no,cellular,26,jul,607,3,171,3,other,True
+56,housemaid,divorced,primary,yes,1238,no,no,unknown,5,jun,1558,1,client was not previously contacted,0,unknown,True
+27,unemployed,single,secondary,no,771,no,no,cellular,21,oct,181,1,302,3,other,True
+37,services,married,secondary,no,2678,no,no,cellular,25,mar,156,1,client was not previously contacted,0,unknown,True
+33,services,single,secondary,no,170,no,no,cellular,7,jul,782,1,client was not previously contacted,0,unknown,True
+64,unemployed,divorced,secondary,no,588,no,no,cellular,8,mar,409,1,client was not previously contacted,0,unknown,True
+27,management,single,tertiary,yes,-713,yes,no,unknown,4,jun,525,2,client was not previously contacted,0,unknown,True
+86,retired,single,secondary,no,614,no,no,telephone,9,dec,595,1,client was not previously contacted,0,unknown,True
+39,management,married,tertiary,no,1795,no,no,cellular,8,aug,922,7,client was not previously contacted,0,unknown,True
+31,technician,married,tertiary,no,2166,no,no,cellular,13,jul,577,6,182,2,success,True
+36,technician,single,tertiary,no,197,no,no,cellular,30,apr,260,1,client was not previously contacted,0,unknown,True
+37,management,married,tertiary,no,3723,no,no,cellular,22,may,354,1,client was not previously contacted,0,unknown,True
+55,admin.,married,secondary,no,139,no,no,cellular,30,apr,241,1,client was not previously contacted,0,unknown,True
+67,retired,married,secondary,no,1443,no,no,cellular,8,apr,245,1,client was not previously contacted,0,unknown,True
+27,student,single,secondary,no,213,no,no,cellular,27,mar,378,1,client was not previously contacted,0,unknown,True
+48,management,married,secondary,no,4415,yes,no,cellular,8,apr,1032,3,141,7,failure,True
+42,blue-collar,married,secondary,no,443,yes,no,unknown,2,jun,671,5,client was not previously contacted,0,unknown,True
+49,admin.,married,secondary,no,0,no,no,cellular,30,apr,551,1,client was not previously contacted,0,unknown,True
+56,retired,divorced,tertiary,no,158,no,yes,cellular,21,jul,854,1,client was not previously contacted,0,unknown,True
+26,technician,married,secondary,no,267,yes,no,cellular,28,jul,817,2,client was not previously contacted,0,unknown,True
+52,services,married,secondary,no,1000,no,no,cellular,5,aug,766,2,client was not previously contacted,0,unknown,True
+56,unemployed,married,secondary,no,0,no,no,telephone,2,feb,492,1,client was not previously contacted,0,unknown,True
+59,retired,divorced,secondary,no,5845,no,no,cellular,14,may,1060,2,client was not previously contacted,0,unknown,True
+23,student,single,secondary,no,0,no,no,cellular,7,aug,217,1,99,7,success,True
+50,services,married,secondary,no,2376,yes,no,cellular,24,sep,395,1,client was not previously contacted,0,unknown,True
+31,management,married,tertiary,no,0,yes,yes,cellular,28,jul,664,8,client was not previously contacted,0,unknown,True
+30,technician,single,secondary,no,-522,yes,yes,cellular,5,may,670,2,286,6,failure,True
+40,admin.,married,secondary,no,2574,yes,no,cellular,15,may,432,1,176,1,failure,True
+27,services,single,secondary,no,-195,yes,no,cellular,18,may,391,1,client was not previously contacted,0,unknown,True
+34,management,married,tertiary,no,589,no,no,cellular,1,sep,300,1,44,3,other,True
+26,admin.,single,tertiary,no,760,yes,no,cellular,4,mar,456,2,281,5,success,True
+34,management,married,tertiary,no,828,no,yes,cellular,11,aug,1080,3,client was not previously contacted,0,unknown,True
+49,admin.,single,tertiary,no,228,yes,no,cellular,2,jun,407,1,92,1,success,True
+27,student,single,tertiary,no,5169,yes,no,cellular,3,sep,431,1,466,3,success,True
+43,blue-collar,single,secondary,no,318,yes,no,unknown,5,jun,736,2,client was not previously contacted,0,unknown,True
+30,unemployed,single,tertiary,no,302,no,no,cellular,11,feb,528,3,client was not previously contacted,0,unknown,True
+25,blue-collar,single,secondary,no,0,no,no,cellular,23,apr,163,1,client was not previously contacted,0,unknown,True
+24,services,married,secondary,no,4500,yes,no,cellular,11,may,733,2,client was not previously contacted,0,unknown,True
+37,admin.,single,secondary,no,4803,no,no,cellular,15,jan,396,2,client was not previously contacted,0,unknown,True
+37,admin.,divorced,tertiary,no,4708,no,no,cellular,2,jun,238,1,181,2,success,True
+41,self-employed,single,tertiary,no,1081,no,no,cellular,27,may,229,3,client was not previously contacted,0,unknown,True
+31,blue-collar,married,secondary,no,625,yes,no,cellular,2,jul,135,2,49,3,failure,True
+31,admin.,married,secondary,no,2,yes,yes,cellular,12,may,703,4,client was not previously contacted,0,unknown,True
+27,technician,single,secondary,no,643,no,no,cellular,13,jul,317,1,client was not previously contacted,0,unknown,True
+30,management,single,tertiary,no,697,no,no,cellular,28,apr,545,2,181,8,success,True
+34,management,single,tertiary,no,4348,yes,no,cellular,28,aug,373,8,client was not previously contacted,0,unknown,False
+40,management,married,tertiary,no,2014,no,no,cellular,20,aug,209,5,client was not previously contacted,0,unknown,False
+32,housemaid,married,tertiary,no,357,yes,no,cellular,3,feb,133,3,77,2,failure,False
+32,self-employed,single,tertiary,no,-359,yes,no,cellular,9,feb,122,3,client was not previously contacted,0,unknown,False
+30,admin.,single,secondary,no,390,yes,no,cellular,17,apr,175,1,347,1,failure,False
+28,admin.,single,secondary,no,520,yes,no,cellular,30,nov,113,1,168,1,failure,False
+33,technician,married,secondary,no,118,yes,no,cellular,29,aug,103,2,client was not previously contacted,0,unknown,False
+31,management,single,tertiary,no,713,no,no,cellular,28,aug,162,1,client was not previously contacted,0,unknown,False
+57,management,married,tertiary,no,388,no,yes,unknown,15,may,262,4,client was not previously contacted,0,unknown,False
+34,services,married,secondary,no,-353,yes,no,cellular,15,jul,122,4,client was not previously contacted,0,unknown,False
+41,housemaid,married,primary,no,379,no,yes,unknown,4,sep,9,1,client was not previously contacted,0,unknown,False
+44,blue-collar,single,primary,no,10984,no,no,unknown,20,jun,258,18,client was not previously contacted,0,unknown,False
+49,admin.,married,secondary,no,1323,yes,no,cellular,18,nov,84,1,client was not previously contacted,0,unknown,False
+34,technician,married,secondary,no,545,yes,no,cellular,25,aug,96,4,client was not previously contacted,0,unknown,False
+54,management,married,tertiary,yes,-248,yes,yes,unknown,7,may,112,1,client was not previously contacted,0,unknown,False
+49,admin.,divorced,secondary,no,333,yes,no,unknown,27,may,36,3,client was not previously contacted,0,unknown,False
+33,management,single,secondary,no,8004,no,no,cellular,19,nov,414,3,client was not previously contacted,0,unknown,False
+48,self-employed,married,secondary,no,252,no,no,cellular,7,jul,261,5,client was not previously contacted,0,unknown,False
+60,retired,married,tertiary,no,0,no,no,telephone,14,jul,363,3,client was not previously contacted,0,unknown,False
+32,services,married,secondary,no,0,no,no,cellular,31,jul,105,6,client was not previously contacted,0,unknown,False
+58,housemaid,married,primary,no,4605,no,no,cellular,4,aug,197,1,client was not previously contacted,0,unknown,False
+26,student,single,tertiary,no,2,no,no,cellular,30,apr,120,2,client was not previously contacted,0,unknown,False
+69,retired,married,primary,no,579,no,no,cellular,14,aug,230,1,client was not previously contacted,0,unknown,False
+37,management,married,tertiary,no,1689,yes,no,unknown,29,may,645,2,client was not previously contacted,0,unknown,False
+44,blue-collar,married,secondary,no,1678,yes,no,unknown,17,jun,120,1,client was not previously contacted,0,unknown,False
+36,admin.,single,secondary,no,886,yes,yes,cellular,14,may,362,6,client was not previously contacted,0,unknown,False
+29,management,married,tertiary,no,6586,no,no,cellular,10,jul,176,1,client was not previously contacted,0,unknown,False
+37,services,married,secondary,no,20,yes,no,telephone,14,may,151,5,client was not previously contacted,0,unknown,False
+29,technician,single,secondary,no,115,no,no,unknown,27,may,340,1,client was not previously contacted,0,unknown,False
+52,blue-collar,married,secondary,no,665,yes,no,unknown,15,may,57,4,client was not previously contacted,0,unknown,False
+44,technician,married,secondary,no,10888,yes,no,cellular,5,aug,163,1,client was not previously contacted,0,unknown,False
+44,technician,divorced,secondary,no,1196,yes,no,unknown,27,may,202,1,client was not previously contacted,0,unknown,False
+25,student,single,secondary,no,3090,no,no,cellular,21,aug,139,1,client was not previously contacted,0,unknown,False
+47,blue-collar,married,secondary,no,538,no,yes,cellular,19,nov,131,1,client was not previously contacted,0,unknown,False
+35,admin.,single,tertiary,no,2622,no,no,cellular,15,jul,374,5,client was not previously contacted,0,unknown,False
+34,admin.,married,secondary,no,626,yes,no,cellular,14,may,142,2,client was not previously contacted,0,unknown,False
+53,technician,married,secondary,no,180,no,yes,cellular,19,aug,58,2,client was not previously contacted,0,unknown,False
+31,management,single,tertiary,no,1536,no,no,cellular,22,aug,234,2,client was not previously contacted,0,unknown,False
+60,retired,married,secondary,no,1091,no,yes,telephone,15,jul,778,3,client was not previously contacted,0,unknown,False
+38,admin.,married,secondary,no,-247,yes,no,unknown,27,may,265,4,client was not previously contacted,0,unknown,False
+48,admin.,married,secondary,no,2088,no,yes,cellular,4,feb,93,1,client was not previously contacted,0,unknown,False
+31,technician,single,secondary,no,4105,no,no,cellular,30,apr,264,1,client was not previously contacted,0,unknown,False
+23,blue-collar,single,secondary,no,214,yes,no,unknown,28,may,44,1,client was not previously contacted,0,unknown,False
+43,blue-collar,single,secondary,no,99,no,no,cellular,30,jul,226,2,client was not previously contacted,0,unknown,False
+31,blue-collar,married,primary,no,298,yes,yes,unknown,2,jun,232,1,client was not previously contacted,0,unknown,False
+30,technician,married,secondary,no,590,yes,no,unknown,23,may,242,3,client was not previously contacted,0,unknown,False
+44,blue-collar,divorced,secondary,no,-184,yes,no,cellular,18,nov,825,2,154,3,other,False
+49,technician,married,secondary,no,27,no,no,cellular,22,aug,57,2,client was not previously contacted,0,unknown,False
+30,blue-collar,married,secondary,no,514,yes,no,cellular,11,may,102,3,client was not previously contacted,0,unknown,False
+46,admin.,single,secondary,no,757,yes,yes,cellular,6,apr,342,3,256,3,failure,False
+52,blue-collar,married,primary,no,281,yes,no,cellular,16,apr,55,4,335,3,other,False
+50,services,married,primary,no,1260,no,no,cellular,18,nov,172,1,client was not previously contacted,0,unknown,False
+59,technician,married,tertiary,no,6573,yes,no,telephone,10,nov,4918,1,client was not previously contacted,0,unknown,False
+55,technician,married,secondary,no,741,yes,no,unknown,15,may,973,2,client was not previously contacted,0,unknown,False
+41,blue-collar,married,primary,no,2562,yes,no,cellular,20,nov,157,1,189,4,failure,False
+27,management,single,tertiary,no,2821,yes,no,cellular,17,apr,186,2,client was not previously contacted,0,unknown,False
+36,management,married,tertiary,no,22,no,no,cellular,2,oct,91,2,client was not previously contacted,0,unknown,False
+31,technician,single,tertiary,no,6138,yes,no,cellular,15,may,134,5,client was not previously contacted,0,unknown,False
+53,blue-collar,married,secondary,no,3036,yes,no,cellular,21,nov,104,2,190,1,other,False
+42,blue-collar,married,secondary,no,-336,yes,no,cellular,13,may,318,3,303,2,failure,False
+48,blue-collar,married,secondary,no,157,yes,no,unknown,6,may,73,1,client was not previously contacted,0,unknown,False
+38,technician,married,tertiary,no,940,no,no,cellular,12,aug,191,7,client was not previously contacted,0,unknown,False
+59,management,married,tertiary,no,123,yes,no,cellular,30,jul,70,6,client was not previously contacted,0,unknown,False
+37,admin.,single,tertiary,no,869,no,no,cellular,30,jul,60,8,client was not previously contacted,0,unknown,False
+37,management,married,secondary,no,1180,yes,yes,cellular,1,apr,786,1,135,1,other,False
+37,technician,married,tertiary,no,1092,no,no,cellular,19,nov,292,3,client was not previously contacted,0,unknown,False
+35,admin.,married,tertiary,no,690,no,no,cellular,19,apr,131,2,185,1,failure,False
+34,housemaid,married,tertiary,no,4958,yes,no,cellular,20,apr,11,5,152,2,failure,False
+51,blue-collar,married,primary,no,505,no,yes,cellular,7,jul,130,1,client was not previously contacted,0,unknown,False
+29,technician,single,secondary,no,1331,yes,yes,cellular,14,may,246,1,client was not previously contacted,0,unknown,False
+58,technician,married,secondary,no,1191,no,no,cellular,6,aug,78,2,client was not previously contacted,0,unknown,False
+51,management,divorced,tertiary,no,0,yes,no,cellular,28,jul,534,4,client was not previously contacted,0,unknown,False
+29,technician,married,secondary,no,344,yes,yes,unknown,28,may,279,2,client was not previously contacted,0,unknown,False
+45,technician,married,secondary,no,-847,no,yes,cellular,22,jul,312,1,client was not previously contacted,0,unknown,False
+30,technician,married,secondary,no,2326,no,no,cellular,22,jun,67,1,108,1,success,False
+55,housemaid,divorced,tertiary,no,1241,no,no,cellular,21,nov,48,7,154,5,failure,False
+39,technician,married,secondary,no,505,no,no,cellular,27,may,86,4,client was not previously contacted,0,unknown,False
+26,blue-collar,single,secondary,no,-29,yes,no,unknown,8,may,196,1,client was not previously contacted,0,unknown,False
+36,services,single,secondary,no,328,yes,no,cellular,13,may,194,3,client was not previously contacted,0,unknown,False
+53,management,married,unknown,no,876,yes,no,telephone,14,jul,214,3,client was not previously contacted,0,unknown,False
+49,blue-collar,married,secondary,no,2159,no,no,cellular,17,apr,771,1,client was not previously contacted,0,unknown,False
+46,self-employed,married,unknown,no,-257,no,no,cellular,21,nov,104,1,189,2,failure,False
+40,blue-collar,married,secondary,no,498,yes,no,cellular,8,may,55,2,298,4,failure,False
+55,housemaid,divorced,tertiary,no,6920,yes,no,unknown,6,may,406,3,client was not previously contacted,0,unknown,False
+51,technician,divorced,secondary,no,7928,yes,no,cellular,20,nov,124,1,client was not previously contacted,0,unknown,False
+39,technician,single,unknown,no,0,yes,no,unknown,7,may,130,1,client was not previously contacted,0,unknown,False
+41,blue-collar,married,primary,no,178,yes,no,unknown,20,jul,5,1,791,1,failure,False
+38,blue-collar,married,primary,no,630,yes,no,unknown,23,may,201,3,client was not previously contacted,0,unknown,False
+42,self-employed,married,tertiary,no,2821,no,no,unknown,11,jun,203,2,client was not previously contacted,0,unknown,False
+35,admin.,married,tertiary,no,6,no,no,cellular,26,aug,130,2,client was not previously contacted,0,unknown,False
+47,blue-collar,married,secondary,no,846,yes,no,cellular,31,jul,437,2,client was not previously contacted,0,unknown,False
+58,retired,married,unknown,no,-230,no,yes,cellular,8,jul,133,2,client was not previously contacted,0,unknown,False
+50,services,married,secondary,no,57435,yes,no,cellular,21,nov,319,3,client was not previously contacted,0,unknown,False
+39,technician,married,secondary,no,738,no,yes,cellular,29,jul,90,2,client was not previously contacted,0,unknown,False
+32,management,single,tertiary,no,0,no,no,cellular,22,aug,148,2,client was not previously contacted,0,unknown,False
+42,admin.,married,secondary,no,71,yes,yes,cellular,28,apr,165,3,client was not previously contacted,0,unknown,False
+43,management,married,primary,no,62,yes,no,cellular,18,jul,96,3,client was not previously contacted,0,unknown,False
+33,technician,single,secondary,no,268,no,no,cellular,19,aug,255,1,client was not previously contacted,0,unknown,False
+61,retired,married,secondary,no,76,yes,no,cellular,15,jul,195,7,client was not previously contacted,0,unknown,False
+39,housemaid,married,secondary,no,1444,no,no,cellular,19,nov,100,1,117,8,success,False
+34,admin.,single,secondary,no,5057,yes,no,cellular,19,nov,73,1,client was not previously contacted,0,unknown,False
+30,management,married,tertiary,no,160,yes,no,cellular,30,jul,83,4,client was not previously contacted,0,unknown,False
+43,technician,divorced,secondary,no,159,no,no,cellular,11,aug,160,2,client was not previously contacted,0,unknown,False
+31,technician,single,secondary,no,4,no,no,cellular,13,aug,202,2,client was not previously contacted,0,unknown,False
+33,technician,single,secondary,no,641,yes,yes,cellular,20,apr,242,3,client was not previously contacted,0,unknown,False
+32,technician,married,tertiary,no,-252,yes,no,cellular,29,jul,52,4,client was not previously contacted,0,unknown,False
+35,services,single,secondary,no,568,yes,no,unknown,16,may,469,2,client was not previously contacted,0,unknown,False
+42,technician,married,secondary,no,4466,no,no,cellular,17,nov,158,2,client was not previously contacted,0,unknown,False
+37,technician,married,secondary,no,1613,yes,no,cellular,8,may,266,1,281,11,other,False
+37,services,single,secondary,no,244,no,no,unknown,5,jun,70,1,client was not previously contacted,0,unknown,False
+44,blue-collar,married,secondary,no,129,yes,yes,unknown,5,may,189,2,client was not previously contacted,0,unknown,False
+40,management,married,tertiary,no,2147,yes,no,unknown,30,may,115,1,client was not previously contacted,0,unknown,False
+38,self-employed,married,primary,no,618,no,no,cellular,9,jul,184,1,client was not previously contacted,0,unknown,False
+34,services,single,secondary,no,16,yes,no,cellular,20,nov,340,1,client was not previously contacted,0,unknown,False
+31,blue-collar,single,secondary,no,2093,no,no,cellular,7,jul,103,1,client was not previously contacted,0,unknown,False
+58,services,married,secondary,no,1905,no,no,cellular,27,aug,202,5,client was not previously contacted,0,unknown,False
+55,blue-collar,married,unknown,no,213,no,no,cellular,14,aug,406,2,client was not previously contacted,0,unknown,False
+26,student,single,unknown,no,2503,no,no,cellular,30,apr,121,1,63,2,failure,False
+59,management,married,primary,no,2769,yes,no,cellular,19,nov,104,1,131,2,failure,False
+32,admin.,divorced,secondary,no,410,yes,no,cellular,14,apr,129,1,client was not previously contacted,0,unknown,False
+37,blue-collar,married,secondary,no,685,yes,no,unknown,6,jun,968,1,client was not previously contacted,0,unknown,False
+45,technician,married,tertiary,no,1780,no,no,unknown,9,jun,464,1,client was not previously contacted,0,unknown,False
+52,housemaid,married,primary,no,5137,no,no,unknown,9,jun,199,1,client was not previously contacted,0,unknown,False
+48,management,married,tertiary,no,370,yes,no,cellular,30,jan,134,2,169,2,other,False
+31,management,single,tertiary,no,0,no,no,cellular,19,aug,155,4,client was not previously contacted,0,unknown,False
+47,blue-collar,married,primary,no,-290,yes,no,cellular,15,may,495,1,client was not previously contacted,0,unknown,False
+30,entrepreneur,single,tertiary,no,216,yes,no,cellular,20,apr,182,3,client was not previously contacted,0,unknown,False
+32,technician,married,secondary,no,169,yes,no,cellular,7,may,22,11,client was not previously contacted,0,unknown,False
+32,self-employed,married,secondary,no,217,yes,yes,cellular,15,jul,317,5,client was not previously contacted,0,unknown,False
+33,technician,married,tertiary,no,48,no,no,cellular,27,aug,34,14,client was not previously contacted,0,unknown,False
+27,services,single,secondary,no,4,yes,yes,unknown,9,may,490,1,client was not previously contacted,0,unknown,False
+35,entrepreneur,married,tertiary,no,542,yes,yes,unknown,27,may,591,5,client was not previously contacted,0,unknown,False
+38,services,married,secondary,no,105,no,no,cellular,30,jul,244,2,client was not previously contacted,0,unknown,False
+49,services,married,tertiary,no,306,yes,no,cellular,18,aug,285,7,client was not previously contacted,0,unknown,False
+34,blue-collar,single,unknown,no,5901,no,no,cellular,28,jan,211,1,client was not previously contacted,0,unknown,False
+47,admin.,divorced,secondary,no,95,yes,yes,telephone,28,jan,270,3,client was not previously contacted,0,unknown,False
+41,self-employed,married,tertiary,no,-195,yes,yes,cellular,4,feb,52,3,client was not previously contacted,0,unknown,False
+52,services,married,secondary,no,2072,no,no,cellular,10,jul,224,1,client was not previously contacted,0,unknown,False
+40,blue-collar,married,secondary,no,-605,yes,yes,unknown,3,jun,143,1,client was not previously contacted,0,unknown,False
+31,technician,single,secondary,no,4040,yes,no,unknown,2,jun,213,2,client was not previously contacted,0,unknown,False
+35,entrepreneur,married,secondary,no,24,yes,no,cellular,17,nov,128,1,181,1,failure,False
+60,housemaid,married,primary,no,0,no,yes,telephone,22,jul,124,1,client was not previously contacted,0,unknown,False
+34,technician,married,secondary,no,46,yes,yes,unknown,3,jul,412,1,client was not previously contacted,0,unknown,False
+46,management,married,tertiary,no,110,yes,yes,cellular,20,aug,243,5,client was not previously contacted,0,unknown,False
+52,blue-collar,married,secondary,no,223,no,no,cellular,20,aug,81,4,client was not previously contacted,0,unknown,False
+36,technician,married,secondary,no,377,yes,yes,cellular,19,nov,135,1,client was not previously contacted,0,unknown,False
+52,management,single,tertiary,no,-334,yes,no,cellular,6,may,402,2,client was not previously contacted,0,unknown,False
+57,admin.,divorced,secondary,no,0,no,no,cellular,9,sep,121,2,client was not previously contacted,0,unknown,False
+47,blue-collar,married,primary,yes,-1385,yes,yes,unknown,15,may,77,1,client was not previously contacted,0,unknown,False
+51,entrepreneur,single,secondary,no,440,no,no,unknown,18,jun,392,1,client was not previously contacted,0,unknown,False
+60,admin.,married,secondary,no,0,no,no,cellular,5,aug,202,1,client was not previously contacted,0,unknown,False
+40,technician,married,secondary,no,240,no,no,unknown,12,jun,68,4,client was not previously contacted,0,unknown,False
+52,entrepreneur,married,tertiary,no,54,yes,yes,telephone,18,nov,103,1,client was not previously contacted,0,unknown,False
+45,self-employed,married,primary,no,1288,no,no,cellular,7,aug,399,6,client was not previously contacted,0,unknown,False
+32,management,married,tertiary,no,1330,yes,no,unknown,21,may,83,1,client was not previously contacted,0,unknown,False
+46,technician,single,secondary,no,1758,yes,no,cellular,18,nov,109,1,client was not previously contacted,0,unknown,False
+33,management,single,tertiary,no,1431,no,no,cellular,30,apr,94,1,85,2,failure,False
+59,management,single,tertiary,no,266,yes,no,unknown,30,may,147,2,client was not previously contacted,0,unknown,False
+31,management,single,tertiary,no,16,no,no,cellular,20,nov,73,1,client was not previously contacted,0,unknown,False
+40,self-employed,single,tertiary,no,1693,yes,no,cellular,17,nov,353,1,client was not previously contacted,0,unknown,False
+37,blue-collar,married,primary,no,623,no,no,cellular,26,mar,267,2,client was not previously contacted,0,unknown,False
+58,retired,married,secondary,no,11,no,no,cellular,11,aug,270,1,client was not previously contacted,0,unknown,False
+46,technician,married,secondary,no,475,no,yes,cellular,23,jul,158,2,client was not previously contacted,0,unknown,False
+34,admin.,married,secondary,no,1551,yes,yes,cellular,8,jul,188,2,82,4,other,False
+31,technician,single,secondary,no,9,no,no,cellular,7,jul,167,2,client was not previously contacted,0,unknown,False
+28,blue-collar,single,secondary,no,48,no,no,unknown,26,may,144,3,client was not previously contacted,0,unknown,False
+51,management,divorced,tertiary,no,0,no,yes,cellular,22,jul,176,4,client was not previously contacted,0,unknown,False
+57,retired,divorced,primary,no,0,no,no,telephone,28,jul,1037,3,client was not previously contacted,0,unknown,False
+51,services,married,unknown,no,3413,no,no,cellular,27,aug,146,7,client was not previously contacted,0,unknown,False
+49,services,divorced,secondary,no,933,no,yes,cellular,29,jul,92,33,client was not previously contacted,0,unknown,False
+57,retired,married,primary,no,1238,yes,no,cellular,15,jul,274,1,client was not previously contacted,0,unknown,False
+26,blue-collar,married,primary,no,104,yes,no,cellular,4,may,230,6,360,2,other,False
+38,management,married,primary,no,1365,yes,no,unknown,5,jun,224,1,client was not previously contacted,0,unknown,False
+39,technician,married,tertiary,no,0,no,no,cellular,28,aug,13,17,client was not previously contacted,0,unknown,False
+30,entrepreneur,single,secondary,no,491,yes,no,unknown,9,may,197,4,client was not previously contacted,0,unknown,False
+36,management,married,tertiary,no,322,yes,no,cellular,22,jul,485,1,client was not previously contacted,0,unknown,False
+40,services,married,secondary,no,17,no,no,cellular,4,jun,78,1,client was not previously contacted,0,unknown,False
+38,self-employed,married,secondary,no,854,yes,yes,cellular,28,dec,112,2,client was not previously contacted,0,unknown,False
+33,entrepreneur,married,tertiary,no,0,no,no,cellular,20,nov,232,1,client was not previously contacted,0,unknown,False
+50,management,married,tertiary,no,569,no,yes,cellular,18,aug,452,4,client was not previously contacted,0,unknown,False
+38,technician,married,tertiary,no,1161,yes,no,unknown,8,may,665,1,client was not previously contacted,0,unknown,False
+59,entrepreneur,married,secondary,no,2429,no,yes,cellular,18,nov,79,2,182,7,failure,False
+59,management,married,tertiary,no,10114,no,no,cellular,19,nov,596,3,client was not previously contacted,0,unknown,False
+50,blue-collar,married,secondary,no,907,no,yes,cellular,16,jul,68,1,client was not previously contacted,0,unknown,False
+47,blue-collar,married,secondary,no,4101,yes,no,cellular,23,jul,105,1,client was not previously contacted,0,unknown,False
+30,management,single,tertiary,no,2123,no,no,cellular,11,aug,217,2,client was not previously contacted,0,unknown,False
+39,admin.,divorced,secondary,no,1022,yes,no,unknown,20,jun,20,3,client was not previously contacted,0,unknown,False
+40,admin.,single,unknown,no,355,yes,no,cellular,7,apr,345,2,138,6,other,False
+42,management,married,tertiary,no,11093,no,no,cellular,2,feb,156,2,client was not previously contacted,0,unknown,False
+72,management,married,tertiary,no,7003,no,no,telephone,24,jul,116,3,client was not previously contacted,0,unknown,False
+34,management,single,tertiary,no,26575,no,no,cellular,18,nov,93,1,client was not previously contacted,0,unknown,False
+36,management,married,secondary,no,699,no,no,cellular,26,aug,20,8,client was not previously contacted,0,unknown,False
+29,technician,single,secondary,no,-496,yes,yes,cellular,22,jul,422,8,client was not previously contacted,0,unknown,False
+55,management,divorced,tertiary,no,2625,yes,no,cellular,5,may,286,1,252,3,failure,False
+48,management,married,secondary,no,161,yes,no,unknown,5,may,224,3,client was not previously contacted,0,unknown,False
+47,technician,married,secondary,no,57,no,no,cellular,5,may,253,1,342,1,success,False
+36,technician,divorced,secondary,no,5957,yes,no,cellular,18,nov,138,2,client was not previously contacted,0,unknown,False
+37,admin.,married,primary,no,242,yes,no,unknown,8,may,161,8,client was not previously contacted,0,unknown,False
+49,technician,married,secondary,no,51,no,no,cellular,20,aug,513,4,client was not previously contacted,0,unknown,False
+27,blue-collar,married,secondary,no,1295,yes,no,cellular,14,may,1106,1,client was not previously contacted,0,unknown,False
+43,self-employed,married,secondary,no,5564,no,no,cellular,20,apr,45,5,154,2,failure,False
+26,technician,single,tertiary,no,1216,yes,no,cellular,16,apr,472,2,client was not previously contacted,0,unknown,False
+57,entrepreneur,married,secondary,no,1179,no,no,cellular,19,aug,189,2,client was not previously contacted,0,unknown,False
+49,blue-collar,married,secondary,no,298,yes,no,cellular,30,apr,264,2,86,3,failure,False
+38,management,single,unknown,no,715,yes,no,cellular,2,apr,951,1,132,3,failure,False
+32,technician,married,secondary,no,1840,yes,no,cellular,25,aug,99,13,client was not previously contacted,0,unknown,False
+44,management,divorced,tertiary,no,-90,yes,no,cellular,21,jul,472,1,client was not previously contacted,0,unknown,False
+27,services,single,secondary,no,5850,yes,no,cellular,31,jul,164,3,client was not previously contacted,0,unknown,False
+36,housemaid,married,primary,no,622,no,no,unknown,20,jun,55,5,client was not previously contacted,0,unknown,False
+48,services,divorced,secondary,no,105,no,no,cellular,31,jul,111,2,client was not previously contacted,0,unknown,False
+50,blue-collar,married,secondary,no,825,yes,no,cellular,16,apr,18,3,273,1,failure,False
+59,management,married,tertiary,no,1881,no,no,cellular,19,nov,456,2,client was not previously contacted,0,unknown,False
+39,technician,married,secondary,no,4444,yes,no,unknown,21,may,244,1,client was not previously contacted,0,unknown,False
+36,technician,married,secondary,no,154,yes,no,cellular,18,nov,231,1,96,2,other,False
+31,technician,single,secondary,no,1970,no,no,telephone,17,apr,284,3,client was not previously contacted,0,unknown,False
+34,management,married,tertiary,no,690,yes,no,cellular,1,jun,95,2,client was not previously contacted,0,unknown,False
+60,retired,married,primary,no,415,no,no,unknown,18,jun,49,2,client was not previously contacted,0,unknown,False
+41,management,married,secondary,no,5585,no,no,unknown,9,jun,772,1,client was not previously contacted,0,unknown,False
+44,technician,single,unknown,no,78,yes,no,unknown,6,may,13,6,client was not previously contacted,0,unknown,False
+33,management,married,tertiary,no,530,yes,no,cellular,8,aug,94,2,client was not previously contacted,0,unknown,False
+42,technician,married,secondary,no,534,no,no,cellular,5,aug,314,1,client was not previously contacted,0,unknown,False
+39,services,married,secondary,no,823,yes,yes,cellular,28,jul,780,2,client was not previously contacted,0,unknown,False
+56,blue-collar,married,secondary,no,771,yes,yes,unknown,19,jun,254,1,client was not previously contacted,0,unknown,False
+61,blue-collar,married,primary,no,625,yes,no,unknown,19,may,158,2,client was not previously contacted,0,unknown,False
+33,blue-collar,married,primary,no,359,yes,yes,cellular,16,apr,130,1,148,1,failure,False
+52,self-employed,single,tertiary,no,458,yes,yes,unknown,9,may,132,5,client was not previously contacted,0,unknown,False
+37,technician,married,secondary,no,1345,yes,no,cellular,6,may,74,6,169,4,failure,False
+41,services,divorced,primary,no,308,no,no,cellular,31,jul,73,1,client was not previously contacted,0,unknown,False
+42,services,divorced,secondary,no,444,no,no,cellular,21,nov,171,1,client was not previously contacted,0,unknown,False
+37,management,married,tertiary,no,0,no,no,cellular,25,aug,112,4,client was not previously contacted,0,unknown,False
+43,technician,divorced,secondary,no,64,yes,no,cellular,14,aug,55,2,client was not previously contacted,0,unknown,False
+44,services,divorced,secondary,no,7,yes,yes,unknown,7,may,238,3,client was not previously contacted,0,unknown,False
+34,management,divorced,tertiary,no,94,yes,no,cellular,7,may,46,1,client was not previously contacted,0,unknown,False
+57,blue-collar,married,secondary,no,0,yes,no,cellular,14,may,125,5,client was not previously contacted,0,unknown,False
+44,services,married,primary,no,3,yes,no,cellular,7,may,228,1,client was not previously contacted,0,unknown,False
+41,services,divorced,secondary,no,654,yes,no,cellular,13,may,139,2,client was not previously contacted,0,unknown,False
+41,management,married,tertiary,no,651,no,no,cellular,4,aug,104,1,client was not previously contacted,0,unknown,False
+29,services,married,secondary,no,30,yes,no,cellular,23,jul,74,3,client was not previously contacted,0,unknown,False
+46,management,married,tertiary,no,477,yes,no,unknown,20,may,128,6,client was not previously contacted,0,unknown,False
+43,blue-collar,single,secondary,no,24,no,no,cellular,12,may,68,1,363,1,failure,False
+38,technician,divorced,secondary,no,1333,yes,yes,unknown,28,may,188,1,client was not previously contacted,0,unknown,False
+33,entrepreneur,married,secondary,no,135,yes,no,cellular,17,apr,114,1,345,2,failure,False
+59,management,married,tertiary,no,138,yes,yes,cellular,16,nov,162,2,187,5,failure,False
+28,services,single,secondary,yes,-7,no,yes,cellular,23,jul,293,5,client was not previously contacted,0,unknown,False
+45,self-employed,married,secondary,no,706,no,no,cellular,30,apr,78,2,176,1,success,False
+55,blue-collar,married,primary,no,2384,no,yes,telephone,21,aug,331,20,client was not previously contacted,0,unknown,False
+50,admin.,married,secondary,no,1138,yes,yes,cellular,31,jul,73,8,client was not previously contacted,0,unknown,False
+33,self-employed,married,tertiary,no,980,no,no,cellular,25,jul,170,3,client was not previously contacted,0,unknown,False
+26,entrepreneur,married,secondary,no,321,yes,yes,cellular,23,jul,638,2,client was not previously contacted,0,unknown,False
+32,technician,married,secondary,no,12,yes,yes,cellular,4,aug,341,2,client was not previously contacted,0,unknown,False
+51,technician,married,unknown,no,-168,no,no,cellular,31,jul,56,3,client was not previously contacted,0,unknown,False
+33,self-employed,married,tertiary,no,-355,yes,no,unknown,23,may,911,2,client was not previously contacted,0,unknown,False
+27,services,single,secondary,no,2153,yes,no,unknown,30,may,256,6,client was not previously contacted,0,unknown,False
+45,admin.,married,secondary,no,638,yes,no,cellular,20,aug,75,9,client was not previously contacted,0,unknown,False
+33,housemaid,married,secondary,no,230,no,yes,cellular,29,aug,264,2,client was not previously contacted,0,unknown,False
+49,management,married,secondary,no,338,no,no,cellular,25,aug,941,3,client was not previously contacted,0,unknown,False
+33,technician,married,secondary,no,22,no,no,cellular,29,jan,127,1,client was not previously contacted,0,unknown,False
+56,self-employed,married,secondary,no,1539,no,no,cellular,28,aug,149,14,client was not previously contacted,0,unknown,False
+41,technician,single,unknown,no,2701,yes,no,cellular,6,feb,278,4,client was not previously contacted,0,unknown,False
+48,services,married,secondary,no,801,no,no,cellular,8,aug,80,1,client was not previously contacted,0,unknown,False
+46,services,married,secondary,no,9,no,no,unknown,16,may,297,4,client was not previously contacted,0,unknown,False
+33,blue-collar,single,tertiary,no,457,yes,no,cellular,30,jan,159,1,191,4,failure,False
+39,housemaid,married,primary,no,562,no,no,cellular,12,aug,234,2,client was not previously contacted,0,unknown,False
+32,blue-collar,married,secondary,no,824,yes,no,cellular,3,apr,272,1,client was not previously contacted,0,unknown,False
+43,technician,single,secondary,no,293,yes,no,unknown,15,may,49,1,client was not previously contacted,0,unknown,False
+34,admin.,single,secondary,no,66,yes,no,unknown,26,may,237,1,client was not previously contacted,0,unknown,False
+33,technician,single,secondary,no,1074,yes,yes,cellular,14,may,308,2,client was not previously contacted,0,unknown,False
+43,admin.,married,secondary,no,-879,yes,no,unknown,20,jun,199,4,client was not previously contacted,0,unknown,False
+43,admin.,married,primary,no,482,yes,no,unknown,6,jun,1041,13,client was not previously contacted,0,unknown,False
+50,services,married,secondary,no,5,no,yes,cellular,11,jul,196,2,client was not previously contacted,0,unknown,False
+34,management,married,tertiary,no,1518,yes,no,cellular,20,nov,128,2,client was not previously contacted,0,unknown,False
+42,technician,married,unknown,no,0,no,no,unknown,11,jun,241,1,client was not previously contacted,0,unknown,False
+40,technician,married,tertiary,no,84,no,no,cellular,28,aug,715,8,client was not previously contacted,0,unknown,False
+42,technician,married,secondary,no,679,yes,no,cellular,11,may,146,2,client was not previously contacted,0,unknown,False
+46,technician,married,secondary,yes,289,no,no,unknown,7,may,51,3,client was not previously contacted,0,unknown,False
+35,admin.,married,unknown,no,1055,no,no,cellular,2,mar,59,2,client was not previously contacted,0,unknown,False
+55,technician,divorced,secondary,no,0,no,no,unknown,5,may,160,1,client was not previously contacted,0,unknown,False
+46,technician,divorced,tertiary,no,405,yes,no,unknown,15,may,231,1,client was not previously contacted,0,unknown,False
+29,admin.,single,secondary,no,768,yes,no,cellular,24,jul,119,5,client was not previously contacted,0,unknown,False
+57,management,married,secondary,no,2155,no,yes,cellular,11,aug,82,2,client was not previously contacted,0,unknown,False
+34,blue-collar,married,primary,no,-78,yes,no,unknown,9,may,198,1,client was not previously contacted,0,unknown,False
+40,management,married,tertiary,no,8902,yes,no,cellular,14,aug,464,5,client was not previously contacted,0,unknown,False
+48,services,divorced,secondary,no,-203,yes,no,cellular,18,may,156,5,297,1,other,False
+53,technician,married,secondary,no,3398,no,yes,telephone,20,nov,88,6,113,13,other,False
+31,management,married,unknown,no,385,no,no,cellular,29,sep,242,2,491,4,failure,False
+28,entrepreneur,single,secondary,no,1734,yes,no,unknown,3,jun,161,3,client was not previously contacted,0,unknown,False
+57,housemaid,married,secondary,no,0,no,no,cellular,17,nov,56,1,client was not previously contacted,0,unknown,False
+45,unemployed,divorced,primary,yes,-249,yes,yes,unknown,1,jul,92,1,client was not previously contacted,0,unknown,False
+35,blue-collar,married,secondary,no,1160,no,yes,telephone,19,nov,62,1,client was not previously contacted,0,unknown,False
+37,technician,single,tertiary,no,5122,yes,no,unknown,20,may,396,1,client was not previously contacted,0,unknown,False
+46,management,single,tertiary,no,-867,yes,yes,unknown,21,may,222,5,client was not previously contacted,0,unknown,False
+35,blue-collar,married,secondary,no,911,yes,no,cellular,14,may,136,2,175,7,failure,False
+33,student,single,tertiary,no,3404,yes,no,cellular,20,nov,105,2,171,3,failure,False
+50,technician,divorced,tertiary,no,1044,no,no,unknown,5,jun,400,2,client was not previously contacted,0,unknown,False
+42,unemployed,married,secondary,no,250,yes,no,cellular,29,jul,247,3,client was not previously contacted,0,unknown,False
+32,technician,married,unknown,no,196,yes,no,unknown,20,may,196,6,client was not previously contacted,0,unknown,False
+58,admin.,married,primary,no,2232,no,no,unknown,11,jun,219,1,client was not previously contacted,0,unknown,False
+56,technician,single,secondary,no,751,yes,no,cellular,15,may,43,8,177,5,failure,False
+33,services,single,secondary,no,1659,yes,no,cellular,18,may,133,2,353,6,failure,False
+41,services,married,secondary,no,1836,yes,yes,cellular,15,apr,139,1,client was not previously contacted,0,unknown,False
+33,management,married,tertiary,no,2907,no,no,cellular,8,aug,116,1,client was not previously contacted,0,unknown,False
+28,admin.,single,secondary,no,189,yes,no,cellular,31,jul,68,2,client was not previously contacted,0,unknown,False
+49,management,married,tertiary,no,1887,no,no,cellular,18,nov,244,3,client was not previously contacted,0,unknown,False
+55,retired,married,primary,no,150,no,no,cellular,8,jul,124,1,client was not previously contacted,0,unknown,False
+38,technician,single,secondary,no,61,yes,no,cellular,13,may,109,1,359,8,failure,False
+54,management,divorced,tertiary,no,3473,yes,no,cellular,12,aug,306,2,client was not previously contacted,0,unknown,False
+56,management,married,primary,no,-155,yes,no,cellular,17,nov,282,1,client was not previously contacted,0,unknown,False
+36,technician,married,tertiary,no,606,yes,no,unknown,4,jun,159,1,client was not previously contacted,0,unknown,False
+48,housemaid,married,primary,no,0,no,no,cellular,28,aug,20,23,client was not previously contacted,0,unknown,False
+32,management,single,secondary,no,0,yes,yes,unknown,16,may,385,7,client was not previously contacted,0,unknown,False
+33,technician,single,tertiary,no,49,no,no,cellular,25,aug,476,3,client was not previously contacted,0,unknown,False
+52,blue-collar,married,secondary,no,4269,yes,yes,cellular,20,nov,44,1,client was not previously contacted,0,unknown,False
+37,technician,single,secondary,no,6714,yes,no,unknown,23,may,90,1,client was not previously contacted,0,unknown,False
+32,admin.,single,secondary,no,2817,yes,no,cellular,21,nov,195,1,client was not previously contacted,0,unknown,False
+25,services,married,secondary,no,-454,yes,no,unknown,12,may,24,1,client was not previously contacted,0,unknown,False
+59,admin.,married,secondary,no,-198,yes,yes,cellular,8,may,206,1,client was not previously contacted,0,unknown,False
+31,technician,single,secondary,no,845,yes,no,cellular,22,oct,168,2,client was not previously contacted,0,unknown,False
+35,admin.,single,secondary,no,368,yes,no,unknown,16,may,218,3,client was not previously contacted,0,unknown,False
+74,retired,married,primary,no,5539,no,no,cellular,12,jul,390,2,159,3,failure,False
+47,blue-collar,married,primary,no,421,yes,yes,unknown,5,jun,52,1,client was not previously contacted,0,unknown,False
+33,management,married,tertiary,no,483,yes,no,unknown,14,may,738,2,client was not previously contacted,0,unknown,False
+49,management,married,tertiary,no,108,no,no,cellular,26,aug,210,6,client was not previously contacted,0,unknown,False
+38,admin.,married,secondary,no,689,yes,no,cellular,25,jul,270,1,client was not previously contacted,0,unknown,False
+36,blue-collar,married,secondary,no,779,yes,no,cellular,14,may,172,1,client was not previously contacted,0,unknown,False
+52,blue-collar,married,secondary,no,266,yes,no,cellular,18,may,87,2,299,3,other,False
+41,services,married,secondary,no,-111,yes,no,unknown,13,may,21,1,client was not previously contacted,0,unknown,False
+30,management,single,secondary,no,2143,yes,yes,cellular,18,aug,514,10,client was not previously contacted,0,unknown,False
+37,technician,married,secondary,no,952,yes,no,cellular,16,apr,536,1,client was not previously contacted,0,unknown,False
+57,retired,married,secondary,no,2774,no,no,cellular,18,aug,299,6,client was not previously contacted,0,unknown,False
+37,management,married,tertiary,no,2951,no,no,cellular,21,nov,101,3,client was not previously contacted,0,unknown,False
+38,technician,married,secondary,no,284,yes,no,unknown,6,may,483,1,client was not previously contacted,0,unknown,False
+74,retired,married,tertiary,no,4912,no,no,telephone,21,oct,129,3,client was not previously contacted,0,unknown,False
+32,blue-collar,married,primary,no,-11,yes,no,unknown,27,may,776,1,client was not previously contacted,0,unknown,False
+34,management,married,tertiary,no,180,no,no,cellular,16,jun,298,3,client was not previously contacted,0,unknown,False
+28,blue-collar,married,primary,no,115,yes,no,unknown,28,may,78,4,client was not previously contacted,0,unknown,False
+31,services,single,secondary,no,211,no,no,cellular,29,jan,226,2,client was not previously contacted,0,unknown,False
+54,blue-collar,married,primary,no,532,no,no,telephone,31,jul,73,2,client was not previously contacted,0,unknown,False
+48,admin.,divorced,secondary,no,-480,no,no,cellular,18,may,380,2,355,1,failure,False
+32,technician,divorced,tertiary,no,3628,no,no,cellular,18,aug,130,2,client was not previously contacted,0,unknown,False
+28,admin.,single,secondary,no,242,yes,yes,cellular,12,may,256,1,349,1,failure,False
+36,blue-collar,married,secondary,no,2095,yes,no,cellular,7,may,122,2,client was not previously contacted,0,unknown,False
+37,management,married,tertiary,no,489,yes,yes,cellular,20,apr,12,2,client was not previously contacted,0,unknown,False
+36,blue-collar,married,primary,no,223,yes,no,unknown,14,jul,12,3,client was not previously contacted,0,unknown,False
+43,management,married,tertiary,no,1188,no,no,cellular,13,oct,1573,2,139,2,failure,False
+31,student,single,tertiary,no,744,no,no,cellular,20,aug,124,3,client was not previously contacted,0,unknown,False
+35,technician,single,tertiary,no,144,yes,yes,cellular,4,feb,202,4,113,20,failure,False
+47,management,divorced,tertiary,no,8226,yes,no,cellular,30,jul,137,2,client was not previously contacted,0,unknown,False
+46,technician,divorced,secondary,no,129,no,no,unknown,25,jun,75,2,client was not previously contacted,0,unknown,False
+35,self-employed,single,secondary,no,1732,no,no,telephone,21,nov,1441,3,client was not previously contacted,0,unknown,False
+29,services,married,tertiary,no,0,yes,no,unknown,4,jun,113,2,client was not previously contacted,0,unknown,False
+24,blue-collar,single,secondary,no,6,yes,no,cellular,18,may,16,10,client was not previously contacted,0,unknown,False
+36,management,married,tertiary,no,86,yes,no,cellular,3,sep,104,1,380,3,failure,False
+36,self-employed,married,tertiary,no,107,yes,no,unknown,6,may,146,1,client was not previously contacted,0,unknown,False
+48,self-employed,married,primary,no,1204,yes,no,unknown,19,jun,53,1,client was not previously contacted,0,unknown,False
+59,management,married,tertiary,yes,782,no,yes,cellular,13,aug,127,2,client was not previously contacted,0,unknown,False
+37,admin.,married,secondary,no,176,yes,no,cellular,5,may,147,2,347,1,failure,False
+47,services,married,secondary,no,344,yes,no,unknown,3,jun,87,1,client was not previously contacted,0,unknown,False
+29,management,married,tertiary,no,2451,yes,no,unknown,28,may,58,1,client was not previously contacted,0,unknown,False
+43,admin.,married,unknown,no,350,no,no,unknown,6,may,437,1,client was not previously contacted,0,unknown,False
+30,blue-collar,single,unknown,no,306,yes,no,cellular,17,apr,314,1,client was not previously contacted,0,unknown,False
+44,management,divorced,tertiary,no,3321,no,no,cellular,13,aug,73,3,client was not previously contacted,0,unknown,False
+39,self-employed,married,secondary,no,31,yes,no,unknown,23,may,146,4,client was not previously contacted,0,unknown,False
+32,management,married,tertiary,no,312,no,no,cellular,11,aug,67,4,client was not previously contacted,0,unknown,False
+51,blue-collar,married,primary,no,4497,yes,no,unknown,15,may,276,3,client was not previously contacted,0,unknown,False
+45,technician,divorced,secondary,no,12,no,no,cellular,28,aug,88,3,client was not previously contacted,0,unknown,False
+32,blue-collar,married,secondary,no,1281,yes,no,cellular,20,apr,222,1,client was not previously contacted,0,unknown,False
+24,services,single,secondary,no,1611,yes,no,unknown,28,may,418,1,client was not previously contacted,0,unknown,False
+60,unknown,married,unknown,no,7337,no,no,cellular,4,aug,122,1,client was not previously contacted,0,unknown,False
+43,blue-collar,married,primary,no,-67,yes,no,telephone,15,may,137,7,371,1,failure,False
+36,management,married,tertiary,no,1041,yes,no,cellular,14,may,480,2,client was not previously contacted,0,unknown,False
+57,management,married,tertiary,no,1357,yes,yes,cellular,18,nov,97,2,client was not previously contacted,0,unknown,False
+34,technician,married,tertiary,no,8463,no,no,cellular,13,aug,80,2,client was not previously contacted,0,unknown,False
+23,blue-collar,married,secondary,no,-213,yes,yes,unknown,26,may,87,2,client was not previously contacted,0,unknown,False
+33,management,married,tertiary,no,437,yes,no,cellular,9,jul,293,1,client was not previously contacted,0,unknown,False
+46,management,married,tertiary,yes,-1001,yes,no,cellular,21,nov,45,3,client was not previously contacted,0,unknown,False
+36,admin.,single,secondary,no,245,yes,no,cellular,6,may,159,1,client was not previously contacted,0,unknown,False
+45,technician,divorced,tertiary,no,917,no,no,cellular,27,aug,144,8,client was not previously contacted,0,unknown,False
+56,management,single,secondary,no,237,yes,no,telephone,9,jul,236,4,client was not previously contacted,0,unknown,False
+49,services,married,secondary,no,1345,yes,no,cellular,20,apr,254,1,client was not previously contacted,0,unknown,False
+44,blue-collar,married,primary,no,3753,yes,no,unknown,28,may,122,4,client was not previously contacted,0,unknown,False
+32,blue-collar,single,secondary,no,-204,yes,yes,unknown,26,may,202,2,client was not previously contacted,0,unknown,False
+30,technician,married,secondary,no,1660,yes,no,cellular,30,apr,236,1,client was not previously contacted,0,unknown,False
+56,technician,married,secondary,no,463,no,no,unknown,26,may,131,2,client was not previously contacted,0,unknown,False
+31,management,single,secondary,yes,20,yes,no,cellular,28,jul,141,5,client was not previously contacted,0,unknown,False
+38,technician,married,secondary,no,0,yes,yes,cellular,15,jul,146,4,client was not previously contacted,0,unknown,False
+42,self-employed,married,secondary,no,2,yes,no,cellular,14,may,51,5,client was not previously contacted,0,unknown,False
+41,admin.,single,tertiary,no,982,no,no,cellular,23,jul,105,1,client was not previously contacted,0,unknown,False
+36,management,married,secondary,no,2637,no,no,unknown,4,jul,219,1,client was not previously contacted,0,unknown,False
+33,management,divorced,tertiary,no,471,no,no,unknown,23,may,215,4,client was not previously contacted,0,unknown,False
+31,technician,single,secondary,no,591,yes,yes,cellular,15,may,14,5,client was not previously contacted,0,unknown,False
+54,housemaid,married,secondary,no,1977,no,no,unknown,16,jun,69,3,client was not previously contacted,0,unknown,False
+60,housemaid,married,secondary,no,681,no,yes,cellular,9,jul,337,1,client was not previously contacted,0,unknown,False
+30,blue-collar,single,primary,no,464,yes,no,cellular,13,apr,686,1,client was not previously contacted,0,unknown,False
+33,technician,married,secondary,no,-1040,yes,yes,unknown,27,may,130,1,client was not previously contacted,0,unknown,False
+38,services,married,secondary,no,282,no,no,cellular,15,jan,360,3,client was not previously contacted,0,unknown,False
+28,technician,single,secondary,no,1405,yes,no,cellular,5,feb,605,3,client was not previously contacted,0,unknown,False
+31,technician,married,tertiary,no,0,yes,no,cellular,25,jul,266,6,client was not previously contacted,0,unknown,False
+38,technician,married,secondary,no,922,yes,yes,cellular,17,jul,388,2,client was not previously contacted,0,unknown,False
+30,blue-collar,married,secondary,no,554,yes,no,cellular,29,jan,100,1,client was not previously contacted,0,unknown,False
+43,unknown,married,primary,no,2113,no,no,cellular,29,jul,33,2,client was not previously contacted,0,unknown,False
+27,entrepreneur,married,tertiary,no,1991,no,yes,cellular,7,sep,510,1,client was not previously contacted,0,unknown,False
+27,blue-collar,single,primary,no,1128,yes,no,unknown,30,jun,88,4,client was not previously contacted,0,unknown,False
+34,management,married,tertiary,no,714,yes,no,cellular,21,nov,328,4,113,27,failure,False
+31,entrepreneur,single,secondary,no,379,yes,no,cellular,18,jul,570,2,client was not previously contacted,0,unknown,False
+55,housemaid,divorced,primary,no,2014,no,no,unknown,17,jun,156,2,client was not previously contacted,0,unknown,False
+33,services,single,secondary,no,310,yes,no,cellular,12,may,54,2,371,1,failure,False
+32,services,married,secondary,no,-124,no,no,unknown,27,may,116,1,client was not previously contacted,0,unknown,False
+36,admin.,married,tertiary,no,586,yes,no,cellular,28,jan,126,1,client was not previously contacted,0,unknown,False
+46,blue-collar,married,primary,no,881,yes,no,unknown,9,may,126,2,client was not previously contacted,0,unknown,False
+48,management,married,secondary,no,3663,yes,no,cellular,19,nov,239,1,client was not previously contacted,0,unknown,False
+58,admin.,married,secondary,no,3635,no,no,unknown,13,may,273,2,client was not previously contacted,0,unknown,False
+57,entrepreneur,married,secondary,no,926,no,no,unknown,17,jun,447,3,client was not previously contacted,0,unknown,False
+47,blue-collar,married,secondary,no,3237,yes,no,cellular,18,nov,38,1,187,3,failure,False
+46,blue-collar,married,primary,no,-175,yes,yes,cellular,17,apr,250,1,324,2,failure,False
+46,admin.,married,secondary,no,179,yes,no,cellular,29,jan,194,4,436,1,other,False
+30,blue-collar,married,primary,no,0,yes,no,cellular,15,may,432,1,client was not previously contacted,0,unknown,False
+38,blue-collar,married,primary,no,635,yes,no,unknown,3,jun,157,2,client was not previously contacted,0,unknown,False
+43,management,married,tertiary,no,690,yes,no,cellular,6,aug,171,3,client was not previously contacted,0,unknown,False
+54,entrepreneur,married,tertiary,no,0,no,no,cellular,30,jul,250,5,client was not previously contacted,0,unknown,False
+39,management,married,tertiary,no,5060,yes,no,cellular,20,aug,157,4,client was not previously contacted,0,unknown,False
+56,management,married,primary,no,405,no,no,cellular,21,jul,251,2,client was not previously contacted,0,unknown,False
+48,management,married,tertiary,no,269,yes,no,cellular,15,jul,109,2,client was not previously contacted,0,unknown,False
+42,blue-collar,married,secondary,no,230,yes,no,unknown,5,jun,175,7,client was not previously contacted,0,unknown,False
+48,blue-collar,married,secondary,no,1513,no,yes,cellular,17,jul,1171,1,client was not previously contacted,0,unknown,False
+32,services,married,secondary,no,387,yes,no,cellular,20,nov,340,2,client was not previously contacted,0,unknown,False
+44,admin.,married,secondary,no,1362,yes,no,unknown,13,may,46,1,client was not previously contacted,0,unknown,False
+40,blue-collar,married,secondary,no,1522,yes,yes,unknown,14,may,168,2,client was not previously contacted,0,unknown,False
+51,technician,married,secondary,no,563,yes,no,cellular,17,jul,117,3,client was not previously contacted,0,unknown,False
+29,student,single,tertiary,no,559,no,no,cellular,3,feb,143,2,client was not previously contacted,0,unknown,False
+30,admin.,single,unknown,no,0,yes,no,cellular,19,nov,1206,2,client was not previously contacted,0,unknown,False
+53,technician,married,secondary,no,384,yes,no,unknown,5,may,176,1,client was not previously contacted,0,unknown,False
+32,admin.,married,tertiary,no,79,yes,no,cellular,21,nov,37,2,client was not previously contacted,0,unknown,False
+30,admin.,married,secondary,no,2284,yes,no,cellular,19,nov,154,1,client was not previously contacted,0,unknown,False
+40,blue-collar,married,primary,no,177,yes,yes,telephone,21,jul,742,4,client was not previously contacted,0,unknown,False
+44,blue-collar,married,primary,no,953,yes,no,cellular,11,may,772,2,357,1,failure,False
+34,blue-collar,married,secondary,no,457,yes,yes,unknown,27,may,188,1,client was not previously contacted,0,unknown,False
+30,entrepreneur,married,tertiary,no,-130,yes,yes,unknown,3,jul,194,2,client was not previously contacted,0,unknown,False
+52,management,married,tertiary,no,502,no,no,unknown,17,jun,637,3,client was not previously contacted,0,unknown,False
+57,retired,married,tertiary,no,1292,no,no,cellular,1,jun,151,1,69,1,failure,False
+52,admin.,divorced,secondary,no,-402,yes,no,cellular,21,nov,151,1,client was not previously contacted,0,unknown,False
+30,management,married,tertiary,no,3,yes,no,cellular,22,jul,67,9,client was not previously contacted,0,unknown,False
+52,unemployed,married,primary,no,1724,no,no,cellular,29,jan,73,1,client was not previously contacted,0,unknown,False
+60,self-employed,single,tertiary,no,179,no,yes,cellular,29,jul,79,4,client was not previously contacted,0,unknown,False
+29,services,married,secondary,no,368,yes,no,cellular,20,apr,16,5,client was not previously contacted,0,unknown,False
+41,admin.,single,secondary,no,3895,yes,no,cellular,14,may,305,3,296,11,other,False
+36,services,married,secondary,no,183,yes,no,unknown,20,may,103,3,client was not previously contacted,0,unknown,False
+44,admin.,married,secondary,no,251,no,yes,telephone,28,jul,122,3,client was not previously contacted,0,unknown,False
+36,blue-collar,single,primary,no,20,yes,no,unknown,21,may,87,14,client was not previously contacted,0,unknown,False
+26,blue-collar,single,secondary,no,-116,yes,yes,unknown,9,may,208,1,client was not previously contacted,0,unknown,False
+46,technician,married,secondary,no,1029,yes,no,unknown,14,may,142,1,client was not previously contacted,0,unknown,False
+32,blue-collar,married,secondary,no,17332,yes,yes,cellular,20,apr,165,1,client was not previously contacted,0,unknown,False
+42,housemaid,divorced,secondary,no,314,no,no,unknown,9,jun,249,2,client was not previously contacted,0,unknown,False
+72,retired,divorced,tertiary,no,402,no,no,cellular,12,jul,194,3,client was not previously contacted,0,unknown,False
+45,technician,married,secondary,no,3944,yes,no,cellular,18,nov,141,1,client was not previously contacted,0,unknown,False
+41,blue-collar,married,secondary,no,1394,yes,no,cellular,21,nov,519,1,client was not previously contacted,0,unknown,False
+30,blue-collar,married,secondary,no,1177,no,yes,cellular,8,jul,220,2,client was not previously contacted,0,unknown,False
+57,retired,single,secondary,no,976,yes,no,cellular,9,jul,98,1,client was not previously contacted,0,unknown,False
+53,management,married,tertiary,no,20772,no,no,cellular,4,feb,715,1,client was not previously contacted,0,unknown,False
+25,technician,single,tertiary,no,2206,yes,no,cellular,15,jun,114,1,client was not previously contacted,0,unknown,False
+32,housemaid,married,primary,no,1349,yes,no,cellular,7,aug,132,2,client was not previously contacted,0,unknown,False
+41,blue-collar,married,primary,no,865,no,yes,unknown,19,may,19,5,client was not previously contacted,0,unknown,False
+51,blue-collar,married,primary,no,5131,yes,no,cellular,9,apr,348,1,329,2,failure,False
+43,services,divorced,secondary,no,0,yes,no,unknown,6,may,125,2,client was not previously contacted,0,unknown,False
+52,blue-collar,married,primary,no,4660,no,no,cellular,18,aug,82,3,client was not previously contacted,0,unknown,False
+39,technician,married,tertiary,no,11766,yes,no,cellular,4,may,15,4,166,1,failure,False
+34,housemaid,married,tertiary,no,72,no,no,cellular,19,aug,113,2,client was not previously contacted,0,unknown,False
+34,management,married,tertiary,no,0,no,no,cellular,29,aug,120,2,client was not previously contacted,0,unknown,False
+37,blue-collar,single,primary,no,0,no,no,unknown,5,jun,39,1,client was not previously contacted,0,unknown,False
+42,blue-collar,married,primary,no,784,no,no,cellular,28,apr,428,3,client was not previously contacted,0,unknown,False
+51,services,married,secondary,no,5885,yes,no,cellular,15,may,172,1,client was not previously contacted,0,unknown,False
+49,services,married,secondary,no,486,yes,yes,unknown,30,may,43,2,client was not previously contacted,0,unknown,False
+51,technician,divorced,secondary,no,0,no,no,cellular,11,aug,177,2,client was not previously contacted,0,unknown,False
+29,blue-collar,divorced,secondary,no,302,yes,no,cellular,5,feb,116,1,192,8,other,False
+40,admin.,married,secondary,no,1395,yes,yes,cellular,7,jul,122,2,client was not previously contacted,0,unknown,False
+48,services,divorced,secondary,no,0,no,no,unknown,5,jun,428,1,client was not previously contacted,0,unknown,False
+59,retired,single,secondary,no,30,yes,no,unknown,5,may,514,1,client was not previously contacted,0,unknown,False
+46,blue-collar,married,primary,no,2749,yes,no,cellular,17,nov,332,1,client was not previously contacted,0,unknown,False
+52,technician,married,unknown,no,668,yes,no,cellular,31,jul,212,4,client was not previously contacted,0,unknown,False
+75,retired,divorced,primary,no,37127,no,no,cellular,11,feb,505,1,client was not previously contacted,0,unknown,False
+35,services,married,secondary,no,27,yes,yes,cellular,5,may,442,2,278,3,failure,False
+31,blue-collar,single,secondary,no,2597,yes,no,unknown,12,may,189,1,client was not previously contacted,0,unknown,False
+55,services,married,secondary,no,3546,yes,yes,cellular,18,nov,588,1,110,2,failure,False
+33,technician,married,secondary,no,832,yes,yes,unknown,8,may,246,3,client was not previously contacted,0,unknown,False
+40,technician,single,secondary,no,360,yes,no,unknown,9,may,73,1,client was not previously contacted,0,unknown,False
+32,technician,single,secondary,no,1165,no,no,cellular,27,aug,19,23,client was not previously contacted,0,unknown,False
+44,blue-collar,married,primary,no,77,yes,no,unknown,29,may,23,1,client was not previously contacted,0,unknown,False
+39,admin.,married,secondary,no,-650,no,no,cellular,15,may,123,2,364,1,failure,False
+35,technician,married,tertiary,no,703,no,no,cellular,20,apr,169,1,client was not previously contacted,0,unknown,False
+33,blue-collar,single,secondary,no,22,no,no,cellular,30,jan,76,2,207,1,failure,False
+35,housemaid,married,primary,no,0,yes,no,cellular,14,jul,340,3,client was not previously contacted,0,unknown,False
+33,management,married,tertiary,no,2098,no,no,cellular,20,nov,67,1,client was not previously contacted,0,unknown,False
+33,management,married,tertiary,no,4,yes,yes,cellular,24,jul,604,1,client was not previously contacted,0,unknown,False
+59,blue-collar,married,primary,no,5788,no,no,cellular,14,may,56,2,350,2,failure,False
+39,blue-collar,married,secondary,no,10005,yes,no,cellular,31,jul,241,4,client was not previously contacted,0,unknown,False
+40,admin.,single,tertiary,no,1005,yes,no,cellular,21,jul,449,1,client was not previously contacted,0,unknown,False
+27,services,married,unknown,no,-209,yes,yes,cellular,29,jan,128,1,client was not previously contacted,0,unknown,False
+41,admin.,married,primary,no,0,yes,no,cellular,6,may,184,2,323,1,failure,False
+26,management,married,primary,no,1349,yes,no,unknown,9,may,275,1,client was not previously contacted,0,unknown,False
+32,blue-collar,single,secondary,no,5252,yes,no,cellular,20,nov,232,2,183,2,failure,False
+27,blue-collar,single,primary,no,409,yes,no,cellular,18,may,276,4,301,2,success,False
