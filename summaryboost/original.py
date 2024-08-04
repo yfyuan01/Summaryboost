@@ -12,6 +12,7 @@ from eas_apis import init_eas_service,invoke_eas
 # from ours.llm_apis.eas_apis import init_eas_service
 import pickle
 import numpy as np
+from copy import deepcopy
 client = OpenAI()
 init_eas_service(data_dir="./ours/llm_apis", filename='eas_services')
 
@@ -30,14 +31,14 @@ def my_metrics(y_true, y_pred, print_result=False):
         recall[y] = np.sum((y_true == y) & (y_pred == y)) / (np.sum(y_true == y) + 1e-9)
         f1[y] = 2 * prec[y] * recall[y] / (prec[y] + recall[y] + 1e-9)
         bacc.append(recall[y])
-
+    f1_dict = deepcopy(f1)
     bacc = np.mean(bacc)
     if len(prec) == 2:
         prec, recall, f1 = prec['True'], recall['True'], f1['True']
     else:
         prec, recall, f1 = np.mean(list(prec.values())), np.mean(list(recall.values())), np.mean(list(f1.values()))
 
-    return acc, bacc, prec, recall, f1
+    return acc, bacc, prec, recall, f1, f1_dict
 
 
 def read_meta(meta_info):
@@ -55,10 +56,11 @@ def Summary(X,y,shot=4):
 
 def Original(X_train,y_train, X_test, y_test, shot, metadata,description,ending,question,model,y_dict):
     sample = Summary(X_train, y_train,shot)
-    error_rate, f1_rate, error_list = error_cal(sample, X_test, y_test, description, metadata,  ending, question, model,y_dict)
+    error_rate, f1_rate, error_list, f1_dict, results = error_cal(sample, X_test, y_test, description, metadata,  ending, question, model,y_dict)
     print(f'final error rate: {error_rate}')
     print(f'final f1 rate: {f1_rate}')
-    return error_rate, error_list, f1_rate
+    print(f'final f1 list: {f1_dict}')
+    return error_rate, error_list, f1_rate, f1_dict, results
 def DataPreprocessor(file_address):
     if file_address.endswith('.csv'):
         df = pd.read_csv(file_address)
@@ -127,8 +129,8 @@ def error_cal(summary, X, y, description, metadata, ending, question, model,y_di
 
     a_list = [str(a) for a in a_list]
     y = [str(p) for p in y]
-    acc, bacc, prec, recall, f1 = my_metrics(y, a_list)
-    return error/float(len(X)), f1, elist
+    acc, bacc, prec, recall, f1, f1_dict = my_metrics(y, a_list)
+    return error/float(len(X)), f1, elist, f1_dict, results
 
 def generate(prompt):
     conversation = [{"role": "system", "content": prompt}]
@@ -189,6 +191,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str, default='mistral-7b',)
     parser.add_argument('--shot', type=int, default=16)
     parser.add_argument("--shuffled", type=str, default='False', help='whether evaluate for shuffled version of testing set. Default False')
+    parser.add_argument("--prob", type=float, default=None, help="number of true sample portion")
     args = parser.parse_args()
     portion = args.portion
     shot = args.shot
@@ -202,39 +205,51 @@ if __name__ == '__main__':
         all_list = ['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income','jungle']
     else:
         all_list = [args.category]
+    if args.prob != None:
+        all_list = ['bank']
     for category in all_list:
     # for category in ['bank', 'blood', 'calhousing', 'car', 'creditg', 'diabetes', 'heart', 'income']:
         print(f'category: {category}')
-        f_score = 0.
+        f_score_true = 0.
+        f_score_false = 0.
         for j in range(5):
             print(j)
             metadata = description_data[category]
             description, y_dict, summaryprompt, ending, question = read_meta(meta_info[category])
-            if args.shuffled=='False':
-                if category not in ['income', 'jungle', 'calhousing', 'bank']:
-                    test_file = os.path.join(file_folder,
-                                               f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test.csv')
-                else:
-                    test_file = os.path.join(file_folder,
-                                               f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000.csv')
-            else:
+            if args.prob != None:
+                test_file = os.path.join(file_folder,
+                                        f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000_p{args.prob}.csv')
+            if args.shuffled=='True':
                 if category not in ['income', 'jungle', 'calhousing', 'bank']:
                     test_file = os.path.join(file_folder,
                                              f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_shuffled.jsonl')
                 else:
                     test_file = os.path.join(file_folder,
                                              f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000_shuffled.jsonl')
+            elif args.prob == None and args.shuffled=='False':
+                if category not in ['income', 'jungle', 'calhousing', 'bank']:
+                    test_file = os.path.join(file_folder,
+                                             f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test.csv')
+                else:
+                    test_file = os.path.join(file_folder,
+                                             f'{category}/cv{str(j)}/{category}_tabllm_cv{str(j)}test_1000.csv')
+            print(test_file)
             X_test,y_test = DataPreprocessor(test_file)
             X_train,y_train = DataPreprocessor(os.path.join(file_folder,category,f'cv{str(j)}',f'{category}_tabllm_cv{str(j)}train_{portion}.csv'))
-            error_rate, error_list, f1 = Original(X_train, y_train, X_test, y_test, shot, metadata, description, ending, question, model,y_dict)
-            f_score+=f1
-            if args.shuffled=='False':
+            error_rate, error_list, f1, f1_dict, results = Original(X_train, y_train, X_test, y_test, shot, metadata, description, ending, question, model,y_dict)
+            f_score_true+=f1
+            f_score_false+=f1_dict['False']
+            if args.shuffled=='False' and args.prob == None:
                 output_address = os.path.join(file_folder,
                                               f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_{shot}.pkl')
+            elif args.prob!= None:
+                output_address = os.path.join(file_folder,
+                                              f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_{shot}_p{args.prob}.pkl')
             else:
                 output_address = os.path.join(file_folder,
                                           f'{category}/cv{str(j)}/original_{category}_cv{str(j)}test_{portion}_{model}_{shot}_shuffled.pkl')
             with open(output_address, 'wb') as f:
-                pickle.dump({'error_rate': error_rate, 'error_list': error_list}, f, protocol=1)
-        print(f'average f1:{f_score/5.0}')
+                pickle.dump({'error_rate': error_rate, 'error_list': error_list, 'f1_dict':f1, 'results':results}, f, protocol=1)
+        print(f'average f1 true:{f_score_true/5.0}')
+        print(f'average f1 false:{f_score_false / 5.0}')
         # answers = Preprocessor(X,y,meta_data[category],y_dict)
