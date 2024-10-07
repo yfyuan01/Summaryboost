@@ -36,7 +36,8 @@ $\underline{Response \space to \space the \space questions}$
 We sincerely thank the reviewer for the suggestions and below please find our response
 
 $\underline{Response \space to \space the \space weaknesses}$
-1. 
+
+1. We appreciate the reviewer's observation concerning the performance decrease with an increased number of few-shot samples. We agree that it is be a noteworthy aspect of our current framework. However, we believe this phenomenon does not necessarily indicate an inherent limitation of the framework in benefiting from larger datasets. Rather, it may be attributed to several factors: (1) This phenomenon can occur due to the inherent characteristics of LLM-based, prompt-driven methods, which may not benefit from larger data scales in the same way as traditional machine learning models. (2) as our setting is designed to simulate scenarios with very limited data, when more data is added incrementally, the framework might require adjustments (such as regularization or fine-tuning strategies) to fully leverage the larger sample size. We will add more clarification in our next version. 
 
 2. We acknowledge that using a stronger LLM provides an advantage in rule summarization. However, extracting rules from a strong LLM is often straightforward and does not require extra training or much prompting. Also, our experiments with weaker open-sourced LLMs like Mistral still demonstrate promising performance (see the result below), as they retain the ability to generalize key patterns, even if their summarization capabilities are less robust. In addition, we agree that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. Nevertheless, for harder tasks, we envision LLMs functioning in a more iterative mode, where they gather contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules. 
 
@@ -46,3 +47,4 @@ Please see response 2 and 2.5 to the questions from reviewer1 for more details.
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
 
+**Response to Reviewer4**
