@@ -63,6 +63,15 @@ $\underline{Response \space to \space the \space weaknesses}$
 
 5. Please kindly see our response to reviewer1 (Response to Weakness 1 and Response to Question 2 & 2.5).
 
+*Table 1: Overall budget cost of InsightTab. Each number is reported using 5 fold validation on 128 training examples, 16 number of shots.*
+|     | Bank     | Blood     | Calhous. | Car | Creditg | Diabetes | Heart | Income | Jungle | Time|
+|---------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+|Rule Generation (GPT-4o-mini)      | <0.01 |  <0.01  | <0.01  | <0.01  | <0.01    | <0.01  |  <0.01 |  <0.01 |  <0.01 | ~2min 20s|
+|Rule Generation (GPT-4o)      |  |  0.16 |  |   |     |   |  0.20 | 0.05  | 0.12  | ~2min 20s |
+|Prediction  (GPT-3.5-turbo)   | 89.34 |  91.30  | 80.37 |   |     |   |   |   |   ||
+
+
+
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
 
 **Response to Reviewer4**
