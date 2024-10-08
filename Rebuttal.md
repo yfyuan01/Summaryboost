@@ -63,12 +63,13 @@ $\underline{Response \space to \space the \space weaknesses}$
 
 5. Please kindly see our response to reviewer1 (Response to Weakness 1 and Response to Question 2 & 2.5).
 
-*Table 1: Overall budget cost of InsightTab. Each number is reported using 5 fold validation on 128 training examples, 16 number of shots.*
+*Table 1: Overall cost (USD) of InsightTab. Each number is reported using 5 fold validation on 128 training examples, 16 number of shots.*
 |     | Bank     | Blood     | Calhous. | Car | Creditg | Diabetes | Heart | Income | Jungle | Time|
 |---------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-|Rule Generation (GPT-4o-mini)      | <0.01 |  <0.01  | <0.01  | <0.01  | <0.01    | <0.01  |  <0.01 |  <0.01 |  <0.01 | ~2min 20s|
-|Rule Generation (GPT-4o)      |  |  0.16 |  |   |     |   |  0.20 | 0.05  | 0.12  | ~2min 20s |
-|Prediction  (GPT-3.5-turbo)   | 89.34 |  91.30  | 80.37 |   |     |   |   |   |   ||
+|Rule Generation (GPT-4o-mini)      | 0.02 |  0.03  | 0.01  | 0.02  | 0.01    | 0.01  |  0.02 |  0.02 |  0.01 | ~2min 20s|
+|Rule Generation (GPT-4-turbo)      | 1.58 |  1.66 | 1.87 |  1.97 |  1.80   | 1.67  |  1.70 | 1.80  | 1.72  | ~2min 20s |
+|Prediction  (GPT-3.5-turbo)   | 0.69 |  0.28  | 0.42 | 0.26  |   0.29  | 0.22  |  0.30 | 0.73  | 0.84  |~5min per 10k testing samples|
+|SummaryBoost (GPT-4-turbo) | 12.3 | 14.5| 15.8| 14.1| 11.4| 10.4| 15.7|18.9 | 17.5 | ~20min per 10k testing samples|
 
 
 
