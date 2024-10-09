@@ -61,7 +61,7 @@ $\underline{Response \space to \space the \space weaknesses}$
 
 1. We appreciate the reviewer's observation concerning the performance decreases with an increased number of few-shot samples. We agree that it is be a noteworthy aspect of our current framework. However, we believe this phenomenon does not necessarily indicate an inherent limitation of the framework in benefiting from larger datasets. Rather, it may be attributed to several factors: (1) This phenomenon can occur due to the inherent characteristics of LLM-based, prompt-driven methods, which may not benefit from larger data scales in the same way as traditional machine learning models. (2) as our setting is designed to simulate scenarios with very limited data, when more data is added incrementally, the framework might require adjustments (such as regularization or fine-tuning strategies) to fully leverage the larger sample size. We will add more clarification in our next version. 
 
-2. We acknowledge that using a stronger LLM provides an advantage in rule summarization. To address the concern, we've added our experimental results with other rule LLMs below (see **Table 1**). We find our experiments with weaker LLMs like Mistral and gpt-4o-mini still demonstrate promising performance, as they retain the ability to generalize key patterns, even if their summarization capabilities are less robust. In addition, we agree that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. Nevertheless, for harder tasks, we envision LLMs functioning in a more iterative mode, where they gather contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules. 
+2. We acknowledge that using a stronger LLM provides an advantage in rule summarization. To address the concern, we've added our experimental results with other rule LLMs below (see **Table 1**). We find our experiments with weaker LLMs like Mistral and gpt-4o-mini still demonstrate promising performance (also show SOTA performance on some datasets), as they retain the ability to generalize key patterns, even if their summarization capabilities are less robust. In addition, we agree that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. Nevertheless, for harder tasks, we envision LLMs functioning in a more iterative mode, where they gather contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules. 
 
 $\underline{Response \space to \space the \space questions}$
 
@@ -73,19 +73,19 @@ Please see our response to the question 2 and 2.5 from reviewer1 for more detail
 | num_examples | Rule Method  | Bank | Blood | Calhous. | Car | Creditg | Diabetes | Heart | Income | Jungle | 
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 |16| gpt-4o-mini|0.367 | 0.395| 0.704 | 0.390 | 0.470 |0.656 | 0.703 |  0.599 | 0.617 |
-|16| Mistral-7B|
+|16| Mistral-7B| 0.372 | 0.429 | 0.702 | 0.477 |
 |16|**gpt-4-turbo**| 0.417|  0.549 | 0.758|  0.515 | 0.809 | 0.682 | 0.767 | 0.610 | 0.649 |
 |32| gpt-4o-mini| 0.304 | 0.442| 0.709 |  0.429 |  0.429 | 0.635 | 0.750 | 0.620 | 0.603
-|32| Mistral-7B|
+|32| Mistral-7B| 0.374 | 0.456 | 0.715 | 0.480 |
 |32 |**gpt-4-turbo**|0.358| 0.483 | 0.712| 0.491 | 0.814 | 0.646 | 0.788 | 0.647 | 0.636 | 
 |64| gpt-4o-mini|0.359 |0.458| 0.698| 0.467 | 0.502 | 0.638 | 0.774 | 0.617 | 0.631 |
-|64| Mistral-7B|   |
+|64| Mistral-7B|  0.368 | 0.477 | 0.701 | 0.492|
 |64| **gpt-4-turbo**| 0.397|0.493| 0.697|  0.552| 0.835 | 0.633 | 0.812 | 0.620 | 0.636|
 |128| gpt-4o-mini| 0.366| 0.489 | 0.703 | 0.451 | 0.488 | 0.613 | 0.779 | 0.598 | 0.638 |
-|128| Mistral-7B|   | 
+|128| Mistral-7B|  0.361 | 0.481 | 0.704 | 0.502 | 
 |128| **gpt-4-turbo**| 0.379| 0.502| 0.726 | 0.504 | 0.798 | 0.642 | 0.836 | 0.595 | 0.656 |
 |256| gpt-4o-mini| 0.357|   0.496| 0.708 | 0.509 | 0.515 | 0.618 | 0.787 | 0.593 | 0.619 |
-|256| Mistral-7B|   |
+|256| Mistral-7B|  0.355 | 0.484 | 0.698 | 0.503 | 
 |256| **gpt-4-turbo**| 0.390|0.514 | 0.706 | 0.522 | 0.808 | 0.616 | 0.818 | 0.685 | 0.644 |
 
 
