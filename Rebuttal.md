@@ -69,6 +69,12 @@ Please see our response to the question 2 and 2.5 from reviewer1 for more detail
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
+*Table 1: Results of InsightTab based on gpt-4o-mini and Mistral generated rules.*
+| num_examples | Rule Method  | Bank | Blood | Calhous. | Car | Creditg | Diabetes | Heart | Income | Jungle | 
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+|16| gpt-4o-mini|
+|16| Mistral-7B|
+
 **Response to Reviewer3**
 
 We sincerely thank the reviewer for the suggestions and below please find our response
@@ -107,13 +113,13 @@ $\underline{Response \space to \space the \space weaknesses}$
    
 2. We acknowledge the concern of rule example size, we will add a limitation section to discuss about it in detail. However, we propose two potential strategies to mitigate the issue: (1) Chunking and batching. Instead of inputting all examples at once, we can split the data into smaller chunks or batches that stay within the context length limit. The LLM can then summarize each chunk, and we can combine these partial summaries to generate a final rule set. (2) Sampling: For groups with a large number of examples, we can use representative sampling techniques to input a subset of the most informative examples, which reduces prompt size while still capturing the essential patterns needed for rule summarization. 
 
-3. We present our cost below.
+3. Concerning the cost of our model, please kindly see our response to weakness 3 by reviewer3, we've also attached a table of the detailed cost. 
 
 $\underline{Response \space to \space the \space questions}$
 
 1. Please kindly see our response to reviewer1 (Response to Weakness 1 and Response to Question 2 & 2.5).
 
-2. Please refer to our overhead Table below.
+2. Please refer to our overhead Table in response to reviewer3.
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
@@ -125,12 +131,12 @@ $\underline{Response \space to \space the \space weaknesses}$
 
 1. The advantage of our multi-step distillation process lies in enabling the model to gain a better understanding of the dataset through a few key examples and condensed rules. We respectfully argue that this approach minimizes the risk of error propagation. Unlike pipeline-based methods, where the generated rules may influence the selection of demonstrated samples (or vice versa), our approach separates the grouping and sampling processes with different methods. This independence ensures that errors in one step do not propagate to the other, allowing for a more robust and reliable distillation process. Additionally, the reflection mechanism in our approach enables the model to revisit and correct misclassified samples, providing an additional opportunity for error correction.
    
-2. We acknowledge the concern of the influence of adopting different LLMs for rule summarization. Therefore, we present the experimental results with Mistral-generated and GPT-3.5 generated rules (results see my response to ).
+2. We acknowledge the concern of the influence of adopting different LLMs for rule summarization. Therefore, we present the experimental results with Mistral-generated and GPT-4o-mini generated rules (details and experimental results please see the response2 to reviewer2).
 
 $\underline{Response \space to \space the \space questions}$
-1. See my 2nd response above.
+1. Please see my 2nd response above.
    
-2. Thank you for your observation. While the easy-first strategy is designed to select the most representative instances, its purpose is not to lead to convergence on a single rule, but rather to ensure that the model can generate rules that cover the most salient patterns in the data early on. In our approach, the easy-first strategy helps guide the model's understanding of the broader structure of the dataset, while subsequent instances can refine or introduce new patterns. Also the reflection on the hard samples enable the model to self-improve. The generation of a single rule is unlikely, as the framework is designed to handle multiple underlying patterns and adapt as more samples are introduced.
+2. Thank you for your observation. While the easy-first strategy is designed to select the most representative instances, its purpose is not to lead to convergence on a single rule, but rather to ensure that the model can generate rules that cover the most salient patterns in the data. In our approach, the easy-first strategy helps guide the model's understanding of the broader structure of the dataset, while subsequent instances can refine or introduce new patterns. Also the reflection on the hard samples enable the model to self-improve. The generation of a single rule is not very likely, as the framework is designed to handle multiple underlying patterns and adapt as more samples are introduced.
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
