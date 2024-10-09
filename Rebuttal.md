@@ -69,11 +69,25 @@ Please see our response to the question 2 and 2.5 from reviewer1 for more detail
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
-*Table 1: Results of InsightTab based on gpt-4o-mini and Mistral generated rules.*
+*Table 1: Results (gpt-3.5-turbo) of InsightTab based on gpt-4o-mini and Mistral generated rules.*
 | num_examples | Rule Method  | Bank | Blood | Calhous. | Car | Creditg | Diabetes | Heart | Income | Jungle | 
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-|16| gpt-4o-mini|
+|16| gpt-4o-mini|0.367 | 0.395|
 |16| Mistral-7B|
+|16|**gpt-4-turbo**| 0.417|  0.549 | 
+|32| gpt-4o-mini| 0.304 | 0.442| 
+|32| Mistral-7B|
+|32 |**gpt-4-turbo**|0.358| 0.483
+|64| gpt-4o-mini|0.359 |0.458|
+|64| Mistral-7B|   |
+|64| **gpt-4-turbo**| 0.397|0.493|
+|128| gpt-4o-mini| 0.366| 0.489 | 
+|128| Mistral-7B|   |
+|128| **gpt-4-turbo**| 0.379| 0.502| 
+|256| gpt-4o-mini| 0.357|   0.496|
+|256| Mistral-7B|   |
+|256| **gpt-4-turbo**| 0.390|0.514 |
+
 
 **Response to Reviewer3**
 
