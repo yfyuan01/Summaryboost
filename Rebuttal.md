@@ -14,7 +14,7 @@ $\underline{Response \space to \space the \space weaknesses}$
 3. Given the page and resource constraints of this paper, we respectfully argue that conducting experiments on the full dataset (30-40 instances) is challenging. Therefore, we follow previous works [1] and use the 9 most representative datasets with different scale to show the effectiveness of our method (the reason for selecting these datasets see our 3rd response in the next section).
 
 $\underline{Response \space to \space the \space questions}$
-1. While we agree that SSL-based methods can be applied to tabular classification, we emphasize that our focus is on the low-resource, few-shot setting where LLMs can be particularly effective. Bayesian algorithms, therefore, fall outside the scope of this work. However, for the reviewer's reference, we have included the results of TabPFN below.
+1. While we agree that SSL-based methods can be applied to tabular classification, we emphasize that our focus is on the low-resource, few-shot setting where LLMs can be particularly effective. Bayesian algorithms, therefore, fall outside the scope of this work. However, for the reviewer's reference, we have included the results of TabPFN and XGBoost below (see **Table 1**). Our method demonstrates a clear advantage when applied to small training datasets, further validating its effectiveness in the targeted **few-shot** setting.
 
 2. We agree with the reviewer's concern about directly using XGBoost on each dataset. However, **since we are not the first to use LLMs for the tabular classificatio task, existing works have already made such comparison and verify the advantage of using LLM as a serialization tool against XGBoost (see Table 1 in [1])**. Therefore, we didn't report this result for space constraints. However, we attach the result below. We will add the results in our next version.
 
@@ -24,20 +24,32 @@ $\underline{Response \space to \space the \space questions}$
 
 4. The code is currently hosted in a private GitHub repository. While we are unable to release it at this time due to safety concerns, we have included the specific prompts used in our experiments in the paper to ensure reproducibility. We will release the code as soon as our paper gets accepted.
 
-**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
+**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
 *Table 1: F1 performance on the public tabular datasets with different number of training samples*
 | num_examples | Method  | Bank | Blood | Calhous. | Car | Creditg | Diabetes | Heart | Income | Jungle | 
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 |16     | XGBoost| 0.0| 0.273|0.664|0.332|0.801|0.312|0.693|0.105|0.528|
+|16     | TabPFN| 0.013| 0.216|0.721|0.221|0.822|0.292|0.790|0.004|0.416|
+|16     | **InsightTab**| 0.488|0.629|0.797|0.484|0.804|0.764|0.800|0.675|0.694|
 |32     | XGBoost|0.149|0.235|0.665|0.336|0.765|0.522|0.746|0.398|0.696|
+|32     | TabPFN| 0.166| 0.095|0.760|0.238|0.818|0.372|0.798|0.086|0.701|
+|32    | **InsightTab** |0.395|0.441|0.764|0.439|0.818|0.668|0.775|0.620|0.702|
 |64     | XGBoost|0.323|0.392|0.726|0.433|0.773|0.585|0.819|0.362|0.722|
+|64     | TabPFN |0.214|0.116|0.800|0.285|0.804|0.577|0.837|0.350|0.723|
+|64    | **InsightTab** |0.408|0.495|0.746|0.472|0.826|0.644|0.750|0.729|0.716|
 |128    | XGBoost|0.362|0.414|0.769|0.507|0.797|0.583|0.859|0.492|0.768|
+|128    | TabPFN |0.180|0.278|0.832|0.477|0.806|0.625|0.848|0.368|0.772|
+|128   | **InsightTab** |0.353|0.506|0.782|0.550|0.829|0.708|0.742|0.634|0.656|
 |256    | XGBoost|0.363|0.331|0.802|0.669|0.808|0.625|0.849|0.573|0.794|
-|all    | XGBoost|0.545|0.424|0.905|0.977|0.828|0.609|0.876|0.724|0.891|
+|256    | TabPFN|0.272|0.280|0.842|0.674|0.812|0.642|0.866|0.486|0.787|
+|256   | **InsightTab** |0.340|0.460|0.744|0.542|0.820|0.635|0.786|0.677|0.707|
+
 
 [1] TabLLM: Few-shot Classification of Tabular Data with Large Language Models
+
 [2] TABLET: Learning From Instructions For Tabular Data
+
 [3] Language models are weak learners. 
 
 
@@ -47,15 +59,15 @@ We sincerely thank the reviewer for the suggestions and below please find our re
 
 $\underline{Response \space to \space the \space weaknesses}$
 
-1. We appreciate the reviewer's observation concerning the performance decrease with an increased number of few-shot samples. We agree that it is be a noteworthy aspect of our current framework. However, we believe this phenomenon does not necessarily indicate an inherent limitation of the framework in benefiting from larger datasets. Rather, it may be attributed to several factors: (1) This phenomenon can occur due to the inherent characteristics of LLM-based, prompt-driven methods, which may not benefit from larger data scales in the same way as traditional machine learning models. (2) as our setting is designed to simulate scenarios with very limited data, when more data is added incrementally, the framework might require adjustments (such as regularization or fine-tuning strategies) to fully leverage the larger sample size. We will add more clarification in our next version. 
+1. We appreciate the reviewer's observation concerning the performance decreases with an increased number of few-shot samples. We agree that it is be a noteworthy aspect of our current framework. However, we believe this phenomenon does not necessarily indicate an inherent limitation of the framework in benefiting from larger datasets. Rather, it may be attributed to several factors: (1) This phenomenon can occur due to the inherent characteristics of LLM-based, prompt-driven methods, which may not benefit from larger data scales in the same way as traditional machine learning models. (2) as our setting is designed to simulate scenarios with very limited data, when more data is added incrementally, the framework might require adjustments (such as regularization or fine-tuning strategies) to fully leverage the larger sample size. We will add more clarification in our next version. 
 
-2. We acknowledge that using a stronger LLM provides an advantage in rule summarization. However, extracting rules from a strong LLM is often straightforward and does not require extra training or much prompting. Also, our experiments with weaker open-sourced LLMs like Mistral still demonstrate promising performance (see the result below), as they retain the ability to generalize key patterns, even if their summarization capabilities are less robust. In addition, we agree that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. Nevertheless, for harder tasks, we envision LLMs functioning in a more iterative mode, where they gather contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules. 
+2. We acknowledge that using a stronger LLM provides an advantage in rule summarization. To address the concern, we've added our experimental results with other rule LLMs below (see **Table 1**). We find our experiments with weaker LLMs like Mistral and gpt-4o-mini still demonstrate promising performance, as they retain the ability to generalize key patterns, even if their summarization capabilities are less robust. In addition, we agree that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. Nevertheless, for harder tasks, we envision LLMs functioning in a more iterative mode, where they gather contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules. 
 
 $\underline{Response \space to \space the \space questions}$
 
-Please see our response 2 and 2.5 to the questions from reviewer1 for more details. 
+Please see our response to the question 2 and 2.5 from reviewer1 for more details.
 
-**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
+**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
 **Response to Reviewer3**
 
@@ -83,7 +95,7 @@ $\underline{Response \space to \space the \space weaknesses}$
 
 
 
-**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
+**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
 **Response to Reviewer4**
 
@@ -103,7 +115,7 @@ $\underline{Response \space to \space the \space questions}$
 
 2. Please refer to our overhead Table below.
 
-**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
+**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
 **Response to Reviewer5**
 
@@ -120,5 +132,5 @@ $\underline{Response \space to \space the \space questions}$
    
 2. Thank you for your observation. While the easy-first strategy is designed to select the most representative instances, its purpose is not to lead to convergence on a single rule, but rather to ensure that the model can generate rules that cover the most salient patterns in the data early on. In our approach, the easy-first strategy helps guide the model's understanding of the broader structure of the dataset, while subsequent instances can refine or introduce new patterns. Also the reflection on the hard samples enable the model to self-improve. The generation of a single rule is unlikely, as the framework is designed to handle multiple underlying patterns and adapt as more samples are introduced.
 
-**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can consider these revisions during the rebuttal phase and kindly reassess the overall scoren.**
+**We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
