@@ -77,22 +77,33 @@ $\underline{Response \space to \space the \space questions}$
 
 [3] Language models are weak learners. 
 
-[4] Large Language Models (LLMs) on Tabular Data: Predic- tion, Generation, and Understanding - A Survey.
+[4] Large Language Models (LLMs) on Tabular Data: Prediction, Generation, and Understanding - A Survey.
 
 
 **Response to Reviewer2**
 
-We sincerely thank the reviewer for the suggestions and below please find our response
+We sincerely thank the reviewer for the suggestions and below please find our response.
 
 $\underline{Response \space to \space the \space weaknesses}$
 
 1. We appreciate the reviewer's observation concerning the performance decreases with an increased number of few-shot samples. We agree that it is be a noteworthy aspect of our current framework. However, we believe this phenomenon does not necessarily indicate an inherent limitation of the framework in benefiting from larger datasets. Rather, it may be attributed to several factors: (1) This phenomenon can occur due to the inherent characteristics of LLM-based, prompt-driven methods, which may not benefit from larger data scales in the same way as traditional machine learning models. (2) as our setting is designed to simulate scenarios with very limited data, when more data is added incrementally, the framework might require adjustments (such as regularization or fine-tuning strategies) to fully leverage the larger sample size. We will add more clarification in our next version. 
 
+> We appreciate the reviewer's insightful observation regarding the occasional decrease in performance with an increased number of samples. We agree that this is a noteworthy aspect of current LLM-based tabular classifiers that do not involve fine-tuning. We would like to further clarify that these approaches involve two types of samples: training samples and in-context samples (i.e., shots).  
+**For training samples**: It appears that these approaches do not benefit from larger data scales in the same way as traditional machine learning models, as illustrated in Table 2 of our paper. Note that only a subset of training samples is selected as in-context samples for inference due to context window constraints. This could informally explain the unexpected trend where performance does not improve with more training samples.
+**For in-context samples**: In-context samples have a direct impact on the LLM's predictions. We present the performance of tested approaches with different numbers of in-context samples in Figure 2 of our paper. The results indicate that, while other approaches still do not benefit from an increased number of shots, the performance of our InsightLLM continues to improve as the number of shots increases from 2 to 16. This is due to our strategic easy-first example selection and the distilled rules.  
+In summary, this phenomenon arises from the inherent characteristics of LLM-based, prompt-driven methods. We have already optimized our method to leverage in-context samples effectively. Our current focus is on scenarios with very limited data. When more data becomes available incrementally, the framework may require adjustments, such as enabling fine-tuning, to fully utilize the larger sample size. We will add further clarification in our next version.  
+Thank you for your valuable feedback.
+
 2. We acknowledge that using a stronger LLM provides an advantage in rule summarization. To address the concern, we've added our experimental results with other rule LLMs below (see **Table 1**). We find our experiments with weaker LLMs like Mistral and gpt-4o-mini still demonstrate promising performance (also show SOTA performance on some datasets), as they retain the ability to generalize key patterns, even if their summarization capabilities are less robust. In addition, we agree that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. Nevertheless, for harder tasks, we envision LLMs functioning in a more iterative mode, where they gather contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules. 
+
+> Indeed, we deliberately distinguish between LLMs for rule summarization and prediction. Since rule summarization needs to be performed only once per dataset or task, this allows us to leverage the capabilities of more powerful LLMs in an economical manner, akin to a teacher-student collaboration.  
+To address your concern, we have included further experimental results with other rule LLMs below (see **Table 1**). Our experiments with weaker LLMs such as Mistral and GPT-4o-mini still demonstrate promising performance, even achieving state-of-the-art results on some datasets. These models retain the ability to generalize key patterns, despite their less robust summarization capabilities.  
+Additionally, we acknowledge that generalizing to more complex problems, where rules cannot be explicitly summarized, presents a challenge. For such tasks, we envision LLMs operating in a more iterative mode, gathering contextual information over multiple steps or turns from the selected examples, rather than relying solely on summarizing predefined rules.
+
 
 $\underline{Response \space to \space the \space questions}$
 
-Please see our response to the question 2 and 2.5 from reviewer1 for more details.
+Please refer to our responses to questions 1&2 by reviewer1 (vwUM).
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
