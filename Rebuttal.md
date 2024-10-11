@@ -69,6 +69,10 @@ $\underline{Response \space to \space the \space questions}$
 |256    | XGBoost|0.363|0.331|0.802|0.669|0.808|0.625|0.849|0.573|0.794|
 |256    | TabPFN|0.272|0.280|0.842|0.674|0.812|0.642|0.866|0.486|0.787|
 |256   | **InsightTab** |0.340|0.460|0.744|0.542|0.820|0.635|0.786|0.677|0.707|
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+|All    | XGBoost|0.545|0.424|0.905| 0.977|0.828|0.609|0.876|0.724|0.891|
+|All    | TabPFN|/|/|/|/|/|/|/|/|/|
+|All   | **InsightTab** |0.368|0.476|0.716|0.476|0.837|0.655|0.756|0.642|0.708|
 
 
 [1] TabLLM: Few-shot Classification of Tabular Data with Large Language Models
@@ -170,17 +174,21 @@ We sincerely thank the reviewer for the suggestions and below please find our re
 
 $\underline{Response \space to \space the \space weaknesses}$
 
-1. Please kindly see our response to reviewer1 (Response to Weakness 1 and Response to Question 2 & 2.5).
+1. Please kindly see our response to reviewer1 (vwUM), specifically to Weakness 2 and Question 1 & 2.
    
 2. We acknowledge the concern of rule example size, we will add a limitation section to discuss about it in detail. However, we propose two potential strategies to mitigate the issue: (1) Chunking and batching. Instead of inputting all examples at once, we can split the data into smaller chunks or batches that stay within the context length limit. The LLM can then summarize each chunk, and we can combine these partial summaries to generate a final rule set. (2) Sampling: For groups with a large number of examples, we can use representative sampling techniques to input a subset of the most informative examples, which reduces prompt size while still capturing the essential patterns needed for rule summarization. 
 
-3. Concerning the cost of our model, please kindly see our response to weakness 3 by reviewer3, we've also attached a table of the detailed cost. 
+> 2. We acknowledge the concern of example explosion during rule summarization, and we will add a limitation section to discuss about it in detail. However, we propose two potential strategies to mitigate the issue: (1) Chunking and batching. Instead of inputting all examples at once, we can split the data into smaller chunks or batches that stay within the context length limit. The LLM can then summarize each chunk, and we can combine these partial summaries to generate a final rule set. (2) Sampling: For groups with a large number of examples, we can use representative sampling techniques to input a subset of the most informative examples, which reduces prompt size while still capturing the essential patterns needed for rule summarization. The sampling step will not incur too much information loss as data within groups are experted to be similar.
+
+3. Concerning the cost of our model, please kindly see our response to weakness 3 by reviewer3 (5at8). We've also attached a table of the detailed cost. 
 
 $\underline{Response \space to \space the \space questions}$
 
 1. Please kindly see our response to reviewer1 (Response to Weakness 1 and Response to Question 2 & 2.5).
 
-2. Please refer to our overhead Table in response to reviewer3.
+> 1. Please see our 1st response above.
+
+2. Please refer to our overhead Table in response to reviewer3 (5at8).
 
 **We thank the reviewer again for the suggestions. We will add more elaborations and experimental results concerning the problems discussed. We sincerely hope the reviewer can kindly reassess the score if he/she finds our response helpful.**
 
@@ -192,10 +200,10 @@ $\underline{Response \space to \space the \space weaknesses}$
 
 1. The advantage of our multi-step distillation process lies in enabling the model to gain a better understanding of the dataset through a few key examples and condensed rules. We respectfully argue that this approach minimizes the risk of error propagation. Unlike pipeline-based methods, where the generated rules may influence the selection of demonstrated samples (or vice versa), our approach separates the grouping and sampling processes with different methods. This independence ensures that errors in one step do not propagate to the other, allowing for a more robust and reliable distillation process. Additionally, the reflection mechanism in our approach enables the model to revisit and correct misclassified samples, providing an additional opportunity for error correction.
    
-2. We acknowledge the concern of the influence of adopting different LLMs for rule summarization. Therefore, we present the experimental results with Mistral-generated and GPT-4o-mini generated rules (details and experimental results please see the response2 to reviewer2).
+2. We acknowledge the concern of the influence of adopting different LLMs for rule summarization. Therefore, we present the experimental results with Mistral-generated and GPT-4o-mini generated rules (details and experimental results please see the response2 to reviewer2 UVNi).
 
 $\underline{Response \space to \space the \space questions}$
-1. Please see my 2nd response above.
+1. Please see our 2nd response above.
    
 2. Thank you for your observation. While the easy-first strategy is designed to select the most representative instances, its purpose is not to lead to convergence on a single rule, but rather to ensure that the model can generate rules that cover the most salient patterns in the data. In our approach, the easy-first strategy helps guide the model's understanding of the broader structure of the dataset, while subsequent instances can refine or introduce new patterns. Also the reflection on the hard samples enable the model to self-improve. The generation of a single rule is not very likely, as the framework is designed to handle multiple underlying patterns and adapt as more samples are introduced.
 
